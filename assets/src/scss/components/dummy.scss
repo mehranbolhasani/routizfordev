@@ -1,0 +1,16 @@
+.rz-dummy-image {
+    @include relative;
+    display: inline-block;
+    width: 100%;
+    padding-top: 66.4%;
+    background-color: #222;
+    color: #ccc;
+    vertical-align: top;
+
+    i {
+        @include absolute( top 50% left 50% );
+        font-size: 2rem;
+        color: inherit;
+        @include transformXY(-50%, -50%);
+    }
+}

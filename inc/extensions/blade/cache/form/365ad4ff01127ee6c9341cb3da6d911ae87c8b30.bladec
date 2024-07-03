@@ -1,0 +1,34 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-range-type-<?php echo static::e($input_type); ?>" data-type="<?php echo static::e($input_type); ?>">
+
+ <div class="rz-range-number">
+
+ <div class="rz-range-field" data-type="from">
+ <?php echo $this->runChild('range.input', [
+ 'id' => $id,
+ 'value' => isset( $value[0] ) ? $value[0] : '',
+ 'placeholder' => $placeholder[0],
+ 'suffix' => $suffix,
+ 'number_attr' => $number_attrs,
+ ]); ?>
+ </div>
+
+ <div class="rz-range-separator rz-flex rz-flex-column rz-justify-center">
+ <?php echo static::e($separator); ?>
+
+ </div>
+
+ <div class="rz-range-field" data-type="to">
+ <?php echo $this->runChild('range.input', [
+ 'id' => $id,
+ 'value' => isset( $value[1] ) ? $value[1] : '',
+ 'placeholder' => $placeholder[1],
+ 'suffix' => $suffix,
+ 'number_attr' => $number_attrs,
+ ]); ?>
+ </div>
+
+ </div>
+
+</div>

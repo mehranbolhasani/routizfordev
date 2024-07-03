@@ -1,0 +1,6866 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-13 13:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: inc/lib/wordpress-importer/class-wp-import.php:110
+#: inc/lib/wordpress-importer/class-wp-import.php:119
+#: inc/lib/wordpress-importer/class-wp-import.php:170
+#: inc/lib/wordpress-importer/class-wp-import.php:174
+#: inc/lib/wordpress-importer/class-wp-import.php:183
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:111
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:154
+msgid "All done."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:154
+msgid "Have fun!"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:155
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:175
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:191
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:216
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:242
+msgid "Assign Authors"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:243
+msgid ""
+"To make it simpler for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site, such as your primary administrator account."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:245
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:255
+msgid "Import Attachments"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:258
+msgid "Download and import file attachments"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:262
+msgid "Submit"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:275
+msgid "Import author:"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:287
+msgid "or create new user with login name:"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:290
+msgid "as a new user:"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:300
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:302
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:310
+msgid "- Select -"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:364
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:416
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:461
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:516
+#: inc/lib/wordpress-importer/class-wp-import.php:804
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:609
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:646
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:770
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:944
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:951
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1014
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1027
+msgid "Invalid file type"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1066
+msgid "Could not create temporary file."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1085
+#, php-format
+msgid "Request failed due to an error: %1$s (%2$s)"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1101
+#, php-format
+msgid "Remote server returned the following unexpected result: %1$s (%2$s)"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1113
+msgid "Remote server did not respond"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1120
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1125
+msgid "Downloaded file has incorrect size"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1131
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1163
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1178
+msgid "The uploaded file could not be moved"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1426
+msgid "Import WordPress"
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1433
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1448
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: inc/lib/wordpress-importer/class-wp-import.php:1449
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser-regex.php:96
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser-simplexml.php:41
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser-simplexml.php:46
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser-xml.php:48
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser-simplexml.php:29
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser-simplexml.php:37
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser.php:42
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: inc/lib/wordpress-importer/parsers/class-wxr-parser.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: inc/src/admin.php:43
+msgid "Routiz Thumbnail"
+msgstr ""
+
+#: inc/src/admin.php:213 templates/admin/metabox/listing-type.php:137
+#: templates/admin/metabox/listing-type.php:2794
+#: templates/admin/settings/settings.php:270
+msgid "Explore Page"
+msgstr ""
+
+#: inc/src/admin.php:216 templates/admin/settings/settings.php:282
+msgid "Submission Page"
+msgstr ""
+
+#: inc/src/icon-sets.php:27
+msgid "Icon Set"
+msgstr ""
+
+#: inc/src/icon-sets.php:28
+msgid "Icon Sets"
+msgstr ""
+
+#: inc/src/icon-sets.php:43 inc/src/post-types.php:178
+#: inc/src/post-types.php:223 inc/src/post-types.php:273
+#: inc/src/post-types.php:323 inc/src/post-types.php:372
+#: inc/src/woocommerce/post-types.php:46 inc/src/woocommerce/post-types.php:96
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/src/icon-sets.php:44 inc/src/post-types.php:82
+#: inc/src/post-types.php:135 inc/src/post-types.php:179
+#: inc/src/post-types.php:224 inc/src/post-types.php:274
+#: inc/src/post-types.php:324 inc/src/post-types.php:373
+#: inc/src/form/modules/repeater/repeater.php:22
+#: inc/src/woocommerce/post-types.php:47 inc/src/woocommerce/post-types.php:97
+msgid "Add New"
+msgstr ""
+
+#: inc/src/icon-sets.php:45 inc/src/post-types.php:83
+#: inc/src/post-types.php:136 inc/src/post-types.php:180
+#: inc/src/post-types.php:225 inc/src/post-types.php:275
+#: inc/src/post-types.php:325 inc/src/post-types.php:374
+#: inc/src/woocommerce/post-types.php:48 inc/src/woocommerce/post-types.php:98
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: inc/src/icon-sets.php:46 inc/src/post-types.php:84
+#: inc/src/post-types.php:137 inc/src/post-types.php:181
+#: inc/src/post-types.php:226 inc/src/post-types.php:276
+#: inc/src/post-types.php:326 inc/src/post-types.php:375
+#: inc/src/admin/columns/claim.php:135 inc/src/admin/columns/entry.php:166
+#: inc/src/admin/columns/listing-type.php:98
+#: inc/src/admin/columns/listing.php:197 inc/src/admin/columns/plan.php:159
+#: inc/src/admin/columns/promotion.php:171
+#: inc/src/admin/columns/report.php:156 inc/src/woocommerce/post-types.php:49
+#: inc/src/woocommerce/post-types.php:99
+#: templates/account/listings/modal/modal.php:6
+msgid "Edit"
+msgstr ""
+
+#: inc/src/icon-sets.php:47 inc/src/post-types.php:85
+#: inc/src/post-types.php:138 inc/src/post-types.php:182
+#: inc/src/post-types.php:227 inc/src/post-types.php:277
+#: inc/src/post-types.php:327 inc/src/post-types.php:376
+#: inc/src/woocommerce/post-types.php:50
+#: inc/src/woocommerce/post-types.php:100
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/src/icon-sets.php:48 inc/src/post-types.php:86
+#: inc/src/post-types.php:139 inc/src/post-types.php:183
+#: inc/src/post-types.php:228 inc/src/post-types.php:278
+#: inc/src/post-types.php:328 inc/src/post-types.php:377
+#: inc/src/woocommerce/post-types.php:51
+#: inc/src/woocommerce/post-types.php:101
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: inc/src/icon-sets.php:49 inc/src/icon-sets.php:50 inc/src/post-types.php:87
+#: inc/src/post-types.php:88 inc/src/post-types.php:140
+#: inc/src/post-types.php:141 inc/src/post-types.php:184
+#: inc/src/post-types.php:185 inc/src/post-types.php:229
+#: inc/src/post-types.php:230 inc/src/post-types.php:279
+#: inc/src/post-types.php:280 inc/src/post-types.php:329
+#: inc/src/post-types.php:330 inc/src/post-types.php:378
+#: inc/src/post-types.php:379 inc/src/woocommerce/post-types.php:52
+#: inc/src/woocommerce/post-types.php:53
+#: inc/src/woocommerce/post-types.php:102
+#: inc/src/woocommerce/post-types.php:103
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: inc/src/icon-sets.php:51 inc/src/post-types.php:89
+#: inc/src/post-types.php:142 inc/src/post-types.php:186
+#: inc/src/post-types.php:231 inc/src/post-types.php:281
+#: inc/src/post-types.php:331 inc/src/post-types.php:380
+#: inc/src/woocommerce/post-types.php:54
+#: inc/src/woocommerce/post-types.php:104
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: inc/src/icon-sets.php:52 inc/src/post-types.php:90
+#: inc/src/post-types.php:143 inc/src/post-types.php:187
+#: inc/src/post-types.php:232 inc/src/post-types.php:282
+#: inc/src/post-types.php:332 inc/src/post-types.php:381
+#: inc/src/woocommerce/post-types.php:55
+#: inc/src/woocommerce/post-types.php:105
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: inc/src/icon-sets.php:53 inc/src/post-types.php:91
+#: inc/src/post-types.php:144 inc/src/post-types.php:188
+#: inc/src/post-types.php:233 inc/src/post-types.php:283
+#: inc/src/post-types.php:333 inc/src/post-types.php:382
+#: inc/src/woocommerce/post-types.php:56
+#: inc/src/woocommerce/post-types.php:106
+#, php-format
+msgid "No %s found in trash"
+msgstr ""
+
+#: inc/src/icon-sets.php:54 inc/src/post-types.php:92
+#: inc/src/post-types.php:145 inc/src/post-types.php:189
+#: inc/src/post-types.php:234 inc/src/post-types.php:284
+#: inc/src/post-types.php:334 inc/src/post-types.php:383
+#: inc/src/woocommerce/post-types.php:57
+#: inc/src/woocommerce/post-types.php:107
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: inc/src/icon-sets.php:80
+msgctxt "Icon set options in wp-admin"
+msgid "Icon Set Options"
+msgstr ""
+
+#: inc/src/icon-sets.php:185
+msgid "The file type that you've uploaded is not a ZIP archive."
+msgstr ""
+
+#: inc/src/post-types.php:65 templates/admin/metabox/listing.php:25
+msgid "Listing Type"
+msgstr ""
+
+#: inc/src/post-types.php:66 templates/admin/metabox/filters.php:581
+msgid "Listing Types"
+msgstr ""
+
+#: inc/src/post-types.php:81
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: inc/src/post-types.php:111 inc/src/admin/columns/entry.php:40
+#: inc/src/admin/columns/promotion.php:37 inc/src/admin/columns/report.php:40
+#: inc/src/woocommerce/cart.php:32 templates/admin/metabox/conversation.php:30
+#: templates/admin/metabox/listing-type.php:32
+#: templates/admin/panel/modal/template-fields.php:34
+#: templates/admin/panel/modal/webhook-fields.php:37
+msgid "Listing"
+msgstr ""
+
+#: inc/src/post-types.php:112 inc/src/woocommerce/account/account.php:65
+#: templates/account/dashboard/dashboard.php:162
+#: templates/admin/settings/settings.php:36
+msgid "Listings"
+msgstr ""
+
+#: inc/src/post-types.php:134
+#, php-format
+msgid "All %s%s"
+msgstr ""
+
+#: inc/src/post-types.php:162
+msgid "Search Form"
+msgstr ""
+
+#: inc/src/post-types.php:163
+msgid "Search Forms"
+msgstr ""
+
+#: inc/src/post-types.php:207 templates/account/entries/modal/modal.php:6
+msgid "Entry"
+msgstr ""
+
+#: inc/src/post-types.php:208 inc/src/woocommerce/account/account.php:68
+#: templates/account/dashboard/dashboard.php:169
+msgid "Entries"
+msgstr ""
+
+#: inc/src/post-types.php:257 templates/admin/metabox/listing-type.php:1931
+msgid "Report"
+msgstr ""
+
+#: inc/src/post-types.php:258
+msgid "Reports"
+msgstr ""
+
+#: inc/src/post-types.php:307 templates/admin/metabox/conversation.php:85
+msgid "Conversation"
+msgstr ""
+
+#: inc/src/post-types.php:308
+msgid "Conversations"
+msgstr ""
+
+#: inc/src/post-types.php:356
+#: inc/src/admin/http/endpoints/endpoint-action-claim-send.php:103
+#: inc/src/woocommerce/order.php:316
+#: templates/admin/metabox/listing-type.php:1940
+msgid "Claim"
+msgstr ""
+
+#: inc/src/post-types.php:357
+msgid "Claims"
+msgstr ""
+
+#: inc/src/post-types.php:410 inc/utils/helper.php:517
+#: inc/utils/helper.php:551
+msgctxt "post status"
+msgid "Pending Payment"
+msgstr ""
+
+#: inc/src/post-types.php:415
+#, php-format
+msgid "Pending Payment <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Payment <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/src/post-types.php:419 inc/utils/helper.php:518
+#: inc/utils/helper.php:540
+msgctxt "post status"
+msgid "Expired"
+msgstr ""
+
+#: inc/src/post-types.php:425
+#, php-format
+msgid "Expired <span class=\"count\">(%s)</span>"
+msgid_plural "Expired <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/src/post-types.php:429 inc/utils/helper.php:552
+msgctxt "post status"
+msgid "Declined"
+msgstr ""
+
+#: inc/src/post-types.php:435
+#, php-format
+msgid "Declined <span class=\"count\">(%s)</span>"
+msgid_plural "Declined <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/src/post-types.php:439 inc/src/woocommerce/post-types.php:135
+#: inc/utils/helper.php:519 inc/utils/helper.php:530 inc/utils/helper.php:541
+msgctxt "post status"
+msgid "Cancelled"
+msgstr ""
+
+#: inc/src/post-types.php:445 inc/src/woocommerce/post-types.php:140
+#, php-format
+msgid "Cancelled <span class=\"count\">(%s)</span>"
+msgid_plural "Cancelled <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/src/setup.php:216 inc/src/form/modules/flyout/flyout.php:11
+#: inc/src/form/modules/key/key.php:41
+#: inc/src/form/modules/open-hours/open-hours.php:100
+#: inc/src/form/modules/select/select.php:13
+#: inc/src/form/modules/select2/select2.php:25
+#: inc/src/listing/action/modules/booking-appointments/booking-appointments.php:32
+#: inc/src/widgets/widget-listings.php:185
+#: templates/account/listings/promotion/modal/row.php:22
+#: templates/admin/metabox/filters.php:136
+#: templates/admin/metabox/filters.php:598
+#: templates/admin/metabox/listing-type.php:811
+#: templates/admin/metabox/listing-type.php:896
+#: templates/single/appointments-more.php:73
+#: templates/single/appointments.php:49
+#: templates/submission/listing-type.php:69
+msgid "Select"
+msgstr ""
+
+#: inc/src/setup.php:217 templates/account/dashboard/dashboard.php:144
+msgid "Listing views"
+msgstr ""
+
+#: inc/src/taxonomies.php:22
+msgctxt "Categories Singular Name"
+msgid "Categories"
+msgstr ""
+
+#: inc/src/taxonomies.php:23
+msgctxt "Categories Singular Name"
+msgid "Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:24
+msgid "Search Categories"
+msgstr ""
+
+#: inc/src/taxonomies.php:25
+msgid "All Categories"
+msgstr ""
+
+#: inc/src/taxonomies.php:26
+msgid "Parent Category"
+msgstr ""
+
+#: inc/src/taxonomies.php:27
+msgid "Parent Category:"
+msgstr ""
+
+#: inc/src/taxonomies.php:28
+msgid "Edit Category"
+msgstr ""
+
+#: inc/src/taxonomies.php:29
+msgid "Update Category"
+msgstr ""
+
+#: inc/src/taxonomies.php:30
+msgid "Add New Category"
+msgstr ""
+
+#: inc/src/taxonomies.php:31
+msgid "New Category Name"
+msgstr ""
+
+#: inc/src/taxonomies.php:32 inc/src/admin/columns/listing.php:36
+msgid "Categories"
+msgstr ""
+
+#: inc/src/taxonomies.php:51
+msgctxt "Regions Singular Name"
+msgid "Regions"
+msgstr ""
+
+#: inc/src/taxonomies.php:52
+msgctxt "Regions Singular Name"
+msgid "Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:53
+msgid "Search Regions"
+msgstr ""
+
+#: inc/src/taxonomies.php:54
+msgid "All Regions"
+msgstr ""
+
+#: inc/src/taxonomies.php:55
+msgid "Parent Region"
+msgstr ""
+
+#: inc/src/taxonomies.php:56
+msgid "Parent Region:"
+msgstr ""
+
+#: inc/src/taxonomies.php:57
+msgid "Edit Region"
+msgstr ""
+
+#: inc/src/taxonomies.php:58
+msgid "Update Region"
+msgstr ""
+
+#: inc/src/taxonomies.php:59
+msgid "Add New Region"
+msgstr ""
+
+#: inc/src/taxonomies.php:60
+msgid "New Region Name"
+msgstr ""
+
+#: inc/src/taxonomies.php:61
+msgid "Regions"
+msgstr ""
+
+#: inc/src/taxonomies.php:80
+msgctxt "Taxonomy Singular Name"
+msgid "Tags"
+msgstr ""
+
+#: inc/src/taxonomies.php:81 inc/src/taxonomies.php:117
+msgctxt "Taxonomy Singular Name"
+msgid "Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:82
+msgid "Search Tags"
+msgstr ""
+
+#: inc/src/taxonomies.php:83
+msgid "All Tags"
+msgstr ""
+
+#: inc/src/taxonomies.php:84
+msgid "Parent Tag"
+msgstr ""
+
+#: inc/src/taxonomies.php:85
+msgid "Parent Tag:"
+msgstr ""
+
+#: inc/src/taxonomies.php:86
+msgid "Edit Tag"
+msgstr ""
+
+#: inc/src/taxonomies.php:87
+msgid "Update Tag"
+msgstr ""
+
+#: inc/src/taxonomies.php:88
+msgid "Add New Tag"
+msgstr ""
+
+#: inc/src/taxonomies.php:89
+msgid "New Tag Name"
+msgstr ""
+
+#: inc/src/taxonomies.php:90 inc/src/admin/columns/listing.php:38
+#: inc/src/form/modules/use-field/use-field.php:58
+msgid "Tags"
+msgstr ""
+
+#: inc/src/taxonomies.php:118
+msgid "Search Items"
+msgstr ""
+
+#: inc/src/taxonomies.php:119
+msgid "All Items"
+msgstr ""
+
+#: inc/src/taxonomies.php:120
+msgid "Parent Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:121
+msgid "Parent Item:"
+msgstr ""
+
+#: inc/src/taxonomies.php:122
+msgid "Edit Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:123
+msgid "Update Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:124
+msgid "Add New Item"
+msgstr ""
+
+#: inc/src/taxonomies.php:125
+msgid "New Item Name"
+msgstr ""
+
+#: inc/src/validation.php:95
+msgid "Required field"
+msgstr ""
+
+#: inc/src/validation.php:106
+msgid "Too short"
+msgstr ""
+
+#: inc/src/validation.php:117
+msgid "Too long"
+msgstr ""
+
+#: inc/src/validation.php:128
+msgid "Not a valid email"
+msgstr ""
+
+#: inc/src/validation.php:139 inc/src/validation.php:150
+msgid "Wrong username or password"
+msgstr ""
+
+#: inc/src/validation.php:161
+msgid "This email is already registered"
+msgstr ""
+
+#: inc/src/validation.php:172
+msgid "This username is already registered"
+msgstr ""
+
+#: inc/src/validation.php:183
+msgid "Should be a number"
+msgstr ""
+
+#: inc/src/validation.php:194
+msgid "Should be a whole number"
+msgstr ""
+
+#: inc/src/validation.php:205
+msgid "Doesn\\t match"
+msgstr ""
+
+#: inc/src/validation.php:235
+msgid "Are you a robot?"
+msgstr ""
+
+#: inc/src/admin/import.php:37 inc/src/admin/import.php:38
+msgid "Demo Import"
+msgstr ""
+
+#: inc/src/admin/metabox.php:61
+msgctxt "Listing type options in wp-admin"
+msgid "Listing Type Options"
+msgstr ""
+
+#: inc/src/admin/metabox.php:69
+msgctxt "Listing options in wp-admin"
+msgid "Listing Options"
+msgstr ""
+
+#: inc/src/admin/metabox.php:77
+msgctxt "Listing sidebar options in wp-admin"
+msgid "Listing Options"
+msgstr ""
+
+#: inc/src/admin/metabox.php:87
+msgctxt "Search form options in wp-admin"
+msgid "Search Form"
+msgstr ""
+
+#: inc/src/admin/metabox.php:95
+msgctxt "Plan options in wp-admin"
+msgid "Plan"
+msgstr ""
+
+#: inc/src/admin/metabox.php:103
+msgctxt "Plan options in wp-admin"
+msgid "Promotion"
+msgstr ""
+
+#: inc/src/admin/metabox.php:111
+msgctxt "Conversation options in wp-admin"
+msgid "Conversation"
+msgstr ""
+
+#: inc/src/admin/metabox.php:119
+msgctxt "Entries options in wp-admin"
+msgid "Entry"
+msgstr ""
+
+#: inc/src/admin/metabox.php:127
+msgctxt "Claim options in wp-admin"
+msgid "Claim"
+msgstr ""
+
+#: inc/src/admin/metabox.php:143
+msgctxt "Report options in wp-admin"
+msgid "Report"
+msgstr ""
+
+#: inc/src/admin/metabox.php:169 templates/admin/metabox/comment.php:32
+msgid "Listing Review"
+msgstr ""
+
+#: inc/src/admin/settings.php:40 inc/src/admin/settings.php:41
+#: inc/src/woocommerce/account/account.php:78
+#: templates/admin/payouts/payouts.php:15
+#: templates/admin/settings/settings.php:83
+#: templates/admin/settings/settings.php:386
+msgid "Payouts"
+msgstr ""
+
+#: inc/src/admin/settings.php:49 inc/src/admin/settings.php:50
+#: templates/admin/earnings/earnings.php:23
+msgid "Earnings"
+msgstr ""
+
+#: inc/src/admin/settings.php:61 inc/src/admin/settings.php:62
+#: templates/admin/settings/settings.php:13
+msgid "Settings"
+msgstr ""
+
+#: inc/src/admin/settings.php:210
+msgid "The transaction was added successfully"
+msgstr ""
+
+#: inc/src/admin/settings.php:214
+msgid "Please add amount"
+msgstr ""
+
+#: inc/src/admin/settings.php:222
+msgid "Please select transaction type"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:33 inc/src/admin/columns/entry.php:33
+#: inc/src/admin/columns/listing-type.php:33
+#: inc/src/admin/columns/listing.php:34 inc/src/admin/columns/plan.php:33
+#: inc/src/admin/columns/promotion.php:33 inc/src/admin/columns/report.php:33
+#: inc/src/form/modules/key/key.php:16
+#: templates/admin/metabox/listing-type.php:1815
+#: templates/admin/metabox/listing-type.php:1912
+msgid "Title"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:34 inc/src/admin/columns/entry.php:34
+#: inc/src/admin/columns/listing.php:35 inc/src/admin/columns/plan.php:34
+#: inc/src/admin/columns/promotion.php:34 inc/src/admin/columns/report.php:34
+#: templates/admin/payouts/payouts.php:41
+#: templates/admin/payouts/payouts.php:175
+msgid "Status"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:36
+msgid "Claim by"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:37 inc/src/admin/columns/plan.php:39
+#: inc/src/admin/columns/promotion.php:40 templates/admin/metabox/claim.php:42
+msgid "Product"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:38 inc/src/admin/columns/plan.php:40
+#: inc/src/admin/columns/promotion.php:41 templates/admin/metabox/claim.php:62
+#: templates/admin/metabox/plan.php:59
+#: templates/admin/metabox/promotion.php:59
+msgid "Order"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:39 inc/src/admin/columns/entry.php:41
+#: inc/src/admin/columns/listing-type.php:34
+#: inc/src/admin/columns/listing.php:41 inc/src/admin/columns/plan.php:41
+#: inc/src/admin/columns/promotion.php:42 inc/src/admin/columns/report.php:41
+msgid "Posted"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:40 inc/src/admin/columns/entry.php:42
+#: inc/src/admin/columns/listing-type.php:35
+#: inc/src/admin/columns/listing.php:43 inc/src/admin/columns/plan.php:42
+#: inc/src/admin/columns/promotion.php:43 inc/src/admin/columns/report.php:42
+#: templates/admin/earnings/earnings.php:196
+#: templates/admin/earnings/earnings.php:282
+#: templates/admin/payouts/payouts.php:46
+#: templates/admin/payouts/payouts.php:180
+msgid "Actions"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:99 inc/src/admin/columns/entry.php:129
+#: inc/src/admin/columns/listing-type.php:66
+#: inc/src/admin/columns/listing.php:77 inc/src/admin/columns/plan.php:122
+#: inc/src/admin/columns/promotion.php:134
+#: inc/src/admin/columns/report.php:120
+#, php-format
+msgid "ID: %d"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:108 inc/src/admin/columns/entry.php:139
+#: inc/src/admin/columns/listing-type.php:76
+#: inc/src/admin/columns/listing.php:148 inc/src/admin/columns/plan.php:132
+#: inc/src/admin/columns/promotion.php:144
+#: inc/src/admin/columns/report.php:129
+msgid "by a guest"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:108 inc/src/admin/columns/entry.php:139
+#: inc/src/admin/columns/listing-type.php:76
+#: inc/src/admin/columns/listing.php:148 inc/src/admin/columns/plan.php:132
+#: inc/src/admin/columns/promotion.php:144
+#: inc/src/admin/columns/report.php:129
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:126 inc/src/admin/columns/entry.php:157
+#: inc/src/admin/columns/listing-type.php:88
+#: inc/src/admin/columns/listing.php:180 inc/src/admin/columns/plan.php:150
+#: inc/src/admin/columns/promotion.php:162
+#: inc/src/admin/columns/report.php:147
+#: inc/src/entry/modules/booking/booking.php:60
+#: inc/src/entry/modules/booking/booking.php:126
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:63
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:133
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:63
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:132
+#: templates/account/entries/row.php:173
+#: templates/admin/payouts/payouts.php:79
+msgid "Approve"
+msgstr ""
+
+#: inc/src/admin/columns/claim.php:143 inc/src/admin/columns/entry.php:174
+#: inc/src/admin/columns/listing-type.php:114
+#: inc/src/admin/columns/listing.php:205 inc/src/admin/columns/plan.php:167
+#: inc/src/admin/columns/promotion.php:179
+#: inc/src/admin/columns/report.php:164
+#: templates/admin/earnings/earnings.php:221
+msgid "Delete"
+msgstr ""
+
+#: inc/src/admin/columns/entry.php:36 inc/src/admin/columns/plan.php:36
+#: inc/src/admin/columns/promotion.php:36
+msgid "Owner"
+msgstr ""
+
+#: inc/src/admin/columns/entry.php:38
+msgid "Requester"
+msgstr ""
+
+#: inc/src/admin/columns/listing-type.php:106
+msgid "Duplicate"
+msgstr ""
+
+#: inc/src/admin/columns/listing.php:37
+#: inc/src/form/modules/use-field/use-field.php:57
+msgid "Region"
+msgstr ""
+
+#: inc/src/admin/columns/listing.php:39 inc/src/admin/columns/promotion.php:39
+#: templates/admin/metabox/plan.php:144
+#: templates/admin/metabox/promotion.php:124
+#: templates/admin/woocommerce/product-listing-promotion.php:23
+msgid "Priority"
+msgstr ""
+
+#: inc/src/admin/columns/listing.php:40
+msgid "Review"
+msgstr ""
+
+#: inc/src/admin/columns/listing.php:42 templates/account/listings/row.php:68
+msgid "Expires"
+msgstr ""
+
+#: inc/src/admin/columns/listing.php:189 templates/account/entries/row.php:163
+#: templates/admin/metabox/listing-type.php:1983
+msgid "View"
+msgstr ""
+
+#: inc/src/admin/columns/plan.php:37
+msgid "Usage"
+msgstr ""
+
+#: inc/src/admin/columns/plan.php:38 templates/admin/metabox/plan.php:135
+#: templates/admin/metabox/promotion.php:116
+#: templates/admin/woocommerce/product-listing-plan.php:9
+#: templates/admin/woocommerce/product-listing-promotion.php:9
+msgid "Duration"
+msgstr ""
+
+#: inc/src/admin/columns/plan.php:85 inc/src/admin/columns/promotion.php:87
+#, php-format
+msgid "%s posted of %s"
+msgstr ""
+
+#: inc/src/admin/columns/plan.php:85 inc/src/admin/columns/promotion.php:87
+msgid "unlimited"
+msgstr ""
+
+#: inc/src/admin/columns/plan.php:92
+#, php-format
+msgid "%s days"
+msgstr ""
+
+#: inc/src/admin/columns/plan.php:94
+#: templates/admin/woocommerce/product-listing-plan.php:11
+msgid "Never expires"
+msgstr ""
+
+#: inc/src/admin/columns/promotion.php:38
+msgid "Promoted Until"
+msgstr ""
+
+#: inc/src/admin/columns/report.php:38
+msgid "Reporter"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-action-application-send.php:51
+#: inc/utils/helper.php:641 templates/admin/metabox/listing-type.php:1408
+msgid "Application"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-action-claim-send.php:55
+msgid "You already claimed this business"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-action-claim-send.php:85
+msgid "Claim product is missing"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-action-claim-send.php:138
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:66
+#: inc/src/admin/http/endpoints/endpoint-field-upload.php:34
+msgid "Something went wrong"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:27
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:26
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:26
+#: inc/src/admin/http/endpoints/endpoint-purchase.php:26
+msgid "WooCommerce is required bookings"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:34
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:33
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:33
+#: inc/src/admin/http/endpoints/endpoint-purchase.php:33
+msgid "You need to login in order to make a booking"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:41
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:40
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:40
+#: inc/src/admin/http/endpoints/endpoint-purchase.php:40
+msgid "Security check not passed"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:70
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:87
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:64
+msgid "You already have a pending request"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:103
+#: inc/src/listing/booking.php:87 inc/src/listing/booking.php:94
+#: inc/src/woocommerce/checkout.php:51
+msgid "You can't book your own listing"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:114
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:110
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:100
+#: inc/src/admin/http/endpoints/endpoint-purchase.php:55
+msgid "Booking product is missing"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:168
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:225
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:170
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:227
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:155
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:216
+#: inc/src/woocommerce/order.php:187 inc/src/woocommerce/order.php:209
+#: inc/utils/helper.php:642 templates/admin/settings/settings.php:117
+#: templates/admin/settings/settings.php:824
+msgid "Booking"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:197
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:200
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:189
+msgid "Your booking request was send successfully"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:251
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:251
+#: inc/src/admin/http/endpoints/endpoint-add-booking.php:240
+msgid "Your request has been sent successfully"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-appointment.php:264
+msgid "There is no availability for the selected date"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:51
+msgid "Please select date and time"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-add-booking-hour.php:62
+#: templates/single/pricing-hour.php:31
+msgid "End time must be greater than start time"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:55
+msgid "Please select demo"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:72
+msgid "Importing options"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:78
+#, php-format
+msgid "Importing content from %s"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:84
+msgid "Assigning menus"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:89
+msgid "Adding static pages"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:94
+msgid "Re-saving permalink format"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-demo-import.php:99
+msgid "Finalizing"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-field-upload.php:60
+#: inc/src/admin/http/endpoints/endpoint-field-upload.php:89
+msgid "File type is not allowed"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-field-upload.php:68
+msgid "File is not selected"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-field-upload.php:82
+msgid "It is too large than expected"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-promote-listing.php:40
+msgid "Please select a package"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-purchase.php:94
+#: inc/src/entry/modules/purchase/purchase.php:36
+#: inc/src/entry/modules/purchase/purchase.php:88
+#: inc/src/listing/action/modules/purchase/purchase.php:26
+#: inc/src/woocommerce/order.php:377
+#: templates/admin/metabox/listing-type.php:1899
+#: templates/admin/metabox/listing-type.php:1921
+msgid "Purchase"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-purchase.php:118
+msgid "Purchased successfully"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-request-payout.php:38
+msgid "Select payout method"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-request-payout.php:48
+msgid "Not enough funds"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-request-payout.php:57
+msgid "Must be a positive number"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-request-payout.php:66
+#, php-format
+msgid "The minimum payout amount is %s"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-send-message.php:36
+msgid "Please enter a message"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-send-report.php:30
+msgid "Please select a reason"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signin-reset-password.php:44
+#: templates/admin/earnings/earnings.php:56
+#: templates/admin/metabox/listing-type.php:1241
+#: templates/admin/metabox/listing-type.php:1360
+#: templates/admin/metabox/listing-type.php:1870
+#: templates/admin/metabox/listing-type.php:2653
+#: templates/admin/payouts/payouts.php:96
+#: templates/globals/signin/form.php:144 templates/globals/signin/form.php:210
+msgid "Email"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signin-standard.php:39
+#: inc/src/admin/http/endpoints/endpoint-signin-standard.php:62
+#: inc/src/admin/http/endpoints/endpoint-signin-standard.php:63
+msgid "Wrong user email or password"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signin-standard.php:60
+#: inc/src/admin/http/endpoints/endpoint-signup.php:115
+#: inc/src/admin/http/endpoints/endpoint-signup.php:119
+msgid "Email is required"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signin-standard.php:61
+#: inc/src/admin/http/endpoints/endpoint-signup.php:120
+msgid "Please enter a valid email"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signin-standard.php:66
+#: inc/src/admin/http/endpoints/endpoint-signup.php:133
+msgid "Password is required"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:116
+msgid "This username was already used"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:121
+msgid "This email was already used"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:124
+msgid "Phone number is required"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:127
+msgid "First name is required"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:130
+msgid "Last name is required"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:134
+msgid "Password must be at least 6 characters"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:135
+msgid "Password must be maximum 40 characters"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:138
+msgid "Repeat password is required"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:139
+msgid "Passwords should match"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-signup.php:142
+msgid "Please agree with the terms and conditions"
+msgstr ""
+
+#: inc/src/admin/http/endpoints/endpoint-submission-next.php:35
+msgid "Listing type is missing"
+msgstr ""
+
+#: inc/src/entry/modules/application/application.php:18
+#: inc/src/entry/modules/application/application.php:32
+msgid "Action type was not found."
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:42
+#: inc/src/entry/modules/booking/booking.php:108
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:45
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:114
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:45
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:114
+#: inc/src/submission/modules/reservation/reservation.php:36
+#: templates/account/listings/modal/content.php:331
+#: templates/admin/metabox/listing.php:315
+msgid "Reservation"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:43
+#: inc/src/entry/modules/booking/booking.php:109
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:46
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:115
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:46
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:115
+msgid "Reservation status"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:44
+#: inc/src/entry/modules/booking/booking.php:110
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:47
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:116
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:47
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:116
+msgid "Reservation ID"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:45
+#: inc/src/entry/modules/booking/booking.php:111
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:48
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:117
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:48
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:117
+#: templates/account/entries/row.php:107
+msgid "Requested by"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:46
+#: inc/src/entry/modules/booking/booking.php:112
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:49
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:118
+msgid "Checkin date"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:47
+#: inc/src/entry/modules/booking/booking.php:113
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:120
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:50
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:119
+msgid "Checkout date"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:48
+#: inc/src/entry/modules/booking/booking.php:114
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:51
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:121
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:51
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:120
+#: inc/src/form/modules/key/key.php:21 templates/admin/metabox/filters.php:452
+#: templates/admin/metabox/listing-type.php:2632
+msgid "Guests"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:49
+#: inc/src/entry/modules/booking/booking.php:115
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:52
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:122
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:52
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:121
+#: inc/src/entry/modules/purchase/purchase.php:38
+#: inc/src/entry/modules/purchase/purchase.php:90
+msgid "Pricing details"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:50
+#: inc/src/entry/modules/booking/booking.php:116
+msgid "Nights"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:51
+#: inc/src/entry/modules/booking/booking.php:117
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:54
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:124
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:54
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:123
+#: inc/src/entry/modules/purchase/purchase.php:39
+#: inc/src/entry/modules/purchase/purchase.php:91
+msgid "Base price"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:52
+#: inc/src/entry/modules/booking/booking.php:118
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:55
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:125
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:55
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:124
+msgid "Guest price"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:53
+#: inc/src/entry/modules/booking/booking.php:119
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:56
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:126
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:56
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:125
+msgid "Long term price"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:54
+#: inc/src/entry/modules/booking/booking.php:120
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:57
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:127
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:57
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:126
+#: inc/src/entry/modules/purchase/purchase.php:40
+#: inc/src/entry/modules/purchase/purchase.php:92
+#: templates/single/pricing-hour.php:70
+#: templates/single/pricing-purchase.php:31 templates/single/pricing.php:63
+msgid "Security deposit"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:55
+#: inc/src/entry/modules/booking/booking.php:121
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:58
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:128
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:58
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:127
+#: inc/src/entry/modules/purchase/purchase.php:41
+#: inc/src/entry/modules/purchase/purchase.php:93
+#: templates/single/pricing-hour.php:76
+#: templates/single/pricing-purchase.php:37 templates/single/pricing.php:69
+msgid "Service fee"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:56
+#: inc/src/entry/modules/booking/booking.php:122
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:59
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:129
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:59
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:128
+#: inc/src/entry/modules/purchase/purchase.php:42
+#: inc/src/entry/modules/purchase/purchase.php:94
+msgid "Extra services total"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:57
+#: inc/src/entry/modules/booking/booking.php:123
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:60
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:130
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:60
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:129
+#: inc/src/entry/modules/purchase/purchase.php:43
+#: inc/src/entry/modules/purchase/purchase.php:95
+msgid "Payment"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:58
+#: inc/src/entry/modules/booking/booking.php:124
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:61
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:131
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:61
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:130
+#: inc/src/entry/modules/purchase/purchase.php:44
+#: inc/src/entry/modules/purchase/purchase.php:96
+#: templates/account/entries/row.php:117 templates/single/pricing-hour.php:109
+#: templates/single/pricing-purchase.php:70 templates/single/pricing.php:102
+msgid "Total"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:59
+#: inc/src/entry/modules/booking/booking.php:125
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:62
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:132
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:62
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:131
+#: inc/src/entry/modules/purchase/purchase.php:45
+#: inc/src/entry/modules/purchase/purchase.php:97
+msgid "Processing"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:61
+#: inc/src/entry/modules/booking/booking.php:127
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:64
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:134
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:64
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:133
+#: templates/admin/payouts/payouts.php:88
+msgid "Decline"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:62
+#: inc/src/entry/modules/booking/booking.php:129
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:65
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:136
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:65
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:135
+#, php-format
+msgid "The booking request was approved. Last modify date: %s"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:63
+#: inc/src/entry/modules/booking/booking.php:130
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:66
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:137
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:66
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:136
+#, php-format
+msgid "The booking request was declined. Last modify date: %s"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:64
+#: inc/src/entry/modules/booking/booking.php:131
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:67
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:138
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:67
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:137
+#, php-format
+msgid ""
+"The booking request is pending payment. The request will be automatically "
+"canceled if payment is not made by %s"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:65
+#: inc/src/entry/modules/booking/booking.php:132
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:68
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:139
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:68
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:138
+#: templates/account/entries/modal/action/modal.php:6
+msgid "Pay Now"
+msgstr ""
+
+#: inc/src/entry/modules/booking/booking.php:128
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:135
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:134
+#: templates/account/payouts/payouts.php:63
+#: templates/admin/payouts/payouts.php:119
+msgid "Declined"
+msgstr ""
+
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:49
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:118
+msgid "Reservation date"
+msgstr ""
+
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:50
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:119
+msgid "Appointment ID"
+msgstr ""
+
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:53
+#: inc/src/entry/modules/booking-appointments/booking-appointments.php:123
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:53
+#: inc/src/entry/modules/booking-hourly/booking-hourly.php:122
+#: templates/metabox/listing/reservation-availability.php:96
+#: templates/metabox/listing/reservation-availability.php:139
+#: templates/single/pricing-hour.php:49
+msgid "Hours"
+msgstr ""
+
+#: inc/src/entry/modules/purchase/purchase.php:37
+#: inc/src/entry/modules/purchase/purchase.php:89
+msgid "Purchased by"
+msgstr ""
+
+#: inc/src/explore/filter/modules/checkbox/checkbox.php:11
+#: inc/src/form/modules/checkbox/checkbox.php:11
+#: templates/admin/metabox/user.php:21
+msgid "Yes"
+msgstr ""
+
+#: inc/src/explore/filter/modules/guests/guests.php:28
+msgid ""
+"Select the number of guests, infants don’t count toward the number of guests."
+msgstr ""
+
+#: inc/src/explore/filter/modules/tab/tab.php:15
+#: inc/src/form/modules/flyout/flyout.php:13
+#: inc/src/form/modules/guests/guests.php:55
+msgid "Close"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:17
+#: inc/src/form/modules/module.example.php:32
+#: inc/src/form/modules/module.example.php:63
+#: inc/src/form/modules/module.example.php:74
+#: inc/src/form/modules/module.example.php:100
+#: inc/src/form/modules/module.example.php:111
+#: inc/src/form/modules/module.example.php:134
+#: inc/src/form/modules/module.example.php:146
+#: inc/src/form/modules/module.example.php:158
+#: inc/src/form/modules/module.example.php:174
+#: inc/src/form/modules/module.example.php:190
+#: inc/src/form/modules/module.example.php:201
+#: inc/src/form/modules/module.example.php:214
+#: inc/src/form/modules/module.example.php:231
+#: inc/src/form/modules/module.example.php:253
+#: inc/src/form/modules/module.example.php:271
+#: inc/src/form/modules/module.example.php:309
+#: inc/src/form/modules/module.example.php:334
+#: inc/src/form/modules/module.example.php:350
+#: inc/src/form/modules/module.example.php:361
+#: inc/src/form/modules/module.example.php:372
+#: inc/src/form/modules/module.example.php:386
+#: inc/src/form/modules/module.example.php:408
+#: inc/src/form/modules/module.example.php:419
+#: inc/src/form/modules/module.example.php:429
+#: inc/src/form/modules/module.example.php:430
+#: inc/src/form/modules/module.example.php:442
+#: inc/src/form/modules/module.example.php:454
+#: inc/src/form/modules/module.example.php:469
+#: inc/src/form/modules/module.example.php:479
+msgid "__NAME__"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:112
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:203
+msgid "__NOTIFY__"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:235
+#: inc/src/form/modules/module.example.php:239
+msgid "Image 1"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:273
+msgid "__BUTTON_NAME__"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:278
+#: inc/src/form/modules/module.example.php:289
+#: templates/admin/metabox/listing-type.php:1202
+#: templates/admin/metabox/listing-type.php:1321
+#: templates/admin/metabox/listing-type.php:1831
+msgid "Text Field"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:283
+msgid "__NAME_1__"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:294
+msgid "__NAME_2__"
+msgstr ""
+
+#: inc/src/form/modules/module.example.php:456
+msgid "__BUTTON_LABEL__"
+msgstr ""
+
+#: inc/src/form/modules/calendar/calendar.php:82
+#: templates/account/listings/booking-calendar/modal/calendar.php:83
+msgid "Clear dates"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:32
+msgid "Jan"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:33
+msgid "Feb"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:34
+msgid "Mar"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:35
+msgid "Apr"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:36
+#: inc/src/submission/modules/pricing/pricing.php:40
+msgid "May"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:37
+msgid "Jun"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:38
+msgid "Jul"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:39
+msgid "Aug"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:40
+msgid "Sep"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:41
+msgid "Oct"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:42
+msgid "Nov"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:43
+msgid "Dec"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:49
+msgid "Select Month"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:50
+msgid "Month"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:51
+msgid "Day"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:52
+msgid "Year"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:53
+msgid "Hour"
+msgstr ""
+
+#: inc/src/form/modules/datetime/datetime.php:54
+msgid "Minute"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:49
+msgid "1 guest"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:50
+#, php-format
+msgid "%s guests"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:51
+msgid "Select guests"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:52
+msgid "Adults"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:53
+msgid "Children"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:54
+msgid "Infants"
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:56
+#, php-format
+msgid "%s guest maximum. Infants don’t count toward the number of guests."
+msgstr ""
+
+#: inc/src/form/modules/guests/guests.php:57
+#, php-format
+msgid "%s guests maximum. Infants don’t count toward the number of guests."
+msgstr ""
+
+#: inc/src/form/modules/icon/icon.php:15
+msgid "Font Awesome"
+msgstr ""
+
+#: inc/src/form/modules/icon/icon.php:16
+msgid "Material Icons"
+msgstr ""
+
+#: inc/src/form/modules/icon/icon.php:17
+#: templates/admin/settings/settings.php:742
+msgid "Amenities"
+msgstr ""
+
+#: inc/src/form/modules/icon/icon.php:29
+msgid "Click to Select Icon"
+msgstr ""
+
+#: inc/src/form/modules/icon/icon.php:30
+msgid "Search icon ..."
+msgstr ""
+
+#: inc/src/form/modules/icon/icon.php:31
+msgid "Remove icon"
+msgstr ""
+
+#: inc/src/form/modules/key/key.php:17
+#: templates/admin/metabox/listing-type.php:341
+#: templates/admin/metabox/listing-type.php:1162
+#: templates/admin/metabox/listing-type.php:2525
+#: templates/admin/metabox/listing-type.php:2559
+msgid "Content"
+msgstr ""
+
+#: inc/src/form/modules/key/key.php:18
+#: templates/admin/metabox/listing-type.php:2730
+msgid "Gallery"
+msgstr ""
+
+#: inc/src/form/modules/key/key.php:19 inc/utils/helper.php:643
+#: templates/admin/metabox/listing-type.php:959
+#: templates/admin/metabox/listing-type.php:1307
+msgid "Location"
+msgstr ""
+
+#: inc/src/form/modules/key/key.php:20 inc/src/form/modules/menu/menu.php:21
+#: templates/admin/metabox/listing-type.php:1243
+#: templates/admin/metabox/listing-type.php:1362
+#: templates/admin/metabox/listing-type.php:1872
+#: templates/admin/metabox/listing-type.php:2633
+#: templates/admin/metabox/listing-type.php:2655
+#: templates/single/pricing-hour.php:53
+#: templates/single/pricing-purchase.php:26 templates/single/pricing.php:46
+msgid "Price"
+msgstr ""
+
+#: inc/src/form/modules/key/key.php:40
+msgid "Defined"
+msgstr ""
+
+#: inc/src/form/modules/key/key.php:42
+#: templates/admin/metabox/listing-side.php:48
+#: templates/admin/settings/settings.php:1144
+#: templates/metabox/listing/reservation-availability.php:73
+#: templates/metabox/listing/reservation-availability.php:116
+msgid "Custom"
+msgstr ""
+
+#: inc/src/form/modules/listing-types/listing-types.php:32
+msgid "( No name was specified for the listing type )"
+msgstr ""
+
+#: inc/src/form/modules/map/map.php:96
+#: templates/admin/metabox/listing-type.php:1219
+#: templates/admin/metabox/listing-type.php:1239
+#: templates/admin/metabox/listing-type.php:1338
+#: templates/admin/metabox/listing-type.php:1358
+#: templates/admin/metabox/listing-type.php:1848
+#: templates/admin/metabox/listing-type.php:1868
+#: templates/admin/metabox/listing-type.php:2651
+#: templates/admin/payouts/payouts.php:45
+#: templates/admin/payouts/payouts.php:179
+msgid "Address"
+msgstr ""
+
+#: inc/src/form/modules/map/map.php:97
+msgid "e.g. Barcelona"
+msgstr ""
+
+#: inc/src/form/modules/map/map.php:98
+msgid "Latitude"
+msgstr ""
+
+#: inc/src/form/modules/map/map.php:99
+msgid "Longitude"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:15
+msgid "Add Section"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:16
+msgid "Section"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:17
+#: templates/admin/metabox/filters.php:27
+#: templates/admin/metabox/filters.php:76
+#: templates/admin/metabox/filters.php:117
+#: templates/admin/metabox/filters.php:203
+#: templates/admin/metabox/filters.php:287
+#: templates/admin/metabox/filters.php:372
+#: templates/admin/metabox/filters.php:420
+#: templates/admin/metabox/filters.php:457
+#: templates/admin/metabox/filters.php:500
+#: templates/admin/metabox/filters.php:552
+#: templates/admin/metabox/filters.php:586
+#: templates/admin/metabox/filters.php:637
+#: templates/admin/metabox/listing-type.php:331
+#: templates/admin/metabox/listing-type.php:381
+#: templates/admin/metabox/listing-type.php:442
+#: templates/admin/metabox/listing-type.php:503
+#: templates/admin/metabox/listing-type.php:558
+#: templates/admin/metabox/listing-type.php:630
+#: templates/admin/metabox/listing-type.php:743
+#: templates/admin/metabox/listing-type.php:798
+#: templates/admin/metabox/listing-type.php:882
+#: templates/admin/metabox/listing-type.php:964
+#: templates/admin/metabox/listing-type.php:1024
+#: templates/admin/metabox/listing-type.php:1066
+#: templates/admin/metabox/listing-type.php:1108
+#: templates/admin/metabox/listing-type.php:1207
+#: templates/admin/metabox/listing-type.php:1326
+#: templates/admin/metabox/listing-type.php:1436
+#: templates/admin/metabox/listing-type.php:1487
+#: templates/admin/metabox/listing-type.php:1538
+#: templates/admin/metabox/listing-type.php:1584
+#: templates/admin/metabox/listing-type.php:1643
+#: templates/admin/metabox/listing-type.php:1836
+#: templates/admin/metabox/listing-type.php:2340
+#: templates/admin/metabox/listing-type.php:2540
+#: templates/admin/metabox/listing-type.php:2555
+#: templates/admin/metabox/listing-type.php:2570
+#: templates/admin/metabox/listing-type.php:2596
+#: templates/admin/metabox/listing-type.php:2625
+#: templates/admin/metabox/listing-type.php:2682
+#: templates/admin/metabox/listing-type.php:2697
+#: templates/admin/metabox/listing-type.php:2708
+#: templates/admin/metabox/listing-type.php:2724
+#: templates/admin/metabox/listing-type.php:2735
+#: templates/admin/settings/settings.php:741
+#: templates/metabox/listing/reservation-availability.php:39
+msgid "Name"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:18
+msgid "Item"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:19
+msgid "Items"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:20
+#: templates/admin/metabox/filters.php:32
+#: templates/admin/metabox/filters.php:81
+#: templates/admin/metabox/filters.php:122
+#: templates/admin/metabox/filters.php:208
+#: templates/admin/metabox/filters.php:292
+#: templates/admin/metabox/filters.php:559
+#: templates/admin/metabox/filters.php:642
+#: templates/admin/metabox/listing-type.php:396
+#: templates/admin/metabox/listing-type.php:457
+#: templates/admin/metabox/listing-type.php:513
+#: templates/admin/metabox/listing-type.php:584
+#: templates/admin/metabox/listing-type.php:651
+#: templates/admin/metabox/listing-type.php:753
+#: templates/admin/metabox/listing-type.php:823
+#: templates/admin/metabox/listing-type.php:907
+#: templates/admin/metabox/listing-type.php:975
+#: templates/admin/metabox/listing-type.php:1029
+#: templates/admin/metabox/listing-type.php:1071
+#: templates/admin/metabox/listing-type.php:1454
+#: templates/admin/metabox/listing-type.php:1505
+#: templates/admin/metabox/listing-type.php:1551
+#: templates/admin/metabox/listing-type.php:1819
+#: templates/admin/metabox/listing-type.php:1916
+msgid "Description"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:22
+msgid "How is this item special? ( Optional )"
+msgstr ""
+
+#: inc/src/form/modules/menu/menu.php:23
+msgid "Add some short information if you want to highlight the menu item"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:89
+#: inc/src/listing/action/modules/open-hours/open-hours.php:178
+#: templates/metabox/listing/reservation-availability.php:185
+msgid "Monday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:90
+#: inc/src/listing/action/modules/open-hours/open-hours.php:179
+#: templates/metabox/listing/reservation-availability.php:186
+msgid "Tuesday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:91
+#: inc/src/listing/action/modules/open-hours/open-hours.php:180
+#: templates/metabox/listing/reservation-availability.php:187
+msgid "Wednesday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:92
+#: inc/src/listing/action/modules/open-hours/open-hours.php:181
+#: templates/metabox/listing/reservation-availability.php:188
+msgid "Thursday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:93
+#: inc/src/listing/action/modules/open-hours/open-hours.php:182
+#: templates/metabox/listing/reservation-availability.php:189
+msgid "Friday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:94
+#: inc/src/listing/action/modules/open-hours/open-hours.php:183
+#: templates/metabox/listing/reservation-availability.php:190
+msgid "Saturday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:95
+#: inc/src/listing/action/modules/open-hours/open-hours.php:184
+#: templates/metabox/listing/reservation-availability.php:191
+msgid "Sunday"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:98
+msgid "Start"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:99
+msgid "End"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:101
+msgid "Time range"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:102
+msgid "All day open"
+msgstr ""
+
+#: inc/src/form/modules/open-hours/open-hours.php:103
+msgid "All day closed"
+msgstr ""
+
+#: inc/src/form/modules/options/options.php:12
+#, php-format
+msgid ""
+"Put each option in a new line. Specify both a value and label, example: %s"
+msgstr ""
+
+#: inc/src/form/modules/options/options.php:26
+msgid "Add Options"
+msgstr ""
+
+#: inc/src/form/modules/options/options.php:27
+msgid "Save Options"
+msgstr ""
+
+#: inc/src/form/modules/order-list/order-list.php:13
+msgid "No options were found."
+msgstr ""
+
+#: inc/src/form/modules/order-list/order-list.php:57
+#: templates/account/listings/booking-calendar/modal/content.php:86
+msgid "Available"
+msgstr ""
+
+#: inc/src/form/modules/order-list/order-list.php:58
+msgid "Active"
+msgstr ""
+
+#: inc/src/form/modules/preview-listing/index.blade.php:194
+#: inc/src/form/modules/preview-marker/index.blade.php:96
+#: templates/account/listings/modal/content.php:465
+#: templates/account/notifications/notifications.php:68
+#: templates/admin/metabox/comment.php:82
+#: templates/admin/metabox/listing-type.php:245
+#: templates/admin/metabox/listing-type.php:288
+#: templates/admin/metabox/listing-type.php:1125
+#: templates/admin/metabox/listing-type.php:2016
+#: templates/admin/metabox/listing-type.php:2129
+#: templates/admin/metabox/listing-type.php:2250
+#: templates/admin/metabox/listing-type.php:2367
+#: templates/admin/metabox/listing-type.php:2418
+#: templates/admin/metabox/listing-type.php:2466
+#: templates/admin/metabox/listing-type.php:2763
+#: templates/admin/metabox/listing-type.php:2885
+#: templates/admin/metabox/listing-type.php:2940
+#: templates/admin/metabox/listing-type.php:2988
+#: templates/admin/metabox/listing-type.php:3130
+#: templates/admin/metabox/listing-type.php:3192
+#: templates/admin/metabox/listing.php:446
+#: templates/admin/metabox/page-modules.php:48
+#: templates/admin/settings/settings.php:251
+#: templates/admin/settings/settings.php:295
+#: templates/admin/settings/settings.php:376
+#: templates/admin/settings/settings.php:433
+#: templates/admin/settings/settings.php:701
+#: templates/admin/settings/settings.php:762
+#: templates/admin/settings/settings.php:788
+#: templates/admin/settings/settings.php:814
+#: templates/admin/settings/settings.php:872
+#: templates/admin/settings/settings.php:1016
+#: templates/admin/settings/settings.php:1183
+#: templates/admin/settings/settings.php:1350
+msgid "Save Changes"
+msgstr ""
+
+#: inc/src/form/modules/repeater/repeater.php:23
+msgid "No modules were found"
+msgstr ""
+
+#: inc/src/form/modules/upload/upload.php:17
+#: templates/admin/metabox/listing-type.php:553
+#: templates/admin/metabox/listing-type.php:1638
+msgid "Upload"
+msgstr ""
+
+#: inc/src/form/modules/upload/upload.php:63
+#, php-format
+msgid "Maximum upload file size: %s MB."
+msgstr ""
+
+#: inc/src/form/modules/upload/upload.php:64
+msgid "Drag to reorder."
+msgstr ""
+
+#: inc/src/form/modules/use-field/use-field.php:56
+msgid "Category"
+msgstr ""
+
+#: inc/src/form/modules/wc-products/wc-products.php:16
+msgid "There are no available products"
+msgstr ""
+
+#: inc/src/form/modules/wc-products/wc-products.php:25
+msgid "WooCommerce is required in order to use this feature."
+msgstr ""
+
+#: inc/src/listing/booking.php:78
+msgid "No listing type selected"
+msgstr ""
+
+#: inc/src/listing/booking.php:103
+msgid "Please select guests"
+msgstr ""
+
+#: inc/src/listing/booking.php:111
+msgid "Please select dates"
+msgstr ""
+
+#: inc/src/listing/booking.php:118
+msgid "Choose checkout date"
+msgstr ""
+
+#: inc/src/listing/booking.php:125
+msgid "Booking dates are not possible"
+msgstr ""
+
+#: inc/src/listing/booking.php:143
+#, php-format
+msgid "%s days is the minimum length of reservation"
+msgstr ""
+
+#: inc/src/listing/booking.php:143
+#, php-format
+msgid "%s hours is the minimum length of reservation"
+msgstr ""
+
+#: inc/src/listing/booking.php:152
+#, php-format
+msgid "%s days is the maximum length of reservation"
+msgstr ""
+
+#: inc/src/listing/booking.php:152
+#, php-format
+msgid "%s hours is the maximum length of reservation"
+msgstr ""
+
+#: inc/src/listing/booking.php:181
+msgid "The selected dates are not available"
+msgstr ""
+
+#: inc/src/listing/booking.php:193
+msgid "Your reservation was sent"
+msgstr ""
+
+#: inc/src/listing/action/modules/application/application.php:15
+#: templates/admin/metabox/listing-type.php:1418
+msgid "Send Application"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking/booking.php:24
+msgid "per night"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking/booking.php:28
+#: inc/src/listing/action/modules/booking-appointments/booking-appointments.php:29
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:58
+#: inc/src/listing/action/modules/purchase/purchase.php:24
+#: templates/admin/metabox/listing-type.php:2117
+msgid "Select services"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking/booking.php:32
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:62
+msgid "Instant Book"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking/booking.php:32
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:62
+msgid "Send reservation request"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-appointments/booking-appointments.php:33
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:63
+msgid "Select date"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-appointments/booking-appointments.php:34
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:64
+msgid "Select start date"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-appointments/booking-appointments.php:35
+msgid "See more dates"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-appointments/booking-appointments.php:36
+#: templates/single/appointments-more.php:93
+#: templates/single/appointments.php:72
+msgid "No appointments were found"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:53
+msgid "per hour"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:65
+msgid "Start time"
+msgstr ""
+
+#: inc/src/listing/action/modules/booking-hourly/booking-hourly.php:66
+msgid "End time"
+msgstr ""
+
+#: inc/src/listing/action/modules/button/button.php:59
+#: templates/admin/metabox/listing-type.php:1172
+#: templates/admin/metabox/listing-type.php:1269
+msgid "Button"
+msgstr ""
+
+#: inc/src/listing/action/modules/claim/claim.php:16
+#: templates/admin/metabox/listing-type.php:1945
+#: templates/single/modal/action-claim-form.php:78
+msgid "Claim this business"
+msgstr ""
+
+#: inc/src/listing/action/modules/claim/claim.php:17
+msgid "Claimed"
+msgstr ""
+
+#: inc/src/listing/action/modules/claim/claim.php:18
+#, php-format
+msgid "%s confirmed a business or employee ownership"
+msgstr ""
+
+#: inc/src/listing/action/modules/contact/contact.php:16
+msgid "Send message"
+msgstr ""
+
+#: inc/src/listing/action/modules/download/download.php:26
+msgid "Download"
+msgstr ""
+
+#: inc/src/listing/action/modules/download/download.php:27
+msgid "Buy now"
+msgstr ""
+
+#: inc/src/listing/action/modules/location/location.php:22
+#: inc/src/listing/modules/location/location.php:24
+msgid "Location not specified"
+msgstr ""
+
+#: inc/src/listing/action/modules/open-hours/open-hours.php:188
+#: inc/src/listing/action/modules/open-hours/open-hours.php:191
+msgid "Open"
+msgstr ""
+
+#: inc/src/listing/action/modules/open-hours/open-hours.php:189
+msgid "Open now"
+msgstr ""
+
+#: inc/src/listing/action/modules/open-hours/open-hours.php:190
+#: inc/src/listing/action/modules/open-hours/open-hours.php:192
+msgid "Closed"
+msgstr ""
+
+#: inc/src/listing/action/modules/open-hours/open-hours.php:193
+msgid "All the time ranges are in local time"
+msgstr ""
+
+#: inc/src/listing/action/modules/report/report.php:13
+msgid "Report this listing"
+msgstr ""
+
+#: inc/src/listing/modules/author/author.php:27
+msgid "Verified"
+msgstr ""
+
+#: inc/src/listing/modules/author/author.php:28
+#, php-format
+msgid "%s review"
+msgstr ""
+
+#: inc/src/listing/modules/author/author.php:29
+#, php-format
+msgid "%s reviews"
+msgstr ""
+
+#: inc/src/listing/modules/author/author.php:30
+#, php-format
+msgid "Contact %s"
+msgstr ""
+
+#: inc/src/listing/modules/gallery/gallery.php:36
+#, php-format
+msgid "+%s"
+msgstr ""
+
+#: inc/src/listing-type/modules.back/listings/listings.php:68
+msgid "View More"
+msgstr ""
+
+#: inc/src/listing-type/modules.back/listings/listings.php:69
+#: templates/explore/listings.php:30
+msgid "No results were found"
+msgstr ""
+
+#: inc/src/notification/notifications/claim-approved.php:18
+#: inc/src/notification/notifications/claim-approved.php:26
+#: inc/src/notification/notifications/claim-approved.php:38
+msgid "Business claim has been approved"
+msgstr ""
+
+#: inc/src/notification/notifications/claim-approved.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\rA business claim has been approved."
+msgstr ""
+
+#: inc/src/notification/notifications/claim-approved.php:42
+msgid ""
+"Hello,\r\n"
+"\rA business claim has been approved."
+msgstr ""
+
+#: inc/src/notification/notifications/claim-approved.php:60
+#, php-format
+msgid "Business claim for %s has been approved"
+msgstr ""
+
+#: inc/src/notification/notifications/claim-approved.php:60
+msgid "Your claim has been approved"
+msgstr ""
+
+#: inc/src/notification/notifications/entry-approved.php:18
+#: inc/src/notification/notifications/entry-approved.php:26
+#: inc/src/notification/notifications/entry-approved.php:38
+#: inc/src/notification/notifications/entry-approved.php:54
+msgid "Your request has been approved"
+msgstr ""
+
+#: inc/src/notification/notifications/entry-approved.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"Your request has been approved."
+msgstr ""
+
+#: inc/src/notification/notifications/entry-approved.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"Your request has been approved."
+msgstr ""
+
+#: inc/src/notification/notifications/entry-declined.php:18
+#: inc/src/notification/notifications/entry-declined.php:26
+#: inc/src/notification/notifications/entry-declined.php:54
+msgid "Your request has been declined"
+msgstr ""
+
+#: inc/src/notification/notifications/entry-declined.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"Your request has been declined"
+msgstr ""
+
+#: inc/src/notification/notifications/entry-declined.php:38
+msgid "A request has been declined"
+msgstr ""
+
+#: inc/src/notification/notifications/entry-declined.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A request has been declined"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-approved.php:18
+#: inc/src/notification/notifications/listing-approved.php:26
+#: inc/src/notification/notifications/listing-approved.php:54
+msgid "Your listing has been approved"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-approved.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"Your listing has been approved."
+msgstr ""
+
+#: inc/src/notification/notifications/listing-approved.php:38
+msgid "Listing approved"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-approved.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"Your listing has been approved"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-expired.php:18
+#: inc/src/notification/notifications/listing-expired.php:26
+#: inc/src/notification/notifications/listing-expired.php:38
+msgid "Listing expired"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-expired.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"Your listing has expired"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-expired.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A listing has expired"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-expired.php:60
+#, php-format
+msgid "Your listing %s has expired"
+msgstr ""
+
+#: inc/src/notification/notifications/listing-expired.php:60
+msgid "Your listing has expired"
+msgstr ""
+
+#: inc/src/notification/notifications/new-application.php:18
+#: inc/src/notification/notifications/new-application.php:26
+#: inc/src/notification/notifications/new-application.php:54
+msgid "New application has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-application.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"New application has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-application.php:38
+msgid "New application has been sent"
+msgstr ""
+
+#: inc/src/notification/notifications/new-application.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"New application has been sent"
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking-request.php:18
+#: inc/src/notification/notifications/new-booking-request.php:26
+#: inc/src/notification/notifications/new-booking-request.php:54
+msgid "New reservation request has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking-request.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"You have received a new reservation request."
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking-request.php:38
+msgid "New reservation request"
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking-request.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A new reservation request has been sent."
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking.php:18
+#: inc/src/notification/notifications/new-booking.php:26
+#: inc/src/notification/notifications/new-booking.php:54
+msgid "New reservation has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"You have received a new reservation."
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking.php:38
+msgid "New reservation"
+msgstr ""
+
+#: inc/src/notification/notifications/new-booking.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A new reservation has been sent"
+msgstr ""
+
+#: inc/src/notification/notifications/new-claim.php:18
+#: inc/src/notification/notifications/new-claim.php:26
+#: inc/src/notification/notifications/new-claim.php:38
+msgid "Business claim has been generated"
+msgstr ""
+
+#: inc/src/notification/notifications/new-claim.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\rA business claim has been generated."
+msgstr ""
+
+#: inc/src/notification/notifications/new-claim.php:42
+msgid ""
+"Hello,\r\n"
+"\rA business claim has been generated."
+msgstr ""
+
+#: inc/src/notification/notifications/new-claim.php:54
+msgid "New business claim has been generated"
+msgstr ""
+
+#: inc/src/notification/notifications/new-comment.php:18
+#: inc/src/notification/notifications/new-comment.php:26
+#: inc/src/notification/notifications/new-comment.php:54
+msgid "New comment has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-comment.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"You have received a new comment."
+msgstr ""
+
+#: inc/src/notification/notifications/new-comment.php:38
+msgid "New comment"
+msgstr ""
+
+#: inc/src/notification/notifications/new-comment.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A new comment has been sent"
+msgstr ""
+
+#: inc/src/notification/notifications/new-listing.php:18
+#: inc/src/notification/notifications/new-listing.php:26
+#: inc/src/notification/notifications/new-listing.php:54
+msgid "New listing has been created"
+msgstr ""
+
+#: inc/src/notification/notifications/new-listing.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"New listing has been created."
+msgstr ""
+
+#: inc/src/notification/notifications/new-listing.php:38
+msgid "New listing"
+msgstr ""
+
+#: inc/src/notification/notifications/new-listing.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"New listing has been created"
+msgstr ""
+
+#: inc/src/notification/notifications/new-message.php:18
+msgid "New message received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-message.php:26
+#: inc/src/notification/notifications/new-message.php:62
+msgid "You have received a new message"
+msgstr ""
+
+#: inc/src/notification/notifications/new-message.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"You have received a new message from {from_user_display_name}."
+msgstr ""
+
+#: inc/src/notification/notifications/new-message.php:38
+msgid "A new message was sent"
+msgstr ""
+
+#: inc/src/notification/notifications/new-message.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A new message was sent from {from_user_display_name} to {user_display_name}."
+msgstr ""
+
+#: inc/src/notification/notifications/new-message.php:62
+#, php-format
+msgid "You have received a new message from %s"
+msgstr ""
+
+#: inc/src/notification/notifications/new-purchase.php:18
+#: inc/src/notification/notifications/new-purchase.php:26
+#: inc/src/notification/notifications/new-purchase.php:38
+#: inc/src/notification/notifications/new-purchase.php:54
+msgid "New purchase has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/new-purchase.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\rA new purchase has been received."
+msgstr ""
+
+#: inc/src/notification/notifications/new-purchase.php:42
+msgid ""
+"Hello,\r\n"
+"\rA new purchase has been received."
+msgstr ""
+
+#: inc/src/notification/notifications/payout-request.php:18
+#: inc/src/notification/notifications/payout-request.php:26
+#: inc/src/notification/notifications/payout-request.php:54
+msgid "Your payout request has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/payout-request.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"Your payout request has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/payout-request.php:38
+msgid "A new payout request has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/payout-request.php:42
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"A new payout request has been received"
+msgstr ""
+
+#: inc/src/notification/notifications/promotion-expired.php:18
+#: inc/src/notification/notifications/promotion-expired.php:26
+#: inc/src/notification/notifications/promotion-expired.php:60
+msgid "Promotion has expired"
+msgstr ""
+
+#: inc/src/notification/notifications/promotion-expired.php:30
+msgid ""
+"Hello {user_display_name},\r\n"
+"\rPromotion has expired."
+msgstr ""
+
+#: inc/src/notification/notifications/promotion-expired.php:38
+msgid "Promotion expired"
+msgstr ""
+
+#: inc/src/notification/notifications/promotion-expired.php:42
+msgid ""
+"Hello,\r\n"
+"\rPromotion has expired."
+msgstr ""
+
+#: inc/src/notification/notifications/promotion-expired.php:60
+#, php-format
+msgid "Promotion has expired for listing %s"
+msgstr ""
+
+#: inc/src/notification/notifications/welcome.php:16
+msgid "Welcome aboard!"
+msgstr ""
+
+#: inc/src/notification/notifications/welcome.php:24
+msgid "Welcome aboard"
+msgstr ""
+
+#: inc/src/notification/notifications/welcome.php:28
+msgid ""
+"Hello {user_display_name},\r\n"
+"\r\n"
+"Thank you for joining us!"
+msgstr ""
+
+#: inc/src/notification/notifications/welcome.php:36
+msgid "New user"
+msgstr ""
+
+#: inc/src/notification/notifications/welcome.php:40
+msgid ""
+"Hello,\r\n"
+"\r\n"
+"New user has joined the family!"
+msgstr ""
+
+#: inc/src/notification/notifications/welcome.php:52
+msgid "Welcome aboard {user_display_name}!"
+msgstr ""
+
+#: inc/src/submission/component.php:17
+#: templates/account/listings/modal/content.php:62
+#: templates/admin/metabox/listing-type.php:27
+#: templates/admin/metabox/listing-type.php:146
+#: templates/admin/metabox/listing-type.php:184
+#: templates/admin/metabox/listing-type.php:257
+#: templates/admin/metabox/listing-type.php:2827
+#: templates/admin/metabox/listing.php:38
+#: templates/admin/settings/settings.php:31
+#: templates/admin/settings/settings.php:126
+#: templates/admin/settings/settings.php:153
+msgid "General"
+msgstr ""
+
+#: inc/src/submission/modules/fields/fields.php:20
+msgid "No listing fields were found"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:23
+#: templates/account/listings/modal/content.php:89
+#: templates/admin/metabox/listing-type.php:93
+#: templates/admin/metabox/listing-type.php:2027
+#: templates/admin/metabox/listing.php:74
+msgid "Pricing"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:27
+#: templates/account/listings/modal/content.php:97
+#: templates/account/listings/modal/content.php:118
+#: templates/account/listings/modal/content.php:200
+#: templates/admin/metabox/listing.php:82
+#: templates/admin/metabox/listing.php:103
+#: templates/admin/metabox/listing.php:184
+msgid "Base Price"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:28
+#: templates/account/listings/modal/content.php:107
+#: templates/account/listings/modal/content.php:208
+#: templates/admin/metabox/listing.php:92
+#: templates/admin/metabox/listing.php:191
+msgid "Weekend Price"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:29
+msgid "Seasonal Pricing"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:30
+#: templates/account/listings/modal/content.php:170
+#: templates/admin/metabox/listing.php:155
+msgid "Add Seasonal Pricing"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:31
+#: templates/account/listings/modal/content.php:172
+#: templates/admin/metabox/listing.php:157
+#: templates/metabox/listing/reservation-availability.php:24
+msgid "Add Period"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:32
+msgid "Seasson"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:33
+#: templates/account/listings/modal/content.php:181
+#: templates/admin/metabox/listing.php:166
+#: templates/metabox/listing/reservation-availability.php:33
+msgid "Period"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:34
+#: templates/account/listings/modal/content.php:187
+#: templates/admin/metabox/listing.php:172
+#: templates/metabox/listing/reservation-availability.php:159
+msgid "Start Date"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:35
+#: templates/account/listings/modal/content.php:193
+#: templates/admin/metabox/listing.php:178
+#: templates/metabox/listing/reservation-availability.php:171
+msgid "End Date"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:36
+msgid "January"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:37
+msgid "February"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:38
+msgid "March"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:39
+msgid "April"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:41
+msgid "June"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:42
+msgid "July"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:43
+msgid "August"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:44
+msgid "September"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:45
+msgid "October"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:46
+msgid "November"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:47
+msgid "December"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:48
+msgid "Long term discount"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:49
+#: templates/account/listings/modal/content.php:147
+#: templates/admin/metabox/listing.php:132
+msgid "Apply 7+ days discount in percentage"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:50
+#: templates/account/listings/modal/content.php:156
+#: templates/admin/metabox/listing.php:141
+msgid "Apply 30+ days discount in percentage"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:51
+msgid "Extra service pricing"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:52
+#: templates/account/listings/modal/content.php:232
+#: templates/admin/metabox/listing.php:216
+msgid "Add extra service pricing"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:53
+#: templates/account/listings/modal/content.php:234
+#: templates/admin/metabox/listing.php:218
+msgid "Add service"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:54
+#: templates/account/listings/modal/content.php:243
+#: templates/admin/metabox/listing.php:227
+msgid "Service"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:55
+#: templates/account/listings/modal/content.php:249
+#: templates/admin/metabox/listing.php:233
+msgid "Service name"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:56
+#: templates/account/listings/modal/content.php:250
+#: templates/admin/metabox/listing.php:234
+msgid "Enter service name"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:57
+#: templates/account/listings/modal/content.php:255
+#: templates/admin/metabox/listing.php:239
+msgid "Service type"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:58
+#: templates/account/listings/modal/content.php:265
+#: templates/admin/metabox/listing.php:249
+msgid "Service price"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:59
+#: templates/account/listings/modal/content.php:257
+#: templates/admin/metabox/listing.php:241
+msgid "Single fee"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:60
+#: templates/account/listings/modal/content.php:258
+#: templates/admin/metabox/listing.php:242
+msgid "Per day"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:61
+#: templates/account/listings/modal/content.php:131
+#: templates/admin/metabox/listing.php:116
+msgid "Security Deposit"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:62
+#: templates/account/listings/modal/content.php:284
+#: templates/admin/metabox/listing.php:268
+msgid "Add addons"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:63
+#: templates/account/listings/modal/content.php:286
+#: templates/admin/metabox/listing.php:270
+msgid "Add addon"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:64
+msgid "Addons"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:65
+#: templates/account/listings/modal/content.php:295
+#: templates/admin/metabox/listing.php:279
+msgid "Addon"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:66
+#: templates/account/listings/modal/content.php:301
+#: templates/admin/metabox/listing.php:285
+msgid "Addon name"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:67
+msgid "Addon id"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:68
+#: templates/account/listings/modal/content.php:302
+#: templates/admin/metabox/listing.php:286
+msgid "Enter addon name"
+msgstr ""
+
+#: inc/src/submission/modules/pricing/pricing.php:69
+#: templates/account/listings/modal/content.php:307
+#: templates/admin/metabox/listing.php:291
+msgid "Addon price"
+msgstr ""
+
+#: inc/src/submission/modules/publish/publish.php:19
+msgid "You are about to publish"
+msgstr ""
+
+#: inc/src/submission/modules/publish/publish.php:20
+msgid "Are you sure you you want to publish this listing?"
+msgstr ""
+
+#: inc/src/submission/modules/publish/publish.php:168
+msgid "Add new"
+msgstr ""
+
+#: inc/src/submission/modules/publish/publish.php:178
+msgid "View submission"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:39
+#: templates/account/listings/modal/content.php:347
+#: templates/admin/metabox/listing-type.php:2151
+#: templates/admin/metabox/listing.php:331
+msgid "Allow instant booking"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:40
+#: templates/account/listings/modal/content.php:357
+#: templates/admin/metabox/listing.php:341
+msgid "Maximum number of guests allowed"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:41
+#: templates/account/listings/modal/content.php:358
+#: templates/admin/metabox/listing.php:342
+msgid "Limit the number of guests"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:42
+#: templates/account/listings/modal/content.php:374
+#: templates/admin/metabox/listing.php:358
+msgid "Price per each additional guests"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:43
+#: templates/account/listings/modal/content.php:375
+msgid "Add additional price for each guest > 1"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:44
+#: templates/account/listings/modal/content.php:390
+msgid "Minimum number of days per reservation"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:44
+#: templates/account/listings/modal/content.php:390
+msgid "Minimum number of hours per reservation"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:45
+#: templates/account/listings/modal/content.php:403
+msgid "Maximum number of days per reservation"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:45
+#: templates/account/listings/modal/content.php:403
+msgid "Maximum number of hours per reservation"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:46
+msgid "Leave empty to skip"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:47
+#: templates/account/listings/modal/content.php:431
+#: templates/admin/metabox/listing.php:415
+msgid "Booking Start Time"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:47
+#: templates/account/listings/modal/content.php:431
+#: templates/admin/metabox/listing.php:415
+msgid "Disable Multiple Booking at Same Time Slot"
+msgstr ""
+
+#: inc/src/submission/modules/reservation/reservation.php:48
+#: templates/account/listings/modal/content.php:439
+#: templates/admin/metabox/listing.php:423
+msgid "Booking End Time"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:19
+msgid "Select a plan"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:20
+msgid "Most popular"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:21
+msgid "Unlimited submissions available"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:22
+#, php-format
+msgid "%s submission available"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:23
+#, php-format
+msgid "%s submissions available"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:24
+msgid "Plan owned"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:25
+msgid "There are no packages available for this listing type"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:48
+msgid "The plan limit has been reached"
+msgstr ""
+
+#: inc/src/submission/modules/select-plan/select-plan.php:54
+msgid "Please select a plan"
+msgstr ""
+
+#: inc/src/submission/modules/success/success.php:16
+msgid "Your submission was successful!"
+msgstr ""
+
+#: inc/src/submission/modules/success/success.php:17
+msgid "Your submission has been sent and awaits approval"
+msgstr ""
+
+#: inc/src/submission/modules/success/success.php:18
+msgid "Your submission has been sent and published"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:154
+msgid "No results were found."
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:179
+msgid "Title:"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:183
+msgid "Select listing type ( Optional ):"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:196
+msgid "Sort by:"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:198
+msgid "Latest"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:199
+msgid "Top rated"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:200
+msgid "Favorites"
+msgstr ""
+
+#: inc/src/widgets/widget-listings.php:204
+msgid "Number of listings:"
+msgstr ""
+
+#: inc/src/woocommerce/cart.php:33 inc/src/woocommerce/order.php:458
+msgid "( no title )"
+msgstr ""
+
+#: inc/src/woocommerce/order.php:441 templates/admin/metabox/plan.php:76
+#: templates/admin/metabox/promotion.php:76
+msgid "Listings Attached"
+msgstr ""
+
+#: inc/src/woocommerce/post-types.php:30 templates/admin/metabox/plan.php:42
+#: templates/admin/metabox/promotion.php:42
+msgid "Plan"
+msgstr ""
+
+#: inc/src/woocommerce/post-types.php:31
+#: templates/admin/metabox/listing-type.php:155
+#: templates/admin/metabox/listing-type.php:2900
+msgid "Plans"
+msgstr ""
+
+#: inc/src/woocommerce/post-types.php:80
+msgid "Promotion"
+msgstr ""
+
+#: inc/src/woocommerce/post-types.php:81
+#: templates/admin/metabox/listing-type.php:160
+#: templates/admin/metabox/listing-type.php:2951
+msgid "Promotions"
+msgstr ""
+
+#: inc/src/woocommerce/post-types.php:144 inc/utils/helper.php:529
+msgctxt "post status"
+msgid "Used"
+msgstr ""
+
+#: inc/src/woocommerce/post-types.php:150
+#, php-format
+msgid "Used <span class=\"count\">(%s)</span>"
+msgid_plural "Used <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/src/woocommerce/account/account.php:61
+msgid "Dashboard"
+msgstr ""
+
+#: inc/src/woocommerce/account/account.php:73
+#: templates/account/dashboard/dashboard.php:54
+#: templates/account/dashboard/dashboard.php:176
+msgid "Messages"
+msgstr ""
+
+#: inc/src/woocommerce/account/account.php:83
+#: templates/admin/settings/settings.php:93
+#: templates/admin/settings/settings.php:474
+#: templates/globals/notifications.php:20
+msgid "Notifications"
+msgstr ""
+
+#: inc/src/woocommerce/packages/plan.php:316
+#: inc/src/woocommerce/packages/plan.php:336
+msgid "Proceed to checkout"
+msgstr ""
+
+#: inc/src/woocommerce/products/init.php:48
+msgid "Listing Plan"
+msgstr ""
+
+#: inc/src/woocommerce/products/init.php:49
+msgid "Listing Promotion"
+msgstr ""
+
+#: inc/src/woocommerce/products/init.php:50
+msgid "Listing Booking"
+msgstr ""
+
+#: inc/src/woocommerce/products/init.php:51
+msgid "Listing Claim"
+msgstr ""
+
+#: inc/src/woocommerce/products/init.php:52
+msgid "Listing Purchase"
+msgstr ""
+
+#: inc/src/woocommerce/products/init.php:55
+msgid "Listing Subscription Plan"
+msgstr ""
+
+#: inc/utils/helper.php:377
+msgid "&hellip;"
+msgstr ""
+
+#: inc/utils/helper.php:514 inc/utils/helper.php:527 inc/utils/helper.php:538
+#: inc/utils/helper.php:549
+msgctxt "post status"
+msgid "Active"
+msgstr ""
+
+#: inc/utils/helper.php:515
+msgctxt "post status"
+msgid "Draft"
+msgstr ""
+
+#: inc/utils/helper.php:516
+msgctxt "post status"
+msgid "Pending Approval"
+msgstr ""
+
+#: inc/utils/helper.php:528 inc/utils/helper.php:539 inc/utils/helper.php:573
+msgctxt "post status"
+msgid "Inactive"
+msgstr ""
+
+#: inc/utils/helper.php:550
+msgctxt "post status"
+msgid "Pending"
+msgstr ""
+
+#: inc/utils/helper.php:554 inc/utils/helper.php:564 inc/utils/helper.php:575
+msgctxt "post status"
+msgid "Trash"
+msgstr ""
+
+#: inc/utils/helper.php:562
+msgctxt "post status"
+msgid "Reviewed"
+msgstr ""
+
+#: inc/utils/helper.php:563 inc/utils/helper.php:574
+msgctxt "post status"
+msgid "Pending Review"
+msgstr ""
+
+#: inc/utils/helper.php:572
+msgctxt "post status"
+msgid "Complete"
+msgstr ""
+
+#: inc/utils/helper.php:598
+msgid "Not assigned"
+msgstr ""
+
+#: inc/utils/helper.php:608
+msgctxt "entry type"
+msgid "Daily Reservation"
+msgstr ""
+
+#: inc/utils/helper.php:609
+msgctxt "entry type"
+msgid "Hourly Reservation"
+msgstr ""
+
+#: inc/utils/helper.php:610
+msgctxt "entry type"
+msgid "Appointment"
+msgstr ""
+
+#: inc/utils/helper.php:611
+msgctxt "entry type"
+msgid "Application"
+msgstr ""
+
+#: inc/utils/helper.php:612
+msgctxt "entry type"
+msgid "Purchase"
+msgstr ""
+
+#: inc/utils/helper.php:625
+msgid "Undefined entry type"
+msgstr ""
+
+#: inc/utils/helper.php:631
+msgctxt "priority status"
+msgid "Featured"
+msgstr ""
+
+#: inc/utils/helper.php:632
+msgctxt "priority status"
+msgid "Promoted"
+msgstr ""
+
+#: inc/utils/helper.php:640 templates/admin/metabox/listing-type.php:1292
+msgid "Contact"
+msgstr ""
+
+#: inc/utils/helper.php:797
+msgid "Process full payment"
+msgstr ""
+
+#: inc/utils/helper.php:798
+msgid "Process percentage payment"
+msgstr ""
+
+#: inc/utils/helper.php:799
+msgid "Process only security deposit"
+msgstr ""
+
+#: inc/utils/helper.php:800
+msgid "Process only service fee"
+msgstr ""
+
+#: inc/utils/helper.php:801
+msgid "Process full payment locally"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:35
+msgid "Switch to business"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:47
+msgid "Account details"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:48
+msgid "Provide personal details and how we can reach you"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:55
+#: templates/account/dashboard/dashboard.php:177
+msgid "Track all your important conversations with the world"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:61
+msgid "My orders"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:62
+msgid "Get information about your orders, payments and details"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:68
+msgid "Notification settings"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:69
+msgid "Enable notifications for important actions and activities"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:84
+msgid "Hello"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:89
+msgid "Edit account details"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:109
+msgid "Switch to customer"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:119
+msgid "Views today"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:126
+msgid "Today earnings"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:133
+msgid "Your balance"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:163
+msgid "Manage all your listings and track important information"
+msgstr ""
+
+#: templates/account/dashboard/dashboard.php:170
+msgid "Manage your incoming and outgoing entries"
+msgstr ""
+
+#: templates/account/entries/entries.php:20
+msgid "Incoming"
+msgstr ""
+
+#: templates/account/entries/entries.php:25
+msgid "Outgoing"
+msgstr ""
+
+#: templates/account/entries/entries.php:32
+msgid "Entries that you have recieved from other users"
+msgstr ""
+
+#: templates/account/entries/entries.php:34
+msgid "Entries that you have sent to other users"
+msgstr ""
+
+#: templates/account/entries/entries.php:46
+msgid "No entries were found"
+msgstr ""
+
+#: templates/account/entries/row.php:66 templates/account/listings/row.php:60
+#: templates/account/payouts/payouts.php:73
+#: templates/admin/earnings/earnings.php:191
+#: templates/admin/earnings/earnings.php:277
+#: templates/admin/metabox/listing-type.php:808
+#: templates/admin/metabox/listing-type.php:893
+#: templates/admin/metabox/listing-type.php:1236
+#: templates/admin/metabox/listing-type.php:1355
+#: templates/admin/metabox/listing-type.php:1865
+#: templates/admin/metabox/listing-type.php:2648
+msgid "Type"
+msgstr ""
+
+#: templates/account/entries/row.php:70 templates/account/listings/row.php:64
+msgid "Created"
+msgstr ""
+
+#: templates/account/entries/row.php:75
+msgid "Checkin"
+msgstr ""
+
+#: templates/account/entries/row.php:79
+msgid "Checkout"
+msgstr ""
+
+#: templates/account/entries/row.php:85
+msgid "Reservation start"
+msgstr ""
+
+#: templates/account/entries/row.php:92
+msgid "Reservation end"
+msgstr ""
+
+#: templates/account/entries/row.php:100
+msgid "Sent to"
+msgstr ""
+
+#: templates/account/entries/row.php:123
+msgid "Total payed"
+msgstr ""
+
+#: templates/account/entries/row.php:181
+msgid "Pay now"
+msgstr ""
+
+#: templates/account/listings/listings.php:20
+msgid "No listings were found"
+msgstr ""
+
+#: templates/account/listings/row.php:72
+msgid "Rated"
+msgstr ""
+
+#: templates/account/listings/row.php:74
+#, php-format
+msgid "%s out of %s reviews"
+msgstr ""
+
+#: templates/account/listings/row.php:80
+msgid "Today views"
+msgstr ""
+
+#: templates/account/listings/row.php:85
+msgid "Promotion expires"
+msgstr ""
+
+#: templates/account/listings/row.php:124
+#: templates/admin/earnings/earnings.php:224
+msgid "Are you sure you want to delete this item?"
+msgstr ""
+
+#: templates/account/listings/row.php:136
+#: templates/admin/metabox/listing-side.php:47
+msgid "Promoted"
+msgstr ""
+
+#: templates/account/listings/row.php:141
+msgid "Promote"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/content.php:82
+msgid "Schema"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/content.php:90
+msgid "Past day"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/content.php:94
+#: templates/account/payouts/payouts.php:61
+#: templates/admin/payouts/payouts.php:117
+msgid "Pending"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/content.php:98
+msgid "Booked"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/content.php:102
+msgid "Unavailable"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/content.php:105
+msgid "Toggle all dates"
+msgstr ""
+
+#: templates/account/listings/booking-calendar/modal/modal.php:6
+msgid "Booking Calendar"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:51
+msgid "Export iCal feed url"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:68
+msgid "Import iCal from external source"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:70
+msgid "Add New Source"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:74
+#: templates/admin/earnings/earnings.php:193
+#: templates/admin/earnings/earnings.php:279
+msgid "Source"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:79
+msgid "Source Name"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:84
+msgid "Source URI"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:99
+msgid "iCalendar saved and synchronized successfully!"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/content.php:107
+msgid "Save Changes and Synchronize"
+msgstr ""
+
+#: templates/account/listings/booking-ical/modal/modal.php:6
+msgid "iCalendar"
+msgstr ""
+
+#: templates/account/listings/modal/content.php:314
+#: templates/admin/metabox/listing.php:298
+msgid "Addon Id"
+msgstr ""
+
+#: templates/account/listings/modal/content.php:337
+#: templates/admin/metabox/listing.php:321
+msgid "Date Availability"
+msgstr ""
+
+#: templates/account/listings/modal/content.php:338
+#: templates/admin/metabox/listing.php:322
+msgid ""
+"You can manage the date availability within the listing availability "
+"calendar in your user dashboard."
+msgstr ""
+
+#: templates/account/listings/modal/content.php:391
+#: templates/account/listings/modal/content.php:404
+#: templates/admin/metabox/listing.php:375
+#: templates/admin/metabox/listing.php:388
+msgid "Leave 0 to skip limits"
+msgstr ""
+
+#: templates/account/listings/promotion/modal/content.php:24
+msgid "No packages were found."
+msgstr ""
+
+#: templates/account/listings/promotion/modal/content.php:33
+#: templates/submission/listing-type.php:88
+#: templates/submission/navigation.php:18
+msgid "Continue"
+msgstr ""
+
+#: templates/account/listings/promotion/modal/modal.php:6
+msgid "Promote Listing"
+msgstr ""
+
+#: templates/account/listings/promotion/modal/row.php:19
+#, php-format
+msgid "%s, promotion lasts for %s day"
+msgid_plural "%s, promotion lasts for %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/account/messages/messages.php:27
+msgid "No conversations were found"
+msgstr ""
+
+#: templates/account/notifications/notifications.php:13
+msgid "Manage your notifications"
+msgstr ""
+
+#: templates/account/notifications/notifications.php:51
+#: templates/admin/settings/settings.php:529
+#: templates/admin/settings/settings.php:570
+#: templates/admin/settings/settings.php:601
+#: templates/admin/settings/settings.php:632
+msgid "Enable"
+msgstr ""
+
+#: templates/account/notifications/notifications.php:62
+msgid "No notification were found."
+msgstr ""
+
+#: templates/account/payouts/payouts.php:22
+#, php-format
+msgid "Your current balance is: %s"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:32
+#, php-format
+msgid "Minimum payout amount: %s"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:41
+#: templates/account/payouts/modal/modal.php:14
+msgid "Request Payout"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:62
+#: templates/admin/payouts/payouts.php:118
+msgid "Approved"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:77
+#: templates/account/payouts/modal/modal.php:43
+#: templates/admin/payouts/payouts.php:130
+msgid "PayPal"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:78
+msgid "Direct Bank Transfer"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:84
+msgid "Request date"
+msgstr ""
+
+#: templates/account/payouts/payouts.php:114
+msgid "No payouts were found"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:23
+msgid "Your payout request was sent"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:34
+#: templates/admin/earnings/earnings.php:194
+#: templates/admin/earnings/earnings.php:280
+#: templates/admin/payouts/payouts.php:43
+#: templates/admin/payouts/payouts.php:177
+msgid "Amount"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:46
+msgid "Bank Transfer"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:53
+#: templates/admin/payouts/payouts.php:44
+#: templates/admin/payouts/payouts.php:178
+msgid "Method"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:60
+msgid "PayPal Email"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:71
+msgid "Account Name"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:83
+msgid "Account Number"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:95
+msgid "Bank IBAN"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:107
+#: templates/admin/payouts/payouts.php:102
+msgid "BIC / Swift"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:119
+msgid "Bank Name"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:131
+msgid "Routing Number"
+msgstr ""
+
+#: templates/account/payouts/modal/modal.php:146
+msgid "Send Request"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:49
+#: templates/admin/metabox/plan.php:24
+#: templates/admin/metabox/promotion.php:24
+#: templates/admin/payouts/payouts.php:42
+#: templates/admin/payouts/payouts.php:176
+msgid "User"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:55
+msgid "Search by user email"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:63 templates/explore/filters.php:107
+#: templates/explore/more-filters/modal.php:56
+msgid "Search"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:82
+msgid "Add new transaction"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:93
+msgid "Transaction type"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:95
+msgid "Credit ( + )"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:96
+msgid "Debit ( - )"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:103
+msgid "Transaction amount"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:104
+msgid "0.00"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:125
+msgid "Add transaction"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:143
+msgid "This user was not found."
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:160
+#, php-format
+msgid "Current user balance: %s"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:190
+#: templates/admin/earnings/earnings.php:276
+#: templates/admin/payouts/payouts.php:40
+#: templates/admin/payouts/payouts.php:174
+msgid "ID"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:192
+#: templates/admin/earnings/earnings.php:278
+msgid "Order ID"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:195
+#: templates/admin/earnings/earnings.php:281
+msgid "Date"
+msgstr ""
+
+#: templates/admin/earnings/earnings.php:268
+#: templates/admin/payouts/payouts.php:166
+msgid "There is no withrawal requests"
+msgstr ""
+
+#: templates/admin/import/import.php:25
+msgid "Demo import"
+msgstr ""
+
+#: templates/admin/import/import.php:26
+msgid "Select the demo you want to import and click the button below."
+msgstr ""
+
+#: templates/admin/import/import.php:34
+msgid "Demo has been successfully imported"
+msgstr ""
+
+#: templates/admin/import/import.php:40
+msgid "Recommended server stats"
+msgstr ""
+
+#: templates/admin/import/import.php:42 templates/admin/import/import.php:43
+#: templates/admin/import/import.php:44 templates/admin/import/import.php:45
+#, php-format
+msgid ">= %s recommended"
+msgstr ""
+
+#: templates/admin/import/import.php:51
+msgid "Available demos"
+msgstr ""
+
+#: templates/admin/import/import.php:73
+msgid ""
+"You need to verify your ownership using `Envato Market` plugin to be able to "
+"use the demo importer."
+msgstr ""
+
+#: templates/admin/import/import.php:82 templates/admin/import/import.php:88
+msgid "Start Demo Import"
+msgstr ""
+
+#: templates/admin/import/import.php:96
+msgid "No available demos"
+msgstr ""
+
+#: templates/admin/import/import.php:115
+msgid "Preparing import"
+msgstr ""
+
+#: templates/admin/metabox/claim.php:24
+msgid "Claimed by"
+msgstr ""
+
+#: templates/admin/metabox/claim.php:83
+msgid "Listing claimed"
+msgstr ""
+
+#: templates/admin/metabox/claim.php:107
+#: templates/admin/metabox/conversation.php:47
+#: templates/admin/metabox/plan.php:100
+#: templates/admin/metabox/promotion.php:100
+msgid "( empty )"
+msgstr ""
+
+#: templates/admin/metabox/claim.php:121
+msgid "Comment"
+msgstr ""
+
+#: templates/admin/metabox/comment.php:60
+msgid "No rating criteria were found"
+msgstr ""
+
+#: templates/admin/metabox/comment.php:66
+msgid "Media Uploads"
+msgstr ""
+
+#: templates/admin/metabox/comment.php:74
+msgid "Review Gallery"
+msgstr ""
+
+#: templates/admin/metabox/conversation.php:53
+msgid "Users"
+msgstr ""
+
+#: templates/admin/metabox/conversation.php:82
+#, php-format
+msgid "Last activity: %s"
+msgstr ""
+
+#: templates/admin/metabox/conversation.php:126
+#: templates/globals/conversation/modal/messages.php:66
+msgid "No messages"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:11
+msgid "Filters"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:13
+msgid "Add Filter"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:22
+#: templates/admin/metabox/listing-type.php:376
+#: templates/admin/metabox/listing-type.php:1238
+#: templates/admin/metabox/listing-type.php:1357
+#: templates/admin/metabox/listing-type.php:1431
+#: templates/admin/metabox/listing-type.php:1867
+#: templates/admin/metabox/listing-type.php:2650
+msgid "Text"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:37
+#: templates/admin/metabox/filters.php:86
+#: templates/admin/metabox/filters.php:213
+#: templates/admin/metabox/filters.php:297
+msgid "Field Key"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:38
+#: templates/admin/metabox/filters.php:87
+msgid ""
+"The filder id should match the field id you created in Listing Type > "
+"Listing > Fields"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:43
+#: templates/admin/metabox/filters.php:382
+#: templates/admin/metabox/filters.php:651
+#: templates/admin/metabox/listing-type.php:391
+#: templates/admin/metabox/listing-type.php:452
+#: templates/admin/metabox/listing-type.php:1449
+#: templates/admin/metabox/listing-type.php:1500
+msgid "Placeholder"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:47
+#: templates/admin/metabox/filters.php:92
+#: templates/admin/metabox/filters.php:146
+#: templates/admin/metabox/filters.php:258
+#: templates/admin/metabox/filters.php:343
+#: templates/admin/metabox/filters.php:391
+#: templates/admin/metabox/filters.php:432
+#: templates/admin/metabox/filters.php:465
+#: templates/admin/metabox/filters.php:511
+#: templates/admin/metabox/filters.php:608
+#: templates/admin/metabox/filters.php:655
+#: templates/admin/metabox/listing-type.php:357
+#: templates/admin/metabox/listing-type.php:418
+#: templates/admin/metabox/listing-type.php:479
+#: templates/admin/metabox/listing-type.php:534
+#: templates/admin/metabox/listing-type.php:606
+#: templates/admin/metabox/listing-type.php:719
+#: templates/admin/metabox/listing-type.php:774
+#: templates/admin/metabox/listing-type.php:858
+#: templates/admin/metabox/listing-type.php:940
+#: templates/admin/metabox/listing-type.php:1000
+#: templates/admin/metabox/listing-type.php:1467
+#: templates/admin/metabox/listing-type.php:1518
+#: templates/admin/metabox/listing-type.php:1563
+#: templates/admin/metabox/listing-type.php:1622
+#: templates/admin/metabox/listing-type.php:1678
+msgid "Column Size"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:50
+#: templates/admin/metabox/filters.php:95
+#: templates/admin/metabox/filters.php:149
+#: templates/admin/metabox/filters.php:261
+#: templates/admin/metabox/filters.php:346
+#: templates/admin/metabox/filters.php:394
+#: templates/admin/metabox/filters.php:435
+#: templates/admin/metabox/filters.php:468
+#: templates/admin/metabox/filters.php:514
+#: templates/admin/metabox/filters.php:611
+#: templates/admin/metabox/filters.php:658
+#: templates/admin/metabox/listing-type.php:360
+#: templates/admin/metabox/listing-type.php:421
+#: templates/admin/metabox/listing-type.php:482
+#: templates/admin/metabox/listing-type.php:537
+#: templates/admin/metabox/listing-type.php:609
+#: templates/admin/metabox/listing-type.php:722
+#: templates/admin/metabox/listing-type.php:777
+#: templates/admin/metabox/listing-type.php:861
+#: templates/admin/metabox/listing-type.php:943
+#: templates/admin/metabox/listing-type.php:1003
+#: templates/admin/metabox/listing-type.php:1470
+#: templates/admin/metabox/listing-type.php:1521
+#: templates/admin/metabox/listing-type.php:1566
+#: templates/admin/metabox/listing-type.php:1625
+#: templates/admin/metabox/listing-type.php:1681
+msgid "100%"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:51
+#: templates/admin/metabox/filters.php:96
+#: templates/admin/metabox/filters.php:150
+#: templates/admin/metabox/filters.php:262
+#: templates/admin/metabox/filters.php:347
+#: templates/admin/metabox/filters.php:395
+#: templates/admin/metabox/filters.php:436
+#: templates/admin/metabox/filters.php:469
+#: templates/admin/metabox/filters.php:515
+#: templates/admin/metabox/filters.php:612
+#: templates/admin/metabox/filters.php:659
+#: templates/admin/metabox/listing-type.php:361
+#: templates/admin/metabox/listing-type.php:422
+#: templates/admin/metabox/listing-type.php:483
+#: templates/admin/metabox/listing-type.php:538
+#: templates/admin/metabox/listing-type.php:610
+#: templates/admin/metabox/listing-type.php:723
+#: templates/admin/metabox/listing-type.php:778
+#: templates/admin/metabox/listing-type.php:862
+#: templates/admin/metabox/listing-type.php:944
+#: templates/admin/metabox/listing-type.php:1004
+#: templates/admin/metabox/listing-type.php:1471
+#: templates/admin/metabox/listing-type.php:1522
+#: templates/admin/metabox/listing-type.php:1567
+#: templates/admin/metabox/listing-type.php:1626
+#: templates/admin/metabox/listing-type.php:1682
+msgid "50%"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:52
+#: templates/admin/metabox/filters.php:97
+#: templates/admin/metabox/filters.php:151
+#: templates/admin/metabox/filters.php:263
+#: templates/admin/metabox/filters.php:348
+#: templates/admin/metabox/filters.php:396
+#: templates/admin/metabox/filters.php:437
+#: templates/admin/metabox/filters.php:470
+#: templates/admin/metabox/filters.php:516
+#: templates/admin/metabox/filters.php:613
+#: templates/admin/metabox/filters.php:660
+msgid "33%"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:53
+#: templates/admin/metabox/filters.php:98
+#: templates/admin/metabox/filters.php:152
+#: templates/admin/metabox/filters.php:264
+#: templates/admin/metabox/filters.php:349
+#: templates/admin/metabox/filters.php:397
+#: templates/admin/metabox/filters.php:438
+#: templates/admin/metabox/filters.php:471
+#: templates/admin/metabox/filters.php:517
+#: templates/admin/metabox/filters.php:614
+#: templates/admin/metabox/filters.php:661
+#: templates/admin/metabox/listing-type.php:362
+#: templates/admin/metabox/listing-type.php:423
+#: templates/admin/metabox/listing-type.php:484
+#: templates/admin/metabox/listing-type.php:539
+#: templates/admin/metabox/listing-type.php:611
+#: templates/admin/metabox/listing-type.php:724
+#: templates/admin/metabox/listing-type.php:779
+#: templates/admin/metabox/listing-type.php:863
+#: templates/admin/metabox/listing-type.php:945
+#: templates/admin/metabox/listing-type.php:1005
+#: templates/admin/metabox/listing-type.php:1472
+#: templates/admin/metabox/listing-type.php:1523
+#: templates/admin/metabox/listing-type.php:1568
+#: templates/admin/metabox/listing-type.php:1627
+#: templates/admin/metabox/listing-type.php:1683
+msgid "25%"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:54
+#: templates/admin/metabox/filters.php:99
+#: templates/admin/metabox/filters.php:153
+#: templates/admin/metabox/filters.php:265
+#: templates/admin/metabox/filters.php:350
+#: templates/admin/metabox/filters.php:398
+#: templates/admin/metabox/filters.php:439
+#: templates/admin/metabox/filters.php:472
+#: templates/admin/metabox/filters.php:518
+#: templates/admin/metabox/filters.php:615
+#: templates/admin/metabox/filters.php:662
+msgid "16%"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:55
+#: templates/admin/metabox/filters.php:100
+#: templates/admin/metabox/filters.php:154
+#: templates/admin/metabox/filters.php:266
+#: templates/admin/metabox/filters.php:351
+#: templates/admin/metabox/filters.php:399
+#: templates/admin/metabox/filters.php:440
+#: templates/admin/metabox/filters.php:473
+#: templates/admin/metabox/filters.php:519
+#: templates/admin/metabox/filters.php:616
+#: templates/admin/metabox/filters.php:663
+msgid "Auto"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:71
+#: templates/admin/metabox/listing-type.php:738
+#: templates/admin/metabox/listing-type.php:1533
+msgid "Checkbox"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:112
+#: templates/admin/metabox/filters.php:127
+#: templates/admin/metabox/listing-type.php:877
+#: templates/admin/metabox/listing-type.php:887
+msgid "Taxonomy"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:133
+#: templates/admin/metabox/filters.php:218
+#: templates/admin/metabox/filters.php:302
+#: templates/admin/metabox/filters.php:595
+msgid "Field Type"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:137
+#: templates/admin/metabox/filters.php:599
+#: templates/admin/metabox/listing-type.php:812
+#: templates/admin/metabox/listing-type.php:897
+msgid "Select2"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:138
+#: templates/admin/metabox/filters.php:600
+#: templates/admin/metabox/listing-type.php:813
+#: templates/admin/metabox/listing-type.php:898
+msgid "Radio Buttons"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:139
+#: templates/admin/metabox/listing-type.php:816
+#: templates/admin/metabox/listing-type.php:900
+msgid "Checklist"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:140
+#: templates/admin/metabox/filters.php:601
+#: templates/admin/metabox/listing-type.php:815
+#: templates/admin/metabox/listing-type.php:899
+msgid "Buttons"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:198
+#: templates/admin/metabox/filters.php:220
+#: templates/admin/metabox/filters.php:305
+#: templates/admin/metabox/listing-type.php:625
+#: templates/admin/metabox/listing-type.php:643
+msgid "Number"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:221
+msgid "Slider"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:222
+#: templates/admin/metabox/listing-type.php:645
+msgid "Stepper"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:229
+#: templates/admin/metabox/filters.php:313
+msgid "Minimum"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:234
+#: templates/admin/metabox/filters.php:318
+msgid "Maximun"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:239
+#: templates/admin/metabox/filters.php:323
+#: templates/admin/metabox/listing-type.php:691
+msgid "Step Size"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:244
+msgid "Comparison"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:247
+msgid "Equal"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:248
+msgid "Less"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:249
+msgid "Less or equal"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:250
+msgid "Greater"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:251
+msgid "Greater or equal"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:282
+#: templates/admin/metabox/listing-type.php:644
+msgid "Range"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:328
+msgid "Suffix"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:333
+msgid "Placeholder From"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:338
+msgid "Placeholder To"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:367
+msgid "Autocomplete"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:386
+#: templates/admin/metabox/listing-type.php:1232
+#: templates/admin/metabox/listing-type.php:1351
+#: templates/admin/metabox/listing-type.php:1861
+#: templates/admin/metabox/listing-type.php:2644
+#: templates/admin/term-metabox/terms.php:29
+msgid "Icon"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:415
+msgid "Availability Calendar"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:428
+msgid "Single Date Selection?"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:489
+#: templates/admin/metabox/listing-type.php:1103
+msgid "Tab"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:501
+msgid "Tab Name"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:506
+msgid "Tab Label"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:535
+msgid "Tab Break"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:547
+msgid "Heading"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:569
+msgid "Separator"
+msgstr ""
+
+#: templates/admin/metabox/filters.php:632
+msgid "Geolocation"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:31
+msgid "Name and publish the post, then upload your font package"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:38
+#, php-format
+msgid "Upload your icon package generated by the %s"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:38
+msgid "Icomoon App"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:43
+msgid "Select icon package"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:87
+msgid "Re-upload icon set"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:93
+msgid "Package details"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:99
+msgid "Icons"
+msgstr ""
+
+#: templates/admin/metabox/icon-set.php:103
+msgid "Prefix"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:20
+#, php-format
+msgid "Promoted listing, expires:<br>%s"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:42
+msgid "Listing priority"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:43
+msgid "Set what priority will be given to this listing in search results."
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:45
+#: templates/admin/woocommerce/product-listing-plan.php:39
+msgid "Normal"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:46
+msgid "Featured"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:56
+msgid ""
+"Higher value means higher priority in search results.<br><br>Normal = "
+"0<br>Featured = 1<br>Promoted = 2"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:77
+msgid "Is this listing claimed?"
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:78
+msgid ""
+"Check this option if you want to display this listing as claimed. Other "
+"customers won't be able to claim it."
+msgstr ""
+
+#: templates/admin/metabox/listing-side.php:90
+msgid "Enable listing expiration"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:20
+#: templates/admin/settings/settings.php:23
+msgid "Routiz"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:37
+#: templates/admin/metabox/listing-type.php:2739
+msgid "Display"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:42
+#: templates/admin/settings/settings.php:41
+#: templates/admin/settings/settings.php:886 templates/explore/filters.php:54
+msgid "Explore"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:48
+msgid "Monetize"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:57
+#: templates/admin/settings/settings.php:56
+msgid "User Guide"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:69
+msgid "Setup"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:74
+#: templates/admin/settings/settings.php:112
+#: templates/admin/settings/settings.php:798
+msgid "Submission"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:83
+#: templates/admin/metabox/listing-type.php:305
+#: templates/admin/metabox/listing-type.php:318
+#: templates/admin/metabox/listing-type.php:1194
+msgid "Fields"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:88
+#: templates/admin/metabox/listing-type.php:1136
+msgid "Action"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:98
+#: templates/admin/metabox/listing-type.php:2140
+msgid "Reservations"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:103
+#: templates/admin/metabox/listing-type.php:2261
+msgid "Reviews"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:108
+msgid "Nearby"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:113
+#: templates/single/similar.php:19
+msgid "Similar"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:122
+#: templates/admin/metabox/listing-type.php:2481
+msgid "Listing Box"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:127
+#: templates/admin/metabox/listing-type.php:2502
+msgid "Single Page"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:132
+#: templates/admin/metabox/listing-type.php:2773
+msgid "Map Marker"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:165
+#: templates/admin/metabox/listing-type.php:2999
+msgid "Payments"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:170
+#: templates/admin/metabox/listing-type.php:3141
+msgid "Banner Space"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:194
+msgid "Listing Singular Name"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:201
+msgid "Listing Plural Name"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:208
+#: templates/admin/settings/settings.php:164
+msgid "Listing Slug"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:217
+msgid "Listing Icon"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:223
+msgid "Enable Json-ld data"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:224
+msgid ""
+"Structured data is a standardized format for providing information about a "
+"page and classifying the page content"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:231
+msgid "Hide from Global Search"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:232
+msgid ""
+"This option will hide the listing type for the explore page, when no listing "
+"type is selected"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:238
+msgid "Disable user submission"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:267
+msgid "Requires Admin Approval"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:268
+msgid ""
+"Listing submissions under this group will be inserted as \"draft\" and will "
+"be pending for admin approval in order to be visible."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:274
+msgid "Requires Admin Approval after Update"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:275
+msgid ""
+"After user update the status of the listing will be changed to \"Pending\"."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:281
+msgid "Use the gallery first image as featured image"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:307
+msgid ""
+"Customize your listing fields. Organize and group multiple field into "
+"sections using the \"Tab\" for better understanding. Every group will appear "
+"as a new step in the submission form."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:326
+msgid "Plain Text ( Static )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:336
+#: templates/admin/metabox/listing-type.php:386
+#: templates/admin/metabox/listing-type.php:447
+#: templates/admin/metabox/listing-type.php:508
+#: templates/admin/metabox/listing-type.php:563
+#: templates/admin/metabox/listing-type.php:635
+#: templates/admin/metabox/listing-type.php:748
+#: templates/admin/metabox/listing-type.php:803
+#: templates/admin/metabox/listing-type.php:969
+#: templates/admin/metabox/listing-type.php:1442
+#: templates/admin/metabox/listing-type.php:1493
+#: templates/admin/metabox/listing-type.php:1544
+#: templates/admin/metabox/listing-type.php:1590
+#: templates/admin/metabox/listing-type.php:1649
+#: templates/admin/metabox/listing-type.php:2346
+msgid "Key"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:345
+#: templates/admin/metabox/listing-type.php:406
+#: templates/admin/metabox/listing-type.php:467
+#: templates/admin/metabox/listing-type.php:522
+#: templates/admin/metabox/listing-type.php:594
+#: templates/admin/metabox/listing-type.php:707
+#: templates/admin/metabox/listing-type.php:762
+#: templates/admin/metabox/listing-type.php:846
+#: templates/admin/metabox/listing-type.php:928
+#: templates/admin/metabox/listing-type.php:988
+#: templates/admin/metabox/listing-type.php:1043
+#: templates/admin/metabox/listing-type.php:1085
+msgid "Show in Submission Form"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:351
+#: templates/admin/metabox/listing-type.php:412
+#: templates/admin/metabox/listing-type.php:473
+#: templates/admin/metabox/listing-type.php:528
+#: templates/admin/metabox/listing-type.php:600
+#: templates/admin/metabox/listing-type.php:713
+#: templates/admin/metabox/listing-type.php:768
+#: templates/admin/metabox/listing-type.php:852
+#: templates/admin/metabox/listing-type.php:934
+#: templates/admin/metabox/listing-type.php:994
+#: templates/admin/metabox/listing-type.php:1049
+#: templates/admin/metabox/listing-type.php:1091
+#: templates/admin/metabox/listing-type.php:1112
+msgid "Show in Admin Edit Page"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:363
+#: templates/admin/metabox/listing-type.php:424
+#: templates/admin/metabox/listing-type.php:485
+#: templates/admin/metabox/listing-type.php:540
+#: templates/admin/metabox/listing-type.php:612
+#: templates/admin/metabox/listing-type.php:725
+#: templates/admin/metabox/listing-type.php:780
+#: templates/admin/metabox/listing-type.php:864
+#: templates/admin/metabox/listing-type.php:946
+#: templates/admin/metabox/listing-type.php:1006
+#: templates/admin/metabox/listing-type.php:1473
+#: templates/admin/metabox/listing-type.php:1524
+#: templates/admin/metabox/listing-type.php:1569
+#: templates/admin/metabox/listing-type.php:1628
+#: templates/admin/metabox/listing-type.php:1684
+msgid "20%"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:401
+#: templates/admin/metabox/listing-type.php:462
+#: templates/admin/metabox/listing-type.php:517
+#: templates/admin/metabox/listing-type.php:589
+#: templates/admin/metabox/listing-type.php:702
+#: templates/admin/metabox/listing-type.php:757
+#: templates/admin/metabox/listing-type.php:841
+#: templates/admin/metabox/listing-type.php:923
+#: templates/admin/metabox/listing-type.php:983
+#: templates/admin/metabox/listing-type.php:1038
+#: templates/admin/metabox/listing-type.php:1080
+#: templates/admin/metabox/listing-type.php:1459
+#: templates/admin/metabox/listing-type.php:1510
+#: templates/admin/metabox/listing-type.php:1555
+#: templates/admin/metabox/listing-type.php:1614
+#: templates/admin/metabox/listing-type.php:1670
+msgid "Required Field"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:437
+#: templates/admin/metabox/listing-type.php:1482
+msgid "Textarea"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:498
+msgid "Editor"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:569
+#: templates/admin/metabox/listing-type.php:1656
+msgid "Allow Multiple Uploads?"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:573
+#: templates/admin/metabox/listing-type.php:1660
+msgid "Upload Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:576
+#: templates/admin/metabox/listing-type.php:1663
+msgid "Image"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:577
+#: templates/admin/metabox/listing-type.php:1664
+msgid "File"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:640
+msgid "Input Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:656
+#: templates/admin/metabox/listing-type.php:2579
+#: templates/admin/metabox/listing-type.php:2600
+msgid "Style"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:671
+#: templates/admin/metabox/listing-type.php:1225
+#: templates/admin/metabox/listing-type.php:1344
+#: templates/admin/metabox/listing-type.php:1854
+#: templates/admin/metabox/listing-type.php:2638
+#: templates/admin/metabox/listing-type.php:2712
+msgid "Format"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:681
+msgid "Minimum Value"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:686
+msgid "Maximum Value"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:697
+msgid "Value"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:793
+#: templates/admin/metabox/listing-type.php:1579
+msgid "Choice"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:828
+#: templates/admin/metabox/listing-type.php:913
+#: templates/admin/metabox/listing-type.php:1601
+msgid "Multiple Choices?"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:837
+#: templates/admin/metabox/listing-type.php:1610
+msgid "Options"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:979
+msgid "Default Location"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1019
+#: templates/admin/metabox/listing-type.php:1389
+#: templates/admin/metabox/listing-type.php:1393
+msgid "Open Hours"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1061
+#: templates/admin/metabox/listing-type.php:2719
+msgid "Menu"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1147
+msgid "Action Types"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1149
+msgid "Add Action Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1158
+msgid "Plain Text"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1176
+#: templates/admin/metabox/listing-type.php:1296
+#: templates/admin/metabox/listing-type.php:1412
+msgid "Display Author Details"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1181
+msgid "Open in a New Tab?"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1185
+msgid "Request Login?"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1186
+msgid ""
+"If you check this option, only logged-in users will be able to click the "
+"button."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1190
+msgid "Custom Title"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1195
+#: templates/admin/metabox/listing-type.php:1314
+#: templates/admin/metabox/listing-type.php:1824
+msgid "Add additional fields"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1197
+#: templates/admin/metabox/listing-type.php:1316
+#: templates/admin/metabox/listing-type.php:1826
+msgid "Add Field"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1208
+#: templates/admin/metabox/listing-type.php:1327
+#: templates/admin/metabox/listing-type.php:1437
+#: templates/admin/metabox/listing-type.php:1488
+#: templates/admin/metabox/listing-type.php:1539
+#: templates/admin/metabox/listing-type.php:1585
+#: templates/admin/metabox/listing-type.php:1644
+#: templates/admin/metabox/listing-type.php:1837
+msgid "Field name"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1212
+#: templates/admin/metabox/listing-type.php:1331
+#: templates/admin/metabox/listing-type.php:1841
+#: templates/admin/metabox/listing-type.php:2544
+#: templates/admin/metabox/listing-type.php:2575
+#: templates/admin/metabox/listing-type.php:2629
+msgid "Select Field"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1213
+#: templates/admin/metabox/listing-type.php:1332
+#: templates/admin/metabox/listing-type.php:1842
+msgid "Select field to display"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1226
+#: templates/admin/metabox/listing-type.php:1345
+#: templates/admin/metabox/listing-type.php:1855
+#: templates/admin/metabox/listing-type.php:2639
+msgid ""
+"{field} will be replaced with the field value. You can add additional text, "
+"example format: \"{field} bedrooms\", will print \"4 bedrooms\"."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1240
+#: templates/admin/metabox/listing-type.php:1359
+#: templates/admin/metabox/listing-type.php:1869
+#: templates/admin/metabox/listing-type.php:2652
+msgid "URL"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1242
+#: templates/admin/metabox/listing-type.php:1361
+#: templates/admin/metabox/listing-type.php:1871
+#: templates/admin/metabox/listing-type.php:2654
+#: templates/globals/signin/form.php:149
+msgid "Phone number"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1249
+#: templates/admin/metabox/listing-type.php:1368
+#: templates/admin/metabox/listing-type.php:1878
+#: templates/admin/metabox/listing-type.php:2661
+msgid "URL Text"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1263
+msgid "Show button"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1268
+#: templates/admin/metabox/listing-type.php:1920
+msgid "Button Label"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1273
+msgid "Select Button Field"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1274
+msgid "Select the field you want to be used for the button url"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1282
+msgid "Hide  action type if the field value is empty"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1313
+msgid "Location Fields"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1394
+msgid ""
+"This action type requires to create \"Open Hors\" field by going to "
+"\"Listing > Fields\". If the fields empty ( the user left blank ), the whole "
+"action type won't appear in the listing details page."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1398
+msgid "Expanded by Default"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1417
+msgid "Application Button Label"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1422
+msgid "Application Form Fields"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1423
+msgid ""
+"Create your application form. Specify all the fields that you need to "
+"display on the front-end."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1425
+msgid "Add Form Field"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1463
+#: templates/admin/metabox/listing-type.php:1514
+#: templates/admin/metabox/listing-type.php:1559
+#: templates/admin/metabox/listing-type.php:1618
+#: templates/admin/metabox/listing-type.php:1674
+msgid "Show only when the user is not logged in"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1702
+msgid "Booking ( Day )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1706
+#: templates/admin/metabox/listing-type.php:1754
+#: templates/admin/metabox/listing-type.php:1797
+#: templates/admin/metabox/listing-type.php:1903
+#: templates/admin/metabox/listing-type.php:1959
+msgid "Select Product"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1707
+#: templates/admin/metabox/listing-type.php:1755
+#: templates/admin/metabox/listing-type.php:1798
+msgid ""
+"The WooCommerce product of type `Listing Booking` that will be used to "
+"create order."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1711
+#: templates/admin/metabox/listing-type.php:1759
+#: templates/admin/metabox/listing-type.php:1802
+msgid ""
+"There are no available listing booking products, please create one by going "
+"to Products > Add New with the type \"Listing Booking\""
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1715
+msgid "Calendar Selection Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1717
+msgid "Single day"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1718
+msgid "Date range"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1726
+msgid "Enable Reservation Overlapping"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1727
+msgid ""
+"If you check this option, the visitors will be able to reserve the same "
+"dates multiple times"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1731
+#: templates/admin/metabox/listing-type.php:1774
+msgid "Title ( Optional )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1735
+#: templates/admin/metabox/listing-type.php:1778
+msgid "Summary ( Optional )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1739
+#: templates/admin/metabox/listing-type.php:1782
+msgid "Entity Text"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1740
+msgid "Per night"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1750
+msgid "Booking ( Hour )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1763
+msgid "Time Stack"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1765
+msgid "15 minutes"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1766
+msgid "30 minutes"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1767
+msgid "1 hour"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1783
+msgid "Per hour"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1793
+msgid "Booking ( Appointments )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1806
+msgid "Hide Date Selection"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1807
+msgid "Suitable for single appointments"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1811
+msgid "Display Appointment Name"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1823
+msgid "Additional Fields"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1904
+msgid ""
+"The WooCommerce product of type `Listing Purchase` that will be used to "
+"create order."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1908
+msgid ""
+"There are no available listing purchase products, please create one by going "
+"to Products > Add New with the type \"Listing Purchase\""
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1944
+msgid "Claim Button Label"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1949
+msgid "Claim Title"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1950
+msgid "Is this your business?"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1954
+msgid "Claim Description"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1955
+msgid ""
+"Claim your business to immediately update business information, respond to "
+"reviews, and more!"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1960
+msgid ""
+"The WooCommerce product of type `Listing Claim` that will be used to create "
+"order."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1974
+msgid "Enable Sticky Action"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1975
+msgid ""
+"Enable this option if you want to stick the action sidebar to your screen "
+"when scrolling."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1981
+msgid "Mobile Action Button Label"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:1982
+msgid "You can also use the pre-defined field price, like: [price]."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2038
+msgid "Allow Pricing"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2039
+msgid ""
+"Check this option if you want to display pricing in your listings. The "
+"pricing will automatically appear in your submission for and listings."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2045
+msgid "Price is not required"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2046
+msgid "Check this option if your listings can go for free."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2057
+msgid "Allow seasonal pricing"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2058
+msgid "Enable dynamic pricing based on weekdays and months."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2069
+msgid "Allow long term discounts"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2070
+msgid ""
+"Check this if you want to allow the users to apply discounts for 7+ and 30+ "
+"reservations."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2081
+msgid "Allow security deposit"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2092
+msgid "Allow extra pricing"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2093
+msgid ""
+"Check this if you want to allow the users to add additional prices like "
+"additional fees."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2104
+msgid "Allow addons"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2105
+msgid ""
+"Check this if you want to allow the users to add additional addon prices "
+"like airport pickup."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2116
+msgid "Addon label"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2152
+msgid ""
+"If you enable this option, the hosts will be able to enable instant booking "
+"on their listings. Instant booking doesn't require approval and will lead "
+"the customer directly to the checkout page. This method doesn't allow "
+"booking cancellation by the host."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2158
+msgid "Allow Guest Selection"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2164
+msgid "Allow Guest Based Pricing"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2165
+msgid ""
+"If you check this option, the listings in this group will have the option to "
+"increase the final price, based on the number of guests."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2177
+msgid "Allow Min / Max lenth of reservations"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2178
+msgid ""
+"This option will enable your customers to select custom minimum and maximum "
+"length for the bookings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2184
+msgid "Enable iCalendar"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2185
+msgid ""
+"Check this option if you want to generate booking availability feed. "
+"Synchronise all your booking portals in real time and increase your "
+"productivity."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2191
+msgid "Enable Reservation Webhook"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2192
+msgid ""
+"Check this option if you want to trigger any action on completed reservation "
+"through a webhook."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2198
+#: templates/admin/settings/settings.php:639
+#, php-format
+msgid ""
+"The webhook is a way for an app to provide other applications with real-time "
+"information.\r\n"
+" %s.\r\n"
+" %s."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2199
+#: templates/admin/settings/settings.php:640
+msgid "Learn more abount webhooks"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2200
+#: templates/admin/settings/settings.php:641
+msgid "What fields are being sent to the webhook url"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2215
+msgid "Reservation Webhook URL"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2226
+msgid "Reservation Webhook Custom Fields"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2228
+#: templates/admin/settings/settings.php:669
+#, php-format
+msgid ""
+"%s: you can add additional custom meta fields using a simple comma-separated "
+"string, like: %s. webhook_param_name stands for the parameter name that will "
+"be sent to the webhook and listing_meta_key stands for the post meta key, "
+"that you want to extract from the listing and send. The post meta value will "
+"be collected from the listing post type."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2229
+#: templates/admin/settings/settings.php:670
+msgid "Advanced users only"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2243
+#: templates/admin/settings/settings.php:684
+msgid "Trigger webhook"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2271
+msgid ""
+"Customize your reviews, add ratings, enable media upload. Don't forget to "
+"add the review module inside the single page by going to <strong>Display > "
+"Single Page > Content > add the \"Review\" module</strong>."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2277
+msgid "Review Submission"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2279
+msgid "Everyone can submit a review"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2280
+msgid "Only engaged users"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2289
+msgid "Reviews per Page"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2299
+msgid "Comment must be manually approved"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2305
+msgid "Users can submit multiple reviews on listings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2311
+msgid "Enable Media Uploads"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2312
+msgid "Allow users to upload images to their reviews."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2318
+msgid "Enable Review Ratings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2324
+msgid "Add Rating Criteria"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2326
+msgid "Add Criteria"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2335
+msgid "Rating"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2378
+#: templates/single/nearby.php:19
+msgid "Nearby Listings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2388
+msgid "Display nearby listings by location distance."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2394
+msgid "Enable Nearby Listings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2400
+#, php-format
+msgid "Distance ( %s )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2401
+msgid ""
+"Distance to search for nearby listings. Closer listings will appear first."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2429
+msgid "Similar Listings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2439
+msgid "Display similar listings by specific criterias."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2445
+msgid "Enable Similar Listings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2451
+msgid "Similar Listing Relation:"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2452
+msgid "Choose how to make the relation between the listings."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2491
+#: templates/admin/metabox/listing-type.php:2783
+#: templates/admin/settings/settings.php:536
+msgid "Preview"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2512
+msgid "Cover Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2515
+#: templates/metabox/listing/reservation-availability.php:113
+msgid "None"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2516
+msgid "Boxed Grid"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2517
+msgid "Wide Wall"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2531
+msgid "Content Modules"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2581
+#: templates/admin/metabox/listing-type.php:2602
+msgid "Inline"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2582
+#: templates/admin/metabox/listing-type.php:2603
+msgid "List"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2604
+msgid "Sorted List"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2611
+msgid "Highlight"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2616
+msgid "Meta Items"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2686
+msgid "Show Address?"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2741
+msgid "Adaptive gallery"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2742
+msgid "Downloadable files"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2749
+msgid "Select field"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2805
+msgid "Explore Page Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2807
+msgid "Map, 2 columns"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2808
+msgid "Map, 3 columns"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2809
+msgid "No map, full-width"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2838
+msgid "Select Search Form"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2839
+msgid "Filters will appear when you explore the listing type."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2852
+msgid "Select Search Form ( More )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2853
+#: templates/admin/settings/settings.php:962
+msgid "Additional filters that will appear in a popup."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2866
+msgid "Open Listings in a New Tab"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2872
+msgid "Listings per Page"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2902
+msgid ""
+"Plans are a simple WooCommerce products created with the type \"Listing Plan"
+"\". By adding plans to specif listing type, the customers will be asked to "
+"select one in the submission process."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2914
+msgid "Enable Plans for this listing type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2920
+#: templates/submission/wizard.php:13
+msgid "Select Plan"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2927
+#: templates/admin/metabox/listing-type.php:2975
+msgid ""
+"There are no available listing package products, please create some by going "
+"to Products > Add New with the type \"Listing Package\""
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2953
+msgid ""
+"Promotions promotion are a simple WooCommerce products created with the type "
+"\"Listing Promotion\". By adding packages to specif listing type, the "
+"customers will be able to boost their listings in the search results for "
+"limited time."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2965
+msgid "Enable promotions for this listing type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:2971
+msgid "Select Promotion Packages"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3001
+msgid "Fees will affect the final price of the listings"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3014
+msgid "Service Fee Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3017
+#: templates/admin/metabox/listing-type.php:3070
+msgid "No Fee"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3018
+msgid "Fixed Amount"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3019
+#: templates/admin/metabox/listing-type.php:3071
+msgid "Percentage"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3027
+msgid "Service Fee Amount"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3028
+#: templates/admin/metabox/listing-type.php:3044
+#: templates/admin/metabox/listing-type.php:3080
+#: templates/admin/metabox/listing-type.php:3113
+msgid "Number only"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3043
+msgid "Service Fee Amount ( Percentage )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3067
+msgid "Host Fee Type"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3079
+msgid "Host Fee Amount ( Percentage )"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3102
+msgid "Payment processing"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3103
+msgid ""
+"Select the type of collecting payments when purchasing or booking a listing."
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3112
+msgid "Payment processing percentage"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3143
+msgid "Here you can control your banner positions"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3155
+msgid "Enable Explore Page Banner Space"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3161
+msgid "Inject the Banner After N Listing"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3162
+msgid ""
+"Select the number of listing after which you want to inject the banner space"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3178
+msgid "Explore Page Banner Content"
+msgstr ""
+
+#: templates/admin/metabox/listing-type.php:3179
+msgid "Here you can insert your banner code"
+msgstr ""
+
+#: templates/admin/metabox/listing.php:359
+msgid "Increase the price for each guest > 1"
+msgstr ""
+
+#: templates/admin/metabox/listing.php:374
+msgid "Minimum number of days / hours per reservation"
+msgstr ""
+
+#: templates/admin/metabox/listing.php:387
+msgid "Maximum number of days / hours per reservation"
+msgstr ""
+
+#: templates/admin/metabox/page-modules.php:27
+msgid "Enable Page Modules"
+msgstr ""
+
+#: templates/admin/metabox/page-modules.php:33
+msgid "Page Modules"
+msgstr ""
+
+#: templates/admin/metabox/plan.php:116
+msgid "Count"
+msgstr ""
+
+#: templates/admin/metabox/plan.php:118
+msgid "How many posts the user already created with this plan."
+msgstr ""
+
+#: templates/admin/metabox/plan.php:126
+#: templates/admin/woocommerce/product-listing-plan.php:23
+msgid "Limit"
+msgstr ""
+
+#: templates/admin/metabox/plan.php:127
+msgid ""
+"The maximum number of listings this package allow the user to create, 0 = "
+"unlimited."
+msgstr ""
+
+#: templates/admin/metabox/plan.php:136
+msgid ""
+"The expiration ( in days ) of the listings attached to this plan, 0 = never "
+"expires."
+msgstr ""
+
+#: templates/admin/metabox/plan.php:146
+msgid ""
+"Add additional priority on the listings submitted with this plan. Higher "
+"value means higher priority in search results."
+msgstr ""
+
+#: templates/admin/metabox/promotion.php:117
+#: templates/admin/woocommerce/product-listing-promotion.php:10
+msgid "The number of days of the listing to be promoted."
+msgstr ""
+
+#: templates/admin/metabox/promotion.php:126
+#: templates/admin/woocommerce/product-listing-promotion.php:24
+msgid "Higher value means higher priority in search results."
+msgstr ""
+
+#: templates/admin/metabox/report.php:29 templates/single/modal/report.php:59
+msgid "Inaccurate or incorrect"
+msgstr ""
+
+#: templates/admin/metabox/report.php:30 templates/single/modal/report.php:60
+msgid "Not a real listing"
+msgstr ""
+
+#: templates/admin/metabox/report.php:31 templates/single/modal/report.php:61
+msgid "It's a scam"
+msgstr ""
+
+#: templates/admin/metabox/report.php:32 templates/single/modal/report.php:62
+msgid "It's offensive"
+msgstr ""
+
+#: templates/admin/metabox/report.php:33 templates/single/modal/report.php:63
+msgid "Something else"
+msgstr ""
+
+#: templates/admin/metabox/search-form.php:26
+msgid "Select Listing Type ( Optional )"
+msgstr ""
+
+#: templates/admin/metabox/search-form.php:27
+msgid "Select listing type where to point the search filter"
+msgstr ""
+
+#: templates/admin/metabox/user.php:16
+msgid "Verified user"
+msgstr ""
+
+#: templates/admin/metabox/user.php:27
+msgid "User role"
+msgstr ""
+
+#: templates/admin/metabox/user.php:31
+#: templates/admin/settings/settings.php:1227
+#: templates/globals/signin/form.php:96
+msgid "Customer"
+msgstr ""
+
+#: templates/admin/metabox/user.php:32
+#: templates/admin/settings/settings.php:1228
+#: templates/globals/signin/form.php:102
+msgid "Business"
+msgstr ""
+
+#: templates/admin/panel/modal/field-id.php:13
+msgid "Field Ids"
+msgstr ""
+
+#: templates/admin/panel/modal/field-id.php:18
+msgid ""
+"You can use different ids to retrieve specific information. Use the ids you "
+"defined in the custom fields, or the pre-defined."
+msgstr ""
+
+#: templates/admin/panel/modal/field-id.php:21
+msgid "Custom fields"
+msgstr ""
+
+#: templates/admin/panel/modal/field-id.php:39
+msgid "Pre-defined fields"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:6
+msgid "Template Fields"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:11
+msgid "Pre-defined field"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:12
+msgid ""
+"Here is the full list of pre-defined fields that you can use in your "
+"templates."
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:14
+#: templates/admin/panel/modal/webhook-fields.php:13
+msgid "Receiver"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:24
+#: templates/admin/panel/modal/webhook-fields.php:27
+msgid "Sender"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:41
+msgid "Custom meta field"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:42
+msgid "Advanced"
+msgstr ""
+
+#: templates/admin/panel/modal/template-fields.php:42
+msgid ""
+"you can also get some custom meta fields from your listings. Here is an "
+"example how to get meta field with key `my_custom_meta_field`"
+msgstr ""
+
+#: templates/admin/panel/modal/webhook-fields.php:6
+msgid "Webhook Fields"
+msgstr ""
+
+#: templates/admin/panel/modal/webhook-fields.php:11
+msgid ""
+"Here is the list of pre-defined fields that will be sent to your webhook url"
+msgstr ""
+
+#: templates/admin/payouts/payouts.php:99
+msgid "Account name"
+msgstr ""
+
+#: templates/admin/payouts/payouts.php:100
+msgid "Account number"
+msgstr ""
+
+#: templates/admin/payouts/payouts.php:101
+msgid "IBAN"
+msgstr ""
+
+#: templates/admin/payouts/payouts.php:103
+msgid "Bank name"
+msgstr ""
+
+#: templates/admin/payouts/payouts.php:104
+msgid "Routing number"
+msgstr ""
+
+#: templates/admin/payouts/payouts.php:131
+msgid "Bank transfer"
+msgstr ""
+
+#: templates/admin/settings/settings.php:46
+msgid "Integration"
+msgstr ""
+
+#: templates/admin/settings/settings.php:68
+msgid "Units"
+msgstr ""
+
+#: templates/admin/settings/settings.php:73
+#: templates/admin/settings/settings.php:261
+msgid "Pages"
+msgstr ""
+
+#: templates/admin/settings/settings.php:78
+#: templates/admin/settings/settings.php:107
+#: templates/admin/settings/settings.php:305
+#: templates/admin/settings/settings.php:772
+msgid "Social"
+msgstr ""
+
+#: templates/admin/settings/settings.php:88
+#: templates/admin/settings/settings.php:443
+msgid "Development"
+msgstr ""
+
+#: templates/admin/settings/settings.php:102
+#: templates/admin/settings/settings.php:716
+msgid "Taxonomies"
+msgstr ""
+
+#: templates/admin/settings/settings.php:135
+#: templates/admin/settings/settings.php:1030
+msgid "Maps"
+msgstr ""
+
+#: templates/admin/settings/settings.php:140
+msgid "Auth"
+msgstr ""
+
+#: templates/admin/settings/settings.php:165
+msgid ""
+"You need to re-save the permalink format after changing this option in order "
+"to apply the slug correctly"
+msgstr ""
+
+#: templates/admin/settings/settings.php:173
+msgid "Currency Place"
+msgstr ""
+
+#: templates/admin/settings/settings.php:186
+msgid "Currency Symbol"
+msgstr ""
+
+#: templates/admin/settings/settings.php:194
+msgid "Measuring System"
+msgstr ""
+
+#: templates/admin/settings/settings.php:197
+msgid "British Imperial System ( Miles )"
+msgstr ""
+
+#: templates/admin/settings/settings.php:198
+msgid "Metric System ( Kilometers )"
+msgstr ""
+
+#: templates/admin/settings/settings.php:206
+msgid "Select the days to apply weekend pricing"
+msgstr ""
+
+#: templates/admin/settings/settings.php:209
+msgid "Saturday and Sunday"
+msgstr ""
+
+#: templates/admin/settings/settings.php:210
+msgid "Sunday and Monday"
+msgstr ""
+
+#: templates/admin/settings/settings.php:211
+msgid "Friday and Saturday"
+msgstr ""
+
+#: templates/admin/settings/settings.php:212
+msgid "Friday, Saturday and Sunday"
+msgstr ""
+
+#: templates/admin/settings/settings.php:220
+msgid "Number Format Decimals"
+msgstr ""
+
+#: templates/admin/settings/settings.php:234
+msgid "Number Format Decimal Separator"
+msgstr ""
+
+#: templates/admin/settings/settings.php:242
+msgid "Number Format Thousands Separator"
+msgstr ""
+
+#: templates/admin/settings/settings.php:314
+msgid "Enable Social Icons"
+msgstr ""
+
+#: templates/admin/settings/settings.php:320
+msgid "Facebook Link"
+msgstr ""
+
+#: templates/admin/settings/settings.php:331
+msgid "Twitter Link"
+msgstr ""
+
+#: templates/admin/settings/settings.php:342
+msgid "YouTube Link"
+msgstr ""
+
+#: templates/admin/settings/settings.php:353
+msgid "Dribbble"
+msgstr ""
+
+#: templates/admin/settings/settings.php:364
+msgid "Instagram"
+msgstr ""
+
+#: templates/admin/settings/settings.php:395
+msgid "Enable Payouts"
+msgstr ""
+
+#: templates/admin/settings/settings.php:401
+msgid "Payout Methods"
+msgstr ""
+
+#: templates/admin/settings/settings.php:418
+msgid "Minimum Payouts Amount"
+msgstr ""
+
+#: templates/admin/settings/settings.php:452
+msgid "Export Options"
+msgstr ""
+
+#: templates/admin/settings/settings.php:463
+msgid "Options Export JSON"
+msgstr ""
+
+#: templates/admin/settings/settings.php:475
+msgid "Here you can manage site notifications email templates and webhooks"
+msgstr ""
+
+#: templates/admin/settings/settings.php:482
+msgid "All available notifications"
+msgstr ""
+
+#: templates/admin/settings/settings.php:527
+msgid "Send Site Notification"
+msgstr ""
+
+#: templates/admin/settings/settings.php:568
+msgid "Send Email to User"
+msgstr ""
+
+#: templates/admin/settings/settings.php:577
+msgid "Email Template to User"
+msgstr ""
+
+#: templates/admin/settings/settings.php:578
+#: templates/admin/settings/settings.php:609
+#, php-format
+msgid "The use of HTML and %s is allowed."
+msgstr ""
+
+#: templates/admin/settings/settings.php:578
+#: templates/admin/settings/settings.php:609
+msgid "custom fields"
+msgstr ""
+
+#: templates/admin/settings/settings.php:599
+msgid "Send Email to the Admin"
+msgstr ""
+
+#: templates/admin/settings/settings.php:608
+msgid "Email Template to Admin"
+msgstr ""
+
+#: templates/admin/settings/settings.php:630
+msgid "Enable Webhook"
+msgstr ""
+
+#: templates/admin/settings/settings.php:656
+msgid "Webhook URL"
+msgstr ""
+
+#: templates/admin/settings/settings.php:667
+msgid "Webhook Custom Fields"
+msgstr ""
+
+#: templates/admin/settings/settings.php:725
+msgid "Custom Taxonomies"
+msgstr ""
+
+#: templates/admin/settings/settings.php:727
+msgid "Add Taxonomy"
+msgstr ""
+
+#: templates/admin/settings/settings.php:747
+msgid "Taxonomy Slug"
+msgstr ""
+
+#: templates/admin/settings/settings.php:781
+msgid "Enable Listing Sharing"
+msgstr ""
+
+#: templates/admin/settings/settings.php:807
+msgid "Enable Submission Listing Counter?"
+msgstr ""
+
+#: templates/admin/settings/settings.php:833
+msgid "Enable Pending Booking Expiration"
+msgstr ""
+
+#: templates/admin/settings/settings.php:834
+msgid ""
+"Check this option if you want to add expiration days for pending booking "
+"dates"
+msgstr ""
+
+#: templates/admin/settings/settings.php:854
+msgid "After how many hours a reservation would be canceled?"
+msgstr ""
+
+#: templates/admin/settings/settings.php:855
+msgid ""
+"Insert the number of hours a pending reservation must be canceled if the "
+"customer does not make the payment after the listing author has confirmed "
+"the availability."
+msgstr ""
+
+#: templates/admin/settings/settings.php:904
+msgid "Global Explore Page Type"
+msgstr ""
+
+#: templates/admin/settings/settings.php:906
+msgid "Map"
+msgstr ""
+
+#: templates/admin/settings/settings.php:907
+msgid "Full-width, no map"
+msgstr ""
+
+#: templates/admin/settings/settings.php:926
+msgid "Default Map Latitude Coordinates"
+msgstr ""
+
+#: templates/admin/settings/settings.php:933
+msgid "Default Map Longitude Coordinates"
+msgstr ""
+
+#: templates/admin/settings/settings.php:940
+msgid "Hide Search Form Edit Button"
+msgstr ""
+
+#: templates/admin/settings/settings.php:941
+msgid ""
+"Hide the edit button that appears when you are logged in as administrator"
+msgstr ""
+
+#: templates/admin/settings/settings.php:947
+msgid "Global Search Form"
+msgstr ""
+
+#: templates/admin/settings/settings.php:948
+msgid ""
+"Filters will appear when you explore the main explore page with no listing "
+"type selected."
+msgstr ""
+
+#: templates/admin/settings/settings.php:961
+msgid "Global Search Form ( More )"
+msgstr ""
+
+#: templates/admin/settings/settings.php:975
+msgid "Global Listings per Page"
+msgstr ""
+
+#: templates/admin/settings/settings.php:987
+msgid "Promoted Listings Display"
+msgstr ""
+
+#: templates/admin/settings/settings.php:989
+msgid ""
+"Inline - sort promoted listings by priority level and date of publishing"
+msgstr ""
+
+#: templates/admin/settings/settings.php:990
+msgid ""
+"Random - display promoted listings randomly. This option will ignore the "
+"priority level"
+msgstr ""
+
+#: templates/admin/settings/settings.php:998
+msgid "Select the Number of Promoted Listings to Display"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1039
+msgid "Select Map Provider"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1041
+msgid "Google Maps"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1042
+msgid "Mapbox"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1050
+msgid "Google Map Api Key"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1051
+msgid ""
+"To use the Maps JavaScript API you must have an API key. The API key is a "
+"unique identifier that is used to authenticate requests associated with your "
+"project for usage and billing purposes. Get one <a href=\"https://developers."
+"google.com/maps/documentation/javascript/get-api-key\" target=\"_blank"
+"\">here</a>."
+msgstr ""
+
+#: templates/admin/settings/settings.php:1061
+msgid "Geolocation Restrictions"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1062
+msgid ""
+"You can restrict the geolocation autofill by selected countries. Example: "
+"ES. You can also add multiple counties with comma, example: ES, FR, DE"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1072
+msgid "Mapbox Access Token"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1073
+msgid ""
+"To use Mapbox GL JS, you need to have a Mapbox <a href=\"https://docs.mapbox."
+"com/help/getting-started/access-tokens/\" target=\"_blank\">access token</"
+"a>. This access token associates your map with a Mapbox account. For more "
+"information on creating and using access tokens, see our <a href=\"https://"
+"docs.mapbox.com/accounts/guides/tokens/\" target=\"_blank\">token management "
+"documentation</a>."
+msgstr ""
+
+#: templates/admin/settings/settings.php:1083
+msgid "Mapbox Style URL"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1085
+msgid ""
+"Learn more about <a href=\"https://docs.mapbox.com/api/maps/styles/\" target="
+"\"_blank\">Mapbox styles</a>"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1095
+msgid "Google Map Style"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1096
+msgid ""
+"Add your personal touch by customizing the map. You can use our pre-defined "
+"map styles or click \"Custom\" to apply your own JavaScript style array."
+msgstr ""
+
+#: templates/admin/settings/settings.php:1100
+msgid "Default"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1104
+msgid "Lost in the Desert"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1108
+msgid "Blue Essense"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1112
+msgid "Ultra Light with Labels"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1116
+msgid "Xxxxxx"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1120
+msgid "38 Shades of Grey"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1124
+msgid "Modest"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1128
+msgid "Light Dream"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1132
+msgid "Apple Maps Esque"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1136
+msgid "Multi Brand Network"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1140
+msgid "Light and Dark"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1157
+msgid "Custom Map Styles"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1158
+msgid ""
+"Insert your map style here. Customize colors, roads, labels and more. You "
+"can browse ready to use map styles <a target=\"_blank\" href=\"https://"
+"snazzymaps.com/\">here</a>. Just copy the JavaScript style array."
+msgstr ""
+
+#: templates/admin/settings/settings.php:1193
+msgid "Authentication"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1201
+msgid ""
+"User registration is disable for the current site. You can enable it from "
+"the WordPress settings"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1211
+msgid "Enable Standard Sign up Password Input"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1212
+msgid ""
+"Enable the option and allow your visitors to set their own password in the "
+"sign up process"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1218
+msgid "Enable Standard Sign up Role Input"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1219
+msgid "Enable the option and allow your visitors to set their role"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1225
+msgid "Default User Role"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1243
+msgid "Enable Sign Up Phone Number Field"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1249
+msgid "Make Phone Number Required"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1260
+msgid "Enable Sign Up Terms Field"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1266
+msgid "Sign Up Terms Text"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1281
+msgid "Enable Facebook Sign In"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1287
+msgid "Facebook Api ID"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1300
+msgid "Facebook Api Secret"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1317
+msgid "Enable Google Sign In"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1323
+msgid "Google Client ID"
+msgstr ""
+
+#: templates/admin/settings/settings.php:1336
+msgid "Google Client Secret"
+msgstr ""
+
+#: templates/admin/term-metabox/terms.php:23
+msgid "Term Options"
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:10
+msgid ""
+"The number of days of the listing to be active. Leave empty for unlimited "
+"duration."
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:24
+msgid ""
+"The number of listings that a customer can submit with this plan. Leave "
+"empty for unlimited."
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:25
+msgid "Unlimited"
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:37
+msgid "Priority?"
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:38
+msgid ""
+"Add additional priority ( boost visibility ) on the listings submitted with "
+"this plan. Higher value means higher priority in search results. Normal = 0, "
+"Featured = 1, Promoted = 2 and so on."
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:51
+msgid "One time obtainable?"
+msgstr ""
+
+#: templates/admin/woocommerce/product-listing-plan.php:52
+msgid "Use for free plans, so customers cannot have more than one of these."
+msgstr ""
+
+#: templates/explore/filters.php:72
+#: templates/explore/more-filters/modal.php:31
+msgid "Edit search form"
+msgstr ""
+
+#: templates/explore/filters.php:120
+msgid "More filters"
+msgstr ""
+
+#: templates/explore/filters.php:139
+msgid "Clear"
+msgstr ""
+
+#: templates/explore/listings.php:36 templates/submission/submission.php:19
+msgid "No listing types were found"
+msgstr ""
+
+#: templates/explore/summary.php:15
+#, php-format
+msgid "%s - %s of %s listings. "
+msgstr ""
+
+#: templates/explore/map/map.php:15
+msgid "Search as I move the map"
+msgstr ""
+
+#: templates/explore/map/map.php:19
+msgid "Search this area"
+msgstr ""
+
+#: templates/explore/map/map.php:37
+msgid "Map can't be displayed, please configure your map provider"
+msgstr ""
+
+#: templates/explore/map/markers.php:42
+msgid "No data"
+msgstr ""
+
+#: templates/explore/more-filters/modal.php:22
+msgid "More Filters"
+msgstr ""
+
+#: templates/globals/notifications.php:37
+msgid "You don't have any notifications"
+msgstr ""
+
+#: templates/globals/user-action.php:18
+msgid "Sign In"
+msgstr ""
+
+#: templates/globals/conversation/modal/guest.php:9
+msgid "You need to login in order to send messages"
+msgstr ""
+
+#: templates/globals/conversation/modal/messages.php:77
+msgid "Enter your message here ..."
+msgstr ""
+
+#: templates/globals/conversation/modal/modal.php:12
+msgid "Send Message"
+msgstr ""
+
+#: templates/globals/conversation/modal/owner.php:10
+msgid "You can't message yourself"
+msgstr ""
+
+#: templates/globals/favorites/modal/content.php:23
+msgid "No favorites were found."
+msgstr ""
+
+#: templates/globals/favorites/modal/modal.php:6
+msgid "My favorites"
+msgstr ""
+
+#: templates/globals/signin/form.php:13 templates/globals/signin/form.php:67
+#: templates/globals/signin/modal/modal.php:6
+#: templates/globals/signin/modal/modal.php:15
+msgid "Sign in"
+msgstr ""
+
+#: templates/globals/signin/form.php:14 templates/globals/signin/form.php:185
+msgid "Create account"
+msgstr ""
+
+#: templates/globals/signin/form.php:29 templates/globals/signin/form.php:115
+msgid "Continue with Google"
+msgstr ""
+
+#: templates/globals/signin/form.php:37 templates/globals/signin/form.php:123
+msgid "Continue with Facebook"
+msgstr ""
+
+#: templates/globals/signin/form.php:46 templates/globals/signin/form.php:133
+msgid "OR"
+msgstr ""
+
+#: templates/globals/signin/form.php:60
+msgid "Username or email"
+msgstr ""
+
+#: templates/globals/signin/form.php:63 templates/globals/signin/form.php:161
+msgid "Password"
+msgstr ""
+
+#: templates/globals/signin/form.php:76 templates/globals/signin/form.php:214
+msgid "Reset password"
+msgstr ""
+
+#: templates/globals/signin/form.php:77
+msgid "Lost your password?"
+msgstr ""
+
+#: templates/globals/signin/form.php:140
+msgid "Username"
+msgstr ""
+
+#: templates/globals/signin/form.php:154
+msgid "First name"
+msgstr ""
+
+#: templates/globals/signin/form.php:157
+msgid "Last name"
+msgstr ""
+
+#: templates/globals/signin/form.php:164
+msgid "Repeat password"
+msgstr ""
+
+#: templates/globals/signin/form.php:164
+msgid "Childs Dis. Price"
+msgstr ""
+
+#: templates/globals/signin/form.php:164
+msgid "Booking a slot is limited to 1 day only and cannot be extended to multiple days."
+msgstr ""
+
+#: templates/globals/signin/form.php:46 templates/globals/signin/form.php:133
+msgid "Childs Price"
+msgstr ""
+
+#: templates/globals/signin/form.php:193
+msgid ""
+"Your account has been created. Please check your email for more details."
+msgstr ""
+
+#: templates/globals/signin/form.php:197
+msgid "A password will be e-mailed to you"
+msgstr ""
+
+#: templates/globals/signin/form.php:209
+msgid ""
+"Please enter your email address. You will receive a link to create a new "
+"password via email."
+msgstr ""
+
+#: templates/globals/signin/form.php:222
+msgid "Please check your email for more details."
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:22
+msgid "Add Availability"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:40
+msgid "Custom Period"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:50
+msgid "Start Time"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:59
+msgid "End Time"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:68
+msgid "Appointment Duration"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:82
+msgid "Custom Appointment Duration Lenght"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:93
+msgid "Custom Appointment Duration Entity"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:95
+#: templates/metabox/listing/reservation-availability.php:138
+msgid "Minutes"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:97
+#: templates/metabox/listing/reservation-availability.php:140
+msgid "Days"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:111
+msgid "Time Between Appointment"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:125
+msgid "Custom Time Between Appointment Lenght"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:136
+msgid "Custom Time Between Appointment Entity"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:154
+msgid "Recurring Period"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:183
+msgid "Repeat Availability"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:202
+msgid "Custom Price"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:203
+msgid "Leave empty if you want to use the base price"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:211
+msgid "Custom Weekend Price"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:212
+msgid "Leave empty if you want to use the base weekend price"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:220
+msgid "Limit Guests"
+msgstr ""
+
+#: templates/metabox/listing/reservation-availability.php:221
+msgid "Number only. Leave empty for unlimited."
+msgstr ""
+
+#: templates/page/content.php:16
+#, php-format
+msgid ""
+"Please re-create your page layouts using Elementor plugin or import one of "
+"the pre-defined pages. For more information, %s."
+msgstr ""
+
+#: templates/page/content.php:16
+msgid "check this article"
+msgstr ""
+
+#: templates/single/appointments-more.php:81
+#: templates/single/appointments.php:57
+msgid "Sold out"
+msgstr ""
+
+#: templates/single/appointments-more.php:103
+msgid "Load more dates"
+msgstr ""
+
+#: templates/single/nearby.php:31
+#, php-format
+msgid "%s %s away"
+msgstr ""
+
+#: templates/single/nearby.php:44
+msgid "No nearby listings were found"
+msgstr ""
+
+#: templates/single/pricing-hour.php:58 templates/single/pricing.php:51
+msgid "Extra guests"
+msgstr ""
+
+#: templates/single/pricing-hour.php:64 templates/single/pricing.php:57
+msgid "Long term discounts"
+msgstr ""
+
+#: templates/single/pricing-hour.php:113
+#: templates/single/pricing-purchase.php:74 templates/single/pricing.php:106
+msgid "Due now"
+msgstr ""
+
+#: templates/single/pricing.php:42
+msgid "Res. length"
+msgstr ""
+
+#: templates/single/promotion-status.php:17
+#, php-format
+msgid "Promoted, expires: %s"
+msgstr ""
+
+#: templates/single/similar.php:31
+msgid "No similar items were found"
+msgstr ""
+
+#: templates/single/action/action.php:39
+msgid "You can use only one booking action type"
+msgstr ""
+
+#: templates/single/action/author.php:24
+msgid "View user profile"
+msgstr ""
+
+#: templates/single/modal/action-application-form.php:22
+msgid "You need to login in order to send applications"
+msgstr ""
+
+#: templates/single/modal/action-application-form.php:33
+msgid "You can't send application to yourself"
+msgstr ""
+
+#: templates/single/modal/action-application-form.php:42
+msgid "You application was sent successfully"
+msgstr ""
+
+#: templates/single/modal/action-application-form.php:74
+msgid "Application form is empty."
+msgstr ""
+
+#: templates/single/modal/action-application-form.php:84
+msgid "Submit Application"
+msgstr ""
+
+#: templates/single/modal/action-appointments.php:12
+msgid "Appointments"
+msgstr ""
+
+#: templates/single/modal/action-claim-form.php:23
+msgid "You already own this listing"
+msgstr ""
+
+#: templates/single/modal/action-claim-form.php:30
+msgid ""
+"Your claim application was sent successfully. It will be reviewed by "
+"administrator."
+msgstr ""
+
+#: templates/single/modal/action-claim-form.php:48
+#, php-format
+msgid "One time payment - %s"
+msgstr ""
+
+#: templates/single/modal/action-claim-form.php:62
+msgid "Comments"
+msgstr ""
+
+#: templates/single/modal/action-claim-form.php:63
+msgid "Add additional comments to your application."
+msgstr ""
+
+#: templates/single/modal/action-claim.php:6
+msgid "Claim Business"
+msgstr ""
+
+#: templates/single/modal/application.php:6
+msgid "Application Form"
+msgstr ""
+
+#: templates/single/modal/report.php:23
+msgid "Send listing report"
+msgstr ""
+
+#: templates/single/modal/report.php:34
+msgid "You can't report your own listing"
+msgstr ""
+
+#: templates/single/modal/report.php:43
+msgid "You already reported this listing"
+msgstr ""
+
+#: templates/single/modal/report.php:49
+msgid "This is private and won't be shared with the owner."
+msgstr ""
+
+#: templates/single/modal/report.php:77
+msgid "Send Report"
+msgstr ""
+
+#: templates/single/modal/review-reply.php:6
+msgid "Send reply to a review"
+msgstr ""
+
+#: templates/single/modal/share.php:8
+msgid "Share"
+msgstr ""
+
+#: templates/single/modal/share.php:20
+msgid "Share with Facebook"
+msgstr ""
+
+#: templates/single/modal/share.php:26
+msgid "Share with Twitter"
+msgstr ""
+
+#: templates/single/modal/share.php:32
+msgid "Share with Pinterest"
+msgstr ""
+
+#: templates/single/modal/share.php:38
+msgid "Share by email"
+msgstr ""
+
+#: templates/single/modal/submit-review.php:6
+#: templates/single/reviews/stats.php:27
+msgid "Submit a Review"
+msgstr ""
+
+#: templates/single/reviews/form-reply.php:29
+msgid "Enter your comment"
+msgstr ""
+
+#: templates/single/reviews/form-reply.php:42
+msgid "Your reply was sent successfully"
+msgstr ""
+
+#: templates/single/reviews/form-reply.php:50
+msgid "Submit Comment"
+msgstr ""
+
+#: templates/single/reviews/form.php:31
+msgid "You already sent your review."
+msgstr ""
+
+#: templates/single/reviews/form.php:43
+msgid "You can't review your own listing"
+msgstr ""
+
+#: templates/single/reviews/form.php:58
+msgid "Rate your experience"
+msgstr ""
+
+#: templates/single/reviews/form.php:86
+msgid "Leave your review"
+msgstr ""
+
+#: templates/single/reviews/form.php:108
+msgid "Add media gallery"
+msgstr ""
+
+#: templates/single/reviews/form.php:132
+msgid "Your review was sent successfully"
+msgstr ""
+
+#: templates/single/reviews/form.php:140
+msgid "Submit Review"
+msgstr ""
+
+#: templates/single/reviews/stats.php:16
+#, php-format
+msgid "<strong>%s review</strong>"
+msgid_plural "<strong>%s reviews</strong>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/single/reviews/comments/comments.php:17
+msgid "Load More"
+msgstr ""
+
+#: templates/single/reviews/comments/list.php:75
+msgid "Reply"
+msgstr ""
+
+#: templates/submission/listing-type.php:24
+msgid "Select Submission Type"
+msgstr ""
+
+#: templates/submission/listing-type.php:63
+#, php-format
+msgid "%s listings"
+msgstr ""
+
+#: templates/submission/listing-type.php:81
+msgid "Please select a listing type"
+msgstr ""
+
+#: templates/submission/navigation.php:16
+msgid "Go Back"
+msgstr ""
+
+#: templates/submission/wizard.php:20
+msgid "Finish"
+msgstr ""
+
+#: templates/submission/wizard.php:21
+msgid "Publish"
+msgstr ""
+
+
+#: New Add Feature
+
+
+#: templates/single/pricing-hour.php:77
+#: templates/single/pricing-purchase.php:38 templates/single/pricing.php:70
+msgid "This helps us run our platform and offer services like 24/7 support on your trip. it includes VAT."
+msgstr ""
+
+
+#: routiz\inc\src\form\modules\upload\upload.php:65
+msgid "Note: First image selected for listing will be featured image of this listing."
+msgstr ""
+
+#: templates/submission/wizard.php:21
+msgid "Faq"
+msgstr ""
+
+#: templates\admin\metabox\listing-type.php:2232
+msgid "Allow Child Based Discount Pricing"
+msgstr ""
+
+#: templates\admin\metabox\listing-type.php:2244
+msgid "Allow Child Separate Pricing"
+msgstr ""
+
+
+#: templates\admin\metabox\listing-type.php:2233
+msgid "If you check this option, the listings in this group will have the option to decrease the final price, based on the number of childs.', 'routiz'"
+msgstr ""
+
+#: templates\admin\metabox\listing-type.php:2246
+msgid "If you check this option, the listings in this group will have the option to Increase the final price, based on the number of childs.', 'routiz'"
+msgstr ""
+
+#: inc\src\submission\modules\reservation\reservation.php:44
+msgid "Discount per each childs"
+msgstr ""
+
+#: inc\src\submission\modules\reservation\reservation.php:45
+msgid "Discount price for each childs"
+msgstr ""
+
+#: inc\src\submission\modules\reservation\reservation.php:44
+msgid "Price per each childs"
+msgstr ""
+
+#: inc\src\submission\modules\reservation\reservation.php:45
+msgid "Separate price for each childs"
+msgstr ""
+
+#: inc\src\submission\modules\reservation\reservation.php:45
+msgid "Discount the price for each childs"
+msgstr ""
+
+
+#: inc\src\entry\modules\booking\booking.php:56
+msgid "Child Dis. price"
+msgstr ""
+
+#: inc\src\entry\modules\booking\booking.php:55
+msgid "Adults Price"
+msgstr ""
+
+#: inc\src\entry\modules\booking-appointments\booking-appointments.php:52
+msgid "Adults"
+msgstr ""
+
+#: inc\src\entry\modules\booking-appointments\booking-appointments.php:53
+msgid "Children"
+msgstr ""
+
+#: \templates\admin\settings\settings.php:1260
+msgid "Enable Sign Up Google Captcha"
+msgstr ""
+
+#: \templates\admin\settings\settings.php:1265
+msgid "Google Captcha Site Key"
+msgstr ""
+
+#: inc\src\admin\http\endpoints\endpoint-signup.php:149
+msgid "Please verify you are human!"
+msgstr ""
+
+#: \templates\admin\settings\settings.php:1267
+msgid "Get one <a href="https://www.a2hosting.in/kb/security/obtaining-google-recaptcha-site-key-and-secret-key" target="_blank">here</a>."
+msgstr ""
+
+plugins\routiz\templates\account\entries\entries.php:26
+msgid "All entry status"
+msgstr ""
+ 
+msgid "Active"
+msgstr ""
+ 
+msgid "Pending Approval"
+msgstr ""
+ 
+msgid "Pending Payment"
+msgstr ""
+ 
+msgid "Declined"
+msgstr ""
+ 
+ 
+plugins\routiz\templates\single\content.php:27
+msgid "Very Bad"
+msgstr ""
+ 
+msgid "Bad"
+msgstr ""
+ 
+msgid "Fair"
+msgstr ""
+ 
+msgid "Good"
+msgstr ""
+ 
+msgid "Very Good"
+msgstr ""
+ 
+msgid "Excellent"
+msgstr ""
+

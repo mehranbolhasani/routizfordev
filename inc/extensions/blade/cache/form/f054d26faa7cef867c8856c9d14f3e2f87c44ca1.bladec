@@ -1,0 +1,10 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<label class='rz-checkbox rz-no-select'>
+ <input type='checkbox' value="1" <?php echo static::e($value ? 'checked' : ''); ?> <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?> <?php echo static::e($disabled ? 'disabled' : ''); ?>>
+ <span class='rz-transition'></span>
+ <em><?php echo static::e($html->text); ?></em>
+</label>
+
+<?php /* fix for empty inputs in post */ ?>
+<input type='hidden' name="<?php echo static::e($id); ?>" value="<?php echo static::e($value); ?>" <?php echo static::e($readonly ? 'form="fake-form-readonly"' : ''); ?>>

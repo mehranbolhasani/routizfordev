@@ -1,0 +1,61 @@
+<?php if( ! empty( $gallery ) ): ?>
+ <?php if( $display == 'adaptive' ): ?>
+ <div class="brk-mod-listing brk-mod-listing-gallery" data-type="gallery">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+
+ <div class="brk-cover brk--gallery-lighbox">
+
+ <div class="brk--images" data-size="<?php echo static::e(min( 3, $gallery_num )); ?>">
+ <?php $__currentLoopData = $gallery; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $image): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if( isset( $image['ulz_gallery_large'] ) ): ?>
+ <a href="#" class="brk--image" style="background-image: url('<?php echo static::e($image['ulz_gallery_large']); ?>');"></a>
+ <?php endif; ?>
+ <?php if( $key >= 2 ) { break; } ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+
+ <ul class="brk-lightbox-stack" style="margin:0;list-style:none;">
+ <?php $__currentLoopData = $gallery; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $image): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li class="brk-lightbox" data-image="<?php echo static::e($image['ulz_gallery_large']); ?>"></li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ <?php if( count( $gallery ) > 3 ): ?>
+ <ul class="brk-gallery-actions brk--bottom">
+ <li>
+ <a href="#" data-action="expand-gallery">
+ <i class="far fa-images"></i>
+ <span><?php echo static::e(sprintf( $strings->more_images, $gallery_num - 3 )); ?></span>
+ </a>
+ </li>
+ </ul>
+ <?php endif; ?>
+
+ </div> <!-- cover -->
+
+ </div>
+ <?php else: ?>
+ <div class="brk-mod-listing brk-mod-listing-gallery-files" data-type="gallery-files">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+
+ <div class="brk-cover brk-cover-adaptive brk--gallery-lighbox">
+
+ <ul>
+ <?php $__currentLoopData = $gallery; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $image): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li data-id="<?php echo static::e($image['id']); ?>">
+ <a href="<?php echo static::e($image['src']); ?>" target="_blank">
+ <i class="material-icon-file_copy"></i>
+ <span><?php echo static::e($image['name']); ?></span>
+ </a>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+
+ </div> <!-- cover -->
+
+ </div>
+ <?php endif; ?>
+<?php endif; ?>

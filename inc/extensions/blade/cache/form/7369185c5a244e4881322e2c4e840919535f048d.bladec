@@ -1,0 +1,11 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-radio-fieldset">
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_key => $option_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <label class="rz-radio">
+ <input type="radio" name="<?php echo static::e($id); ?>" value="<?php echo static::e($option_key); ?>" <?php echo static::e($option_key == $value ? 'checked' : ''); ?>>
+ <i class="rz-transition"></i>
+ <span><?php echo static::e($option_name); ?></span>
+ </label>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+</div>

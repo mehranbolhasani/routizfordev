@@ -1,0 +1,70 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<input class="rz--value" type="hidden" name="<?php echo static::e($id); ?>" value="<?php echo static::e(is_array( $value ) ? json_encode( $value ) : $value); ?>">
+
+<div class="rz-week-days">
+
+ <?php $__currentLoopData = $week_days; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $day_id => $day_text): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <div class="rz--day">
+ <div class="rz--label">
+ <span class="rz-block rz-mb-2"><?php echo static::e($day_text); ?></span>
+ </div>
+ <div class="rz-mb-2" style="max-width: 700px;">
+ <div class="rz-select rz-select-single">
+ <select name="<?php echo static::e($day_id); ?>[type]">
+ <option value="range" <?php echo static::e(( isset( $value[ $day_id ] ) and isset( $value[ $day_id ]->type ) and $value[ $day_id ]->type == 'range' ) ? ' selected="selected"' : ''); ?>><?php echo static::e($strings->range); ?></option>
+ <option value="open" <?php echo static::e(( isset( $value[ $day_id ] ) and isset( $value[ $day_id ]->type ) and $value[ $day_id ]->type == 'open' ) ? ' selected="selected"' : ''); ?>><?php echo static::e($strings->open); ?></option>
+ <option value="closed" <?php echo static::e(( isset( $value[ $day_id ] ) and isset( $value[ $day_id ]->type ) and $value[ $day_id ]->type == 'closed' ) ? ' selected="selected"' : ''); ?>><?php echo static::e($strings->closed); ?></option>
+ </select>
+ </div>
+ </div>
+ <div class="rz--row">
+
+ <div class="rz--field">
+ <div class="rz-range-number" style="max-width: 700px;">
+
+ <div class="rz-range-field" data-type="from">
+ <div class="rz-field-suffix">
+ <span class="rz-suffix rz-flex rz-flex-column rz-justify-center">
+ <?php echo static::e($strings->start); ?>
+
+ </span>
+ <div class="rz-select rz-select-single">
+ <select name="<?php echo static::e($day_id); ?>[start]">
+ <option value=""><?php echo static::e($strings->select); ?></option>
+ <?php $__currentLoopData = $hours; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $hour_value => $hour_label): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <option value="<?php echo static::e($hour_value); ?>" <?php echo static::e(( isset( $value[ $day_id ] ) and isset( $value[ $day_id ]->start ) and $value[ $day_id ]->start == $hour_value ) ? 'selected' : ''); ?>><?php echo static::e($hour_label); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+ </div>
+ </div>
+ </div>
+
+ <div class="rz-range-separator rz-flex rz-flex-column rz-justify-center">
+ -
+ </div>
+
+ <div class="rz-range-field" data-type="to">
+ <div class="rz-field-suffix">
+ <span class="rz-suffix rz-flex rz-flex-column rz-justify-center">
+ <?php echo static::e($strings->end); ?>
+
+ </span>
+ <div class="rz-select rz-select-single">
+ <select name="<?php echo static::e($day_id); ?>[end]">
+ <option value=""><?php echo static::e($strings->select); ?></option>
+ <?php $__currentLoopData = $hours; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $hour_value => $hour_label): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <option value="<?php echo static::e($hour_value); ?>" <?php echo static::e(( isset( $value[ $day_id ] ) and isset( $value[ $day_id ]->end ) and $value[ $day_id ]->end == $hour_value ) ? 'selected' : ''); ?>><?php echo static::e($hour_label); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+ </div>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+
+</div>

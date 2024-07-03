@@ -1,0 +1,35 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-input-group rz-input-group-custom">
+ <div class="rz-flex">
+ <input type="text" value="<?php echo static::e($value); ?>" placeholder="<?php echo static::e($placeholder); ?>" <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>>
+ <?php if( $defined ): ?>
+ <a class="rz-button rz-gray rz-join-left" href="#">
+ <?php echo static::e($strings->defined); ?>
+
+ </a>
+ <?php endif; ?>
+
+ </div>
+</div>
+
+<?php if( $defined ): ?>
+ <div class="rz-input-group rz-input-group-defined">
+ <div class="rz-flex">
+ <div class="rz-select rz-select-single">
+ <select>
+ <option value=""><?php echo static::e($strings->select); ?></option>
+ <?php $__currentLoopData = $pre_defined; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $pre_key => $pre_value): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <option value="<?php echo static::e($pre_key); ?>" <?php echo static::e($pre_key == $value ? 'selected' : ''); ?>><?php echo static::e($pre_value); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+ </div>
+ <a class="rz-button rz-gray rz-join-left" href="#">
+ <?php echo static::e($strings->custom); ?>
+
+ </a>
+ </div>
+ </div>
+<?php endif; ?>
+
+<input type="hidden" name="<?php echo static::e($id); ?>" value="<?php echo static::e($value); ?>" <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?> <?php echo static::e($readonly ? 'form="fake-form-readonly"' : ''); ?>>

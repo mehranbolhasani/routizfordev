@@ -1,0 +1,36 @@
+<?php if( ! empty( $lat ) and ! empty( $lng ) ): ?>
+ <div class="rz-mod-content <?php if( $show_address and $address ): ?> rz--has-address <?php endif; ?>">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <div class="rz-map-outer">
+ <div class="rz-map" data-lat="<?php echo static::e($lat); ?>" data-lng="<?php echo static::e($lng); ?>"></div>
+ <div class="rz-map-zoom">
+ <a href="#" class="rz--zoom-in" data-action="explore-map-zoom-in"><i class="fas fa-plus"></i></a>
+ <a href="#" class="rz--zoom-out" data-action="explore-map-zoom-out"><i class="fas fa-minus"></i></a>
+ </div>
+ <div class="rz-mod-listing-marker-content rz-none">
+ <span class="rz-mod-listing-marker">
+ <i class="<?php echo static::e($icon); ?>"></i>
+ </span>
+ </div>
+ <?php if( $show_address and $address ): ?>
+ <div class="rz--address">
+ <i class="rz--icon fas fa-map-marker-alt"></i>
+ <a href="<?php echo static::e(add_query_arg( [ 'api' => 1, 'query' => urlencode( $address ) ], 'https://www.google.com/maps/search/' )); ?>" target="_blank">
+ <?php echo static::e($address); ?>
+
+ </a>
+ </div>
+ <?php endif; ?>
+ </div>
+ </div>
+<?php else: ?>
+ <div class="rz-mod-content">
+ <div class="rz-not-specified">
+ <i class="fas fa-map-marker-alt"></i>
+ <p><?php echo static::e($strings->not_specified); ?></p>
+ </div>
+ </div>
+<?php endif; ?>
+

@@ -1,0 +1,31 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-select rz-select-<?php echo static::e($single ? 'single' : 'multiple'); ?>">
+ <select
+ name="<?php echo static::e($id); ?><?php echo static::e(( ! $single and $id ) ? '[]' : ''); ?>"
+ <?php echo static::e(! $single ? 'multiple' : ''); ?>
+
+ <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>
+
+ <?php echo static::e($disabled ? 'disabled' : ''); ?>
+
+ <?php echo static::e($readonly ? 'form="fake-form-readonly"' : ''); ?>
+
+ class="<?php echo static::e($html->class); ?>"
+ <?php if( $html->id ): ?>
+ id="<?php echo static::e($html->id); ?>"
+ <?php endif; ?>
+ >
+ <?php if( $allow_empty and $single ): ?>
+ <option value=""><?php echo static::e($label); ?></option>
+ <?php endif; ?>
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_key => $option_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <option value="<?php echo static::e($option_key); ?>" <?php echo static::e(( $single ? $option_key == $value : ( is_array( $value ) and in_array( $option_key, $value ) ) ) ? 'selected' : ''); ?>><?php echo static::e($option_name); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+</div>
+
+<?php /* fix for empty inputs in post */ ?>
+<?php if( ! $single ): ?>
+ <input name="<?php echo static::e($id); ?>[]" type="hidden" value="" disabled>
+<?php endif; ?>

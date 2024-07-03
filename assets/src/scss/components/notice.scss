@@ -1,0 +1,35 @@
+/*
+ * notice
+ *
+ */
+.rz-notice {
+    width: 100%;
+    padding: 12px 19px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-weight: 600;
+    border-radius: 6px;
+
+    p {
+        font-weight: 600;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.rz-notice-info {
+        background-color: #dfe9f8;
+        color: #325fa4;
+    }
+
+    &.rz-notice-alert {
+        background-color: $color-error;
+        color: $color-white;
+    }
+
+    &.rz-notice-success {
+        background-color: #e6fade;
+        color: #3e8b20;
+    }
+}

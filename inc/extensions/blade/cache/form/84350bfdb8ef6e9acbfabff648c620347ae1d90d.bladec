@@ -1,0 +1,20 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-radio-images rz-flex rz-flex-wrap">
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_key => $option): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if( isset( $option['image'] ) and isset( $option['label'] ) ): ?>
+ <label class="rz-radio-image-fieldset">
+ <input type="radio" name="<?php echo static::e($id); ?>" value="<?php echo static::e($option_key); ?>" <?php echo static::e($option_key == $value ? 'checked' : ''); ?>>
+ <div class='rz-radio-image rz-no-select'>
+ <?php if( substr( $option['image'], 0, 1 ) == '<' ): ?>
+ <?php echo $option['image']; ?>
+
+ <?php else: ?>
+ <img class="rz--label" src="<?php echo static::e($option['image']); ?>" alt="">
+ <?php endif; ?>
+ <span><?php echo static::e($option['label']); ?></span>
+ </div>
+ </label>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+</div>

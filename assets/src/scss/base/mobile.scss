@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+
+.rz-search-bar {
+    display: none;
+}
+
+// start mobile
+@include media( md ) {
+
+/*
+ * general
+ *
+ */
+.rz-search-bar {
+    display: flex;
+    align-items: center;
+    padding: .75rem 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: -3px 3px 14px rgba(0, 0, 0, 0.1);
+
+    > * {
+        padding: 0 $gutter-mobile;
+    }
+
+    .rz--action {
+        padding-right: 0;
+
+        a {
+            padding: 10px;
+            margin-left: -10px;
+        }
+    }
+
+    .rz--title {
+        flex: 1;
+        overflow: hidden;
+        font-weight: 600;
+    }
+
+    .rz--icon-filters {
+        a {
+            padding: 10px;
+            margin-right: -10px;
+            font-size: 17px;
+        }
+    }
+}
+
+} // end mobile

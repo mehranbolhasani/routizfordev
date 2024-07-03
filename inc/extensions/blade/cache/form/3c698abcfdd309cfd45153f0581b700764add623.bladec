@@ -1,0 +1,10 @@
+<?php if( $suffix ): ?>
+ <div class="rz-field-suffix"><span class="rz-suffix rz-flex rz-flex-column rz-justify-center"><?php echo static::e($suffix); ?></span>
+<?php endif; ?>
+
+<input type="number" value="<?php echo static::e($value); ?>" placeholder="<?php echo static::e($placeholder); ?>" <?php echo Rz()->attrs( $number_attrs ); ?>>
+<input type="hidden" name="<?php echo static::e($id); ?>[]" value="<?php echo static::e($value); ?>" <?php if( ! $value ): ?> disabled="disabled" <?php endif; ?>>
+
+<?php if( $suffix ): ?>
+ </div>
+<?php endif; ?>

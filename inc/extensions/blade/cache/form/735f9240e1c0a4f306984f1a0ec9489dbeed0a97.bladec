@@ -1,0 +1,89 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-guests rz-no-select <?php if( ! $guests_num ): ?> rz-is-placeholder <?php endif; ?>"
+ data-num-guests="<?php echo static::e($num_guests); ?>"
+ data-text-singular="<?php echo static::e($strings->one_guest); ?>"
+ data-text-plural="<?php echo static::e($strings->n_guest); ?>"
+ data-text-placeholder="<?php echo static::e($strings->select_guests); ?>">
+ <span class="rz--label">
+ <span>
+ <?php if( $guests_num ): ?>
+ <?php echo static::e(sprintf( $strings->n_guest, $guests_num )); ?>
+
+ <?php else: ?>
+ <?php echo static::e($strings->select_guests); ?>
+
+ <?php endif; ?>
+ </span>
+ </span>
+ <div class="rz--dropdown">
+ <div class="rz--inner">
+ <span class="rz--title"><?php echo static::e($strings->select_guests); ?></span>
+ <div class="rz-none">
+ <?php echo static::e($component->render([
+ 'type' => 'number',
+ 'id' => 'guests',
+ 'min' => 0,
+ 'value' => 0,
+ ])); ?>
+
+ </div>
+ <table>
+ <tbody>
+ <tr>
+ <td class="rz--name"><strong><?php echo static::e($strings->adults); ?></strong></td>
+ <td class="rz--field">
+ <?php echo static::e($component->render([
+ 'type' => 'number',
+ 'id' => 'guest_adults',
+ 'input_type' => 'stepper',
+ 'value' => $guests->adults,
+ 'min' => 0,
+ ])); ?>
+
+ </td>
+ </tr>
+ <tr>
+ <td class="rz--name"><strong><?php echo static::e($strings->children); ?></strong></td>
+ <td class="rz--field">
+ <?php echo static::e($component->render([
+ 'type' => 'number',
+ 'id' => 'guest_children',
+ 'input_type' => 'stepper',
+ 'value' => $guests->children,
+ 'min' => 0,
+ ])); ?>
+
+ </td>
+ </tr>
+ <tr>
+ <td class="rz--name"><strong><?php echo static::e($strings->infants); ?></strong></td>
+ <td class="rz--field">
+ <?php echo static::e($component->render([
+ 'type' => 'number',
+ 'id' => 'guest_infants',
+ 'input_type' => 'stepper',
+ 'value' => $guests->infants,
+ 'min' => 0,
+ 'max' => 999,
+ ])); ?>
+
+ </td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="rz--footer">
+ <?php if( $show_info_guests ): ?>
+ <p class="rz--info"><?php echo $info_guests ? $info_guests : sprintf( _n( $strings->guest_max, $strings->guests_max, $num_guests, 'routiz' ), $num_guests > 30 ? '30+' : $num_guests ); ?></p>
+ <?php endif; ?>
+ <div class="rz-text-right">
+ <a href="#" class="rz-button rz-small" data-action="guests-close">
+ <span><?php echo static::e($strings->close); ?></span>
+ <?php echo static::e(Rz()->preloader()); ?>
+
+ </a>
+ </div>
+ </div>
+ </div>
+</div>

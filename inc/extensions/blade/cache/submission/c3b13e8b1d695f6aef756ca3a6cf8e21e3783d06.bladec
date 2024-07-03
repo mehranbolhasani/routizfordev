@@ -1,0 +1,74 @@
+<div class="rz-submission-heading">
+ <h4 class="rz--title"><?php echo static::e($strings->select_plan); ?></h4>
+</div>
+
+<form>
+ <div class="rz-select-plan">
+ <div class="rz-plans rz-grid rz-no-select">
+
+ <?php if( $products ): ?>
+ <?php $__currentLoopData = $products; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php 
+ $plan = new \Routiz\Inc\Src\Woocommerce\Packages\Plan( $product->get_id() );
+ $type = $product->get_type();
+ $availability = $plan->availability();
+ $short_desc = $product->get_short_description();
+ ?>
+ <div class="rz-col-6 rz-col-md-12 rz-mb-3 rz-flex">
+ <label>
+ <input type="radio" name="rz_plan" value="<?php echo static::e($product->get_id()); ?>">
+ <span class="rz-plan rz--plan-type-<?php echo static::e($type); ?> <?php if( $product->get_featured() ): ?> rz-highlight <?php endif; ?> <?php if( $availability and $plan->is_purchasable() ): ?> rz-has-available <?php endif; ?> ">
+ <?php if( $product->get_featured() ): ?>
+ <span class="brk--badge"><?php echo static::e($strings->most_popular); ?></span>
+ <?php endif; ?>
+ <?php if( $availability and $plan->is_purchasable() ): ?>
+ <div class="rz-available">
+ <span><i class="fas fa-certificate rz-mr-1"></i><?php echo static::e($strings->owned); ?>:</span>
+ <?php if( $availability == 'unlimited' ): ?>
+ <span><?php echo static::e($strings->unlimited); ?></span>
+ <?php else: ?>
+ <span><?php echo sprintf( _n( $strings->available_submission, $strings->available_submissions, $availability, 'routiz' ), $availability ); ?></span>
+ <?php endif; ?>
+ </div>
+ <?php endif; ?>
+ <span class="rz-heading">
+ <?php if( $product->get_price_html() ): ?>
+ <span class="rz-price">
+ <p><?php echo $product->get_price_html(); ?></p>
+ </span>
+ <?php endif; ?>
+ <span class="rz--name"><?php echo static::e($product->get_name()); ?></span>
+ <?php if( $short_desc ): ?>
+ <span class="rz--desc"><?php echo static::e($short_desc); ?></span>
+ <?php endif; ?>
+ </span>
+ <span class="rz-content">
+ <?php echo do_shortcode( $product->get_description() ); ?>
+
+ </span>
+ <span class="rz-action">
+ <span class="rz-button <?php echo static::e($product->get_featured() ? 'rz-button-accent' : 'rz-white-gray'); ?>">
+ <i><?php echo static::e($strings->select_plan); ?></i>
+ </span>
+ </span>
+ </span>
+ </label>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php else: ?>
+ <div class="rz-col-12">
+ <div class="rz-notice rz-notice-alert">
+ <p>
+ <?php echo static::e($strings->no_packages); ?>
+
+ </p>
+ </div>
+ </div>
+ <?php endif; ?>
+
+ </div>
+ <p class="rz-select-plan-error rz-text-center">
+ <span class="rz-error"></span>
+ </p>
+ </div>
+</form>

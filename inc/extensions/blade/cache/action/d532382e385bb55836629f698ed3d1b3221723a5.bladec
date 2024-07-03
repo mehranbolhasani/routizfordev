@@ -1,0 +1,201 @@
+<?php 
+
+global $rz_upcoming;
+$rz_upcoming = $upcoming;
+
+$component->form->render([
+ 'type' => 'nonce',
+ 'id' => 'security-action',
+ 'value' => 'booking-security-nonce',
+]);
+
+ ?>
+
+<?php if( $fields ): ?>
+ <div class="rz-action-info">
+ <?php $__currentLoopData = $fields; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $field): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+
+ <?php 
+ $field_value = $listing->get( $field->fields->id )
+ ?>
+
+ <?php if( $field_value ): ?>
+ <p>
+
+ <?php if( $field->fields->icon ): ?>
+ <i class="rz--icon <?php echo static::e($field->fields->icon); ?>"></i>
+ <?php endif; ?>
+
+ <?php switch ( $field->fields->type ) {
+
+ case ('address'): ?>
+ <a href="<?php echo static::e(add_query_arg( [ 'api' => 1, 'query' => urlencode( esc_html( $field_value ) ) ], 'https://www.google.com/maps/search/' )); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('url'): ?>
+ <a href="<?php echo static::e(esc_url( str_replace( '{field}', $field_value, $field->fields->format ) )); ?>" target="_blank">
+ <?php if( isset( $field->fields->type_url_label ) and ! empty( $field->fields->type_url_label ) ): ?>
+ <?php echo static::e($field->fields->type_url_label); ?>
+
+ <?php else: ?>
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ <?php endif; ?>
+ </a>
+ <?php break; ?>
+
+ <?php case ('phone'): ?>
+ <a href="tel:<?php echo static::e($field_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('email'): ?>
+ <a href="mailto:<?php echo static::e($field_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('price'): ?>
+ <span>
+ <?php echo str_replace( '{field}', Rz()->format_price( $field_value ), $item->fields->format ); ?>
+
+ </span>
+ <?php break; ?>
+
+ <?php default: ?>
+ <span>
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </span>
+
+ <?php } // end switch ?>
+
+ </p>
+ <?php endif; ?>
+
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+<?php endif; ?>
+
+<?php if( ! empty( $title ) ): ?>
+ <h5 class="rz--title"><?php echo static::e($title); ?></h5>
+<?php endif; ?>
+
+<?php if( ! empty( $description ) ): ?>
+ <p class="rz--description"><?php echo static::e($description); ?></p>
+<?php endif; ?>
+
+<?php if( $upcoming ): ?>
+ <div class="rz-form">
+ <div class="rz-grid">
+
+ <?php if( $allow_guests ): ?>
+ <?php 
+
+ $component->form->render([
+ 'type' => 'guests',
+ 'id' => 'rz_guests',
+ 'num_guests' => $num_guests,
+ 'guests' => [
+ 'adults' => 0,
+ 'children' => 0,
+ 'infants' => 0,
+ ],
+ 'class' => [ 'rz-mb-2' ],
+ ]);
+
+ ?>
+ <?php endif; ?>
+
+ <?php 
+
+ if( ! boolval( $action->get_field('hide_date') ) ) {
+ $component->form->render([
+ 'type' => 'flyout',
+ 'id' => 'flyout-booking-date',
+ 'label' => $strings->select_date,
+ 'fields' => [
+ 'rz_booking' => [
+ 'type' => 'calendar',
+ 'name' => $strings->select_start_date,
+ 'range' => false,
+ 'large' => false,
+ 'class' => [ 'rz-mb-0' ]
+ ]
+ ],
+ 'class' => [ 'rz-mb-3' ],
+ ]);
+ }
+
+ ?>
+
+ <?php if( $allow_addons ): ?>
+ <?php 
+
+ $addon_options = [];
+ $items = Rz()->jsoning( 'rz_addons', $listing->id );
+ foreach( $items as $key => $item ) {
+ if( empty( $item->fields->key ) ) {
+ continue;
+ }
+ $addon_price = floatval( $item->fields->price );
+ $addon_name = [
+ $item->fields->name,
+ Rz()->format_price( $addon_price )
+ ];
+ $addon_options[ $item->fields->key ] = $addon_name;
+ }
+
+ if( $addon_options ) {
+ $component->form->render([
+ 'type' => 'flyout',
+ 'id' => 'flyout-addons',
+ 'label' => $addon_label,
+ 'fields' => [
+ 'addons' => [
+ 'type' => 'checklist',
+ 'name' => $addon_label,
+ 'options' => $addon_options,
+ 'class' => [ 'rz-mb-0' ]
+ ]
+ ],
+ 'class' => [ 'rz-mb-2' ]
+ ]);
+ }
+
+ ?>
+ <?php endif; ?>
+
+ </div>
+ </div>
+
+ <?php echo static::e(Rz()->the_template('routiz/single/appointments')); ?>
+
+
+ <div class="rz-action-success">
+ <?php /* append success message */ ?>
+ </div>
+
+ <div class="rz-action-error">
+ <?php /* append error message */ ?>
+ </div>
+
+ <?php if( count( $upcoming ) >= 3 ): ?>
+ <div class="rz-action-footer rz-text-center">
+ <a href="#" class="rz-button rz--border rz-large" data-modal="appointments">
+ <span><?php echo static::e($strings->see_more_dates); ?></span>
+ <?php echo static::e(Rz()->preloader()); ?>
+
+ </a>
+ </div>
+ <?php endif; ?>
+
+<?php else: ?>
+ <p class="rz-text-center rz-weight-700 rz-mb-0"><?php echo static::e($strings->no_appointments); ?></p>
+<?php endif; ?>

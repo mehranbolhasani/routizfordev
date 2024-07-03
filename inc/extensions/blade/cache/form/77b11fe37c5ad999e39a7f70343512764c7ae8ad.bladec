@@ -1,0 +1,68 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-upload">
+
+ <?php if( ! $disabled ): ?>
+
+ <!-- input -->
+ <textarea class="rz-upload-input rz-none" type="text" name="<?php echo static::e($id); ?>" placeholder="<?php echo static::e($placeholder); ?>" <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>><?php echo static::e(is_array( $value ) ? json_encode( $value ) : $value); ?></textarea>
+
+ <!-- button -->
+ <label for="rz-upload-<?php echo static::e($id); ?>" class="rz-button rz-light rz-upload-button">
+ <span><?php echo static::e($button['label']); ?></span>
+ <span><i class="fas fa-arrow-up rz-ml-1"></i></span>
+ <?php echo static::e(Rz()->preloader()); ?>
+
+ </label>
+
+ <!-- file -->
+ <?php if( ! $is_admin ): ?>
+ <div class="rz-none">
+ <input class="rz-upload-file" type="file" id="rz-upload-<?php echo static::e($id); ?>" <?php  echo $multiple_upload ? 'multiple="true"' : '';  ?>>
+ </div>
+ <?php endif; ?>
+
+ <!-- field info -->
+ <?php if( $display_info ): ?>
+ <div class="rz-field-info">
+ <span><?php echo static::e(sprintf( $strings->max_file_size, number_format( wp_max_upload_size() / 1048576 ) )); ?></span>
+ <?php if( $multiple_upload ): ?>
+ <span><?php echo static::e($strings->drag_reorder); ?></span>
+ <?php endif; ?>
+ <span style="display:block;"><b>Note: </b><?php echo static::e($strings->featured_note); ?></span>
+ </div>
+ <?php endif; ?>
+
+ <?php endif; ?>
+
+ <!-- image preview -->
+ <div class="rz-image-preview rz-no-select">
+ <?php if( $preview and is_array( $preview ) ): ?>
+ <?php $__currentLoopData = $preview; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $prv): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <div class="rz-image-prv-wrapper" data-id="<?php echo static::e($prv->id); ?>" data-thumb="<?php echo static::e($prv->thumb); ?>">
+ <div class="rz-image-prv">
+ <div class="rz-image-prv-outer">
+ <div class="rz-image-prv-inner">
+ <?php if( $upload_type == 'image' ): ?>
+ <img src="<?php echo static::e($prv->thumb); ?>" alt="">
+ <?php else: ?>
+ <i class="fas fa-file-alt"></i>
+ <?php endif; ?>
+ <?php if( ! $disabled ): ?>
+ <span class='rz-image-remove rz-transition'><i class='fas fa-times'></i></span>
+ <?php endif; ?>
+ </div>
+ </div>
+ </div>
+ <p class="rz-file-name">
+ <a class="rz-ellipsis" href="<?php echo static::e($prv->url); ?>" target="_blank"><?php echo static::e($prv->name); ?></a>
+ </p>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+ </div>
+
+ <!-- error output -->
+ <div class="rz-error-output"></div>
+
+</div>

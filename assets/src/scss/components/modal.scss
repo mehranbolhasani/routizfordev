@@ -1,0 +1,227 @@
+@charset 'UTF-8';
+
+/*
+ * overlay
+ *
+ */
+.rz-overlay {
+    @include fixed( top 0 left 0 right 0 bottom 0 );
+    @include transition( all .3s );
+    display: none;
+    background-color: #fff;
+    opacity: .98;
+    z-index: 900;
+
+    .rz-modal-visible & {
+        display: block;
+    }
+}
+
+/*
+ * modal
+ *
+ */
+.rz-modal {
+    @include fixed( top 50% left 50% );
+    @include transformY( -50.09% );
+    display: none;
+    flex-direction: column;
+    max-height: 85vh;
+    min-height: 164px;
+    width: 700px;
+    margin-left: -350px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: $border-radius-3;
+    box-shadow: 0 6px 32px rgba( 0, 0, 0, .03 );
+    z-index: 1000;
+
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    @include media( md ) {
+        flex-direction: column;
+        width: auto!important;
+        max-height: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @include transformY( 0 );
+        margin-left: 0!important;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .rz-close {
+        @include absolute( top 0 right 0 );
+        padding: 1.5rem;
+
+        @include media( md ) {
+            padding: 1rem;
+        }
+    }
+
+    &.rz-visible {
+        display: flex;
+
+        // @include media( md ) {
+        //     display: flex;
+        // }
+    }
+
+    > .rz-preloader {
+        margin-top: 0;
+    }
+
+    .rz-modal-heading {
+        padding: 1.5rem;
+
+        &.rz--border {
+            border-bottom: 1px solid #ddd;
+        }
+
+        @include media( md ) {
+            padding: 1rem;
+            border-bottom: 1px solid #ededed;
+        }
+
+        .rz--title {
+            padding: 0;
+            margin: 0;
+            font-size: 19px;
+            line-height: 35px;
+            text-align: center;
+            font-weight: 600;
+
+            @include media( md ) {
+                font-size: 17px;
+                text-align: left;
+            }
+        }
+    }
+
+    .rz-modal-content {
+        @include relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        overflow-y: hidden;
+
+        .rz--empty {
+            margin-top: 1px;
+            color: #000;
+        }
+    }
+
+    .rz-modal-append {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+    }
+
+    .rz-modal-container {
+        @include relative;
+        width: 100%;
+        padding: 1.75rem 1.5rem;
+        overflow-y: auto;
+
+        @include media( sm ) {
+            padding: 1rem;
+        }
+    }
+
+    &.rz-ajaxing {
+        .rz-modal-append {
+            display: none;
+        }
+    }
+
+    &.rz-modal-ajaxing {
+        .rz-modal-button {
+            > span {
+                opacity: 0;
+            }
+
+            .rz-preloader {
+                opacity: 1;
+            }
+        }
+    }
+
+    .rz-modal-footer {
+        padding: 1.5rem;
+        margin-top: auto;
+        text-align: center;
+
+        &.rz--top-border {
+            border-top: 1px solid #ddd;
+        }
+
+        @include media( md ) {
+            // padding: 0;
+
+            .rz-button {
+                width: 100%;
+            }
+        }
+
+        @include media( sm ) {
+            padding: 1rem;
+        }
+    }
+
+    .rz-modal-footer-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -.5rem;
+
+        .rz-button {
+            margin: .5rem;
+        }
+    }
+
+    .rz--icon {
+        // margin: 0 0 1.25rem 0;
+        margin: 0;
+        text-align: center;
+
+        i {
+            display: inline-block;
+            width: 80px;
+            margin-bottom: 24px;
+            // background-color: #f1f1f1;
+            // color: #111;
+            background: linear-gradient( 90deg, var( --main ) 0%, var( --main-shade ) 100% );
+            color: #fff;
+            font-size: 36px;
+            line-height: 80px;
+            text-align: center;
+            border-radius: 100px;
+        }
+
+        p {
+            margin: 0;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+
+    table {
+        border: 0;
+        border-top: 1px solid #eee;
+
+        tr {
+
+        }
+
+        td {
+            padding: .5rem 0;
+            border: 0;
+            border-bottom: 1px solid #eee;
+        }
+    }
+}

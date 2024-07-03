@@ -1,0 +1,8 @@
+<input
+ type="hidden"
+ name="<?php echo static::e($id); ?>"
+ value="<?php echo static::e($value); ?>"
+ <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>
+
+ class="<?php echo static::e($html->class); ?>"
+ <?php if( $html->id ): ?>id="<?php echo static::e($html->id); ?>"<?php endif; ?>>

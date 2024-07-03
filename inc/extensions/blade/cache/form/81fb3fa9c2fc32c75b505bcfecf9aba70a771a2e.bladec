@@ -1,0 +1,19 @@
+<?php if( ( isset( $name ) and ! empty( $name ) ) or ( isset( $description ) and ! empty( $description ) ) ): ?>
+ <div class="rz-heading">
+
+ <?php if( $name ): ?>
+ <label class="<?php if( ! empty( $description ) ): ?> mb-0 <?php endif; ?>">
+ <?php echo $name; ?>
+
+ <?php if( $required ): ?>
+ <i class="rz-required"></i>
+ <?php endif; ?>
+ </label>
+ <?php endif; ?>
+
+ <?php if( $description ): ?>
+ <p><?php echo nl2br( wp_kses_post( html_entity_decode( $description ) ) ); ?></p>
+ <?php endif; ?>
+
+ </div>
+<?php endif; ?>

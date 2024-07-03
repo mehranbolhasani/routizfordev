@@ -1,0 +1,3 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<span class="rz-separator"></span>

@@ -1,0 +1,3 @@
+<div class="rz-tab">
+ <span class="rz--name"><?php echo static::e($name); ?></span>
+</div>

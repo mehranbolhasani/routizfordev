@@ -1,0 +1,9 @@
+<?php if( ! empty( $content ) ): ?>
+ <div class="rz-mod-content">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <?php echo do_shortcode( wpautop( wp_kses_post( html_entity_decode( ( $content ) ) ) ) ); ?>
+
+ </div>
+<?php endif; ?>

@@ -1,0 +1,17 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-select2">
+ <select name="<?php echo static::e($id); ?><?php echo static::e(( ! $single and $id ) ? '[]' : ''); ?>" <?php echo static::e(! $single ? 'multiple' : ''); ?>>
+ <?php if( $allow_empty and $single ): ?>
+ <option value="">-</option>
+ <?php endif; ?>
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_key => $option_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <option value="<?php echo static::e($option_key); ?>" <?php echo static::e($self->selected( $option_key ) ? 'selected' : ''); ?>><?php echo static::e($option_name); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+</div>
+
+<?php /* fix for empty inputs in post */ ?>
+<?php if( ! $single ): ?>
+ <input name="<?php echo static::e($id); ?>[]" type="hidden" value="" disabled>
+<?php endif; ?>

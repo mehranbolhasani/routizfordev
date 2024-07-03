@@ -1,0 +1,101 @@
+<div class="rz-action-location">
+
+ <?php if( $lat and $lng ): ?>
+
+ <div class="rz-action-map-holder">
+ <div class="rz-action-map" data-lat="<?php echo static::e($lat); ?>" data-lng="<?php echo static::e($lng); ?>"></div>
+
+ <div class="rz-map-zoom">
+ <a href="#" class="rz--zoom-in" data-action="explore-map-zoom-in"><i class="fas fa-plus"></i></a>
+ <a href="#" class="rz--zoom-out" data-action="explore-map-zoom-out"><i class="fas fa-minus"></i></a>
+ </div>
+ </div>
+
+ <?php if( $fields ): ?>
+ <div class="rz-action-info">
+ <?php $__currentLoopData = $fields; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $field): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+
+ <?php 
+ $field_value = $listing->get( $field->fields->id )
+ ?>
+
+ <?php if( $field_value ): ?>
+ <p>
+
+ <?php if( $field->fields->icon ): ?>
+ <i class="rz--icon <?php echo static::e($field->fields->icon); ?>"></i>
+ <?php endif; ?>
+
+ <?php switch ( $field->fields->type ) {
+
+ case ('address'): ?>
+ <a href="<?php echo static::e(add_query_arg( [ 'api' => 1, 'query' => urlencode( esc_html( $field_value ) ) ], 'https://www.google.com/maps/search/' )); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('url'): ?>
+ <a href="<?php echo static::e(esc_url( str_replace( '{field}', $field_value, $field->fields->format ) )); ?>" target="_blank">
+ <?php if( isset( $field->fields->type_url_label ) and ! empty( $field->fields->type_url_label ) ): ?>
+ <?php echo static::e($field->fields->type_url_label); ?>
+
+ <?php else: ?>
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ <?php endif; ?>
+ </a>
+ <?php break; ?>
+
+ <?php case ('phone'): ?>
+ <a href="tel:<?php echo static::e($field_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('email'): ?>
+ <a href="mailto:<?php echo static::e($field_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('price'): ?>
+ <span>
+ <?php echo str_replace( '{field}', Rz()->format_price( $field_value ), $item->fields->format ); ?>
+
+ </span>
+ <?php break; ?>
+
+ <?php default: ?>
+ <span>
+ <?php echo static::e(str_replace( '{field}', $field_value, $field->fields->format )); ?>
+
+ </span>
+
+ <?php } // end switch ?>
+
+ </p>
+ <?php endif; ?>
+
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ <?php endif; ?>
+
+ <div class="rz--marker rz-none">
+ <span class="rz-mod-listing-marker">
+ <i class="<?php echo static::e($icon ? $icon : 'fas fa-map-marker-alt'); ?>"></i>
+ </span>
+ </div>
+
+ <?php else: ?>
+
+ <div class="rz--empty">
+ <i class="fas fa-map-marker-alt"></i>
+ <p><?php echo static::e($strings->not_specified); ?></p>
+ </div>
+
+ <?php endif; ?>
+
+</div>

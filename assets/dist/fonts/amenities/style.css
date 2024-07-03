@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'amenities';
+  src:  url('amenities.eot?e9oro8');
+  src:  url('amenities.eot?e9oro8#iefix') format('embedded-opentype'),
+    url('amenities.ttf?e9oro8') format('truetype'),
+    url('amenities.woff?e9oro8') format('woff'),
+    url('amenities.svg?e9oro8#amenities') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-amts-"], [class*=" icon-amts-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'amenities' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-amts-wine:before {
+  content: "\e900";
+}
+.icon-amts-passport:before {
+  content: "\e901";
+}
+.icon-amts-lamp:before {
+  content: "\e902";
+}
+.icon-amts-boiled-egg:before {
+  content: "\e903";
+}
+.icon-amts-toilet:before {
+  content: "\e904";
+}
+.icon-amts-sink:before {
+  content: "\e905";
+}
+.icon-amts-restaurant:before {
+  content: "\e906";
+}
+.icon-amts-airplane:before {
+  content: "\e907";
+}
+.icon-amts-microwave:before {
+  content: "\e908";
+}
+.icon-amts-wifi-router:before {
+  content: "\e909";
+}
+.icon-amts-bellboy:before {
+  content: "\e90a";
+}
+.icon-amts-lifeguard:before {
+  content: "\e90b";
+}
+.icon-amts-iron:before {
+  content: "\e90c";
+}
+.icon-amts-newspaper:before {
+  content: "\e90d";
+}
+.icon-amts-air-conditioner:before {
+  content: "\e90e";
+}
+.icon-amts-parking:before {
+  content: "\e90f";
+}
+.icon-amts-key-room:before {
+  content: "\e910";
+}
+.icon-amts-coffee-maker:before {
+  content: "\e911";
+}
+.icon-amts-luggage-2:before {
+  content: "\e912";
+}
+.icon-amts-shower:before {
+  content: "\e913";
+}
+.icon-amts-phone:before {
+  content: "\e914";
+}
+.icon-amts-clock:before {
+  content: "\e915";
+}
+.icon-amts-towel:before {
+  content: "\e916";
+}
+.icon-amts-hanger:before {
+  content: "\e917";
+}
+.icon-amts-cup:before {
+  content: "\e918";
+}
+.icon-amts-dryer:before {
+  content: "\e919";
+}
+.icon-amts-fridge:before {
+  content: "\e91a";
+}
+.icon-amts-key-card:before {
+  content: "\e91b";
+}
+.icon-amts-mirror:before {
+  content: "\e91c";
+}
+.icon-amts-fire-extinguisher:before {
+  content: "\e91d";
+}
+.icon-amts-washing-machine:before {
+  content: "\e91e";
+}
+.icon-amts-dumbell:before {
+  content: "\e91f";
+}
+.icon-amts-tv:before {
+  content: "\e920";
+}
+.icon-amts-drawers:before {
+  content: "\e921";
+}
+.icon-amts-couch:before {
+  content: "\e922";
+}
+.icon-amts-bathtub:before {
+  content: "\e923";
+}
+.icon-amts-safe:before {
+  content: "\e924";
+}
+.icon-amts-luggage-1:before {
+  content: "\e925";
+}
+.icon-amts-security-camera:before {
+  content: "\e926";
+}
+.icon-amts-cocktail:before {
+  content: "\e927";
+}
+.icon-amts-elevator:before {
+  content: "\e928";
+}
+.icon-amts-menu:before {
+  content: "\e929";
+}
+.icon-amts-room-service-1:before {
+  content: "\e92a";
+}
+.icon-amts-chef:before {
+  content: "\e92b";
+}
+.icon-amts-luggage:before {
+  content: "\e92c";
+}
+.icon-amts-door-handle:before {
+  content: "\e92d";
+}
+.icon-amts-armchair:before {
+  content: "\e92e";
+}
+.icon-amts-room-service:before {
+  content: "\e92f";
+}
+.icon-amts-bed:before {
+  content: "\e930";
+}
+.icon-amts-door-hanger:before {
+  content: "\e931";
+}

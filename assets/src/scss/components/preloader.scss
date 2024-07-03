@@ -1,0 +1,32 @@
+/*
+ * preloader
+ *
+ */
+.rz-preloader {
+    @include absolute( top 50% left 50% );
+    // @include transition( all .3s );
+    opacity: 0;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 0;
+    margin: -21px 0 0 -20px;
+    background-color: transparent;
+    color: var( --name );
+    pointer-events: none;
+
+    i {
+        font-size: 20px;
+        vertical-align: top;
+    }
+
+    .rz-ajaxing & {
+        opacity: 1;
+    }
+
+    .rz-ajaxing &,
+    .rz-modal-ajaxing & {
+        // opacity: 1;
+        -webkit-animation: 'fa-spin' 2s infinite linear;
+                animation: 'fa-spin' 2s infinite linear;
+    }
+}

@@ -1,0 +1,152 @@
+<?php 
+ global $rz_listing;
+ ?>
+
+<?php if( ! empty( $items ) ): ?>
+ <div class="rz-mod-content">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <div class="rz--meta rz--style-<?php echo static::e($style); ?> <?php echo static::e($highlight ? 'rz--is-highlight' : ''); ?>">
+ <ul>
+
+ <?php $__currentLoopData = $items; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+
+ <?php 
+
+ $field_item = $rz_listing->get_field_item( $item->fields->key );
+ $type = isset( $item->fields->type ) ? $item->fields->type : '';
+
+ // custom field
+ if( $field_item ) {
+
+ // multiple
+ if( $field_item->template->id == 'taxonomy' ) {
+ $meta_value = Rz()->get_meta( $item->fields->key, $rz_listing->id, false );
+
+ $values = [];
+ if( is_array( $meta_value ) ) {
+ foreach( $meta_value as $value ) {
+ $term = get_term_by( 'id', $value, Rz()->prefix( $field_item->fields->key ) );
+ if( ! $term ) {
+ continue;
+ }
+ $values[] = (object) [
+ 'name' => $term->name,
+ 'icon' => get_term_meta( $term->term_id, 'rz_icon', true ),
+ ];
+ }
+ }
+
+ $meta_value = $values;
+
+ }
+ // single
+ else{
+ $meta_value = $rz_listing->get( $item->fields->key );
+ }
+
+ if( ! $meta_value ) {
+ continue;
+ }
+
+ }
+ // built-in field
+ else{
+ $meta_value = $rz_listing->get( $item->fields->key );
+ }
+
+ ?>
+
+ <?php /* single */ ?>
+ <?php if( ! is_array( $meta_value ) ): ?>
+
+ <?php if( $meta_value ): ?>
+
+ <li>
+
+ <?php if( isset( $item->fields->icon ) and ! empty( $item->fields->icon ) ): ?>
+ <i class="<?php echo static::e($item->fields->icon); ?>"></i>
+ <?php endif; ?>
+
+ <?php switch ( $type ) {
+
+ case ('address'): ?>
+ <a href="<?php echo static::e(add_query_arg( [ 'api' => 1, 'query' => urlencode( esc_html( $meta_value ) ) ], 'https://www.google.com/maps/search/' )); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $meta_value, $item->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('url'): ?>
+ <a href="<?php echo static::e(esc_url( str_replace( '{field}', $meta_value, $item->fields->format ) )); ?>" target="_blank">
+ <?php if( isset( $item->fields->type_url_label ) and ! empty( $item->fields->type_url_label ) ): ?>
+ <?php echo static::e($item->fields->type_url_label); ?>
+
+ <?php else: ?>
+ <?php echo static::e(str_replace( '{field}', $meta_value, $item->fields->format )); ?>
+
+ <?php endif; ?>
+ </a>
+ <?php break; ?>
+
+ <?php case ('phone'): ?>
+ <a href="tel:<?php echo static::e($meta_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $meta_value, $item->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('email'): ?>
+ <a href="mailto:<?php echo static::e($meta_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $meta_value, $item->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('price'): ?>
+ <span>
+ <?php echo str_replace( '{field}', Rz()->format_price( $meta_value ), $item->fields->format ); ?>
+
+ </span>
+ <?php break; ?>
+
+ <?php default: ?>
+
+ <span>
+ <?php echo static::e(str_replace( '{field}', $meta_value, $item->fields->format )); ?>
+
+ </span>
+
+ <?php } // end switch ?>
+
+ </li>
+
+ <?php endif; ?>
+
+ <?php /* multiple */ ?>
+ <?php else: ?>
+
+ <?php $__currentLoopData = $meta_value; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if( ! is_object( $value ) ): ?>
+ <?php continue; ?>;
+ <?php endif; ?>
+ <li>
+ <?php if( $value->icon ): ?>
+ <i class="<?php echo static::e($value->icon); ?>"></i>
+ <?php endif; ?>
+ <span>
+ <?php echo static::e(str_replace( '{field}', $value->name, $item->fields->format )); ?>
+
+ </span>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+
+ <?php endif; ?>
+
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+
+ </ul>
+ </div>
+ </div>
+<?php endif; ?>

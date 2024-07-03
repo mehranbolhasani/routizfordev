@@ -1,0 +1,44 @@
+<div class="rz-mod-content">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <div class="rz-author">
+ <div class="rz--heading">
+ <div class="rz--avatar">
+ <a href="<?php echo static::e(get_author_posts_url( $user->id )); ?>">
+ <?php echo $user->avatar(); ?>
+
+ </a>
+ </div>
+ <div class="rz--meta">
+ <div class="rz--name">
+ <a href="<?php echo static::e(get_author_posts_url( $user->id )); ?>">
+ <?php echo static::e($display_name); ?>
+
+ <?php if( get_user_meta( $user->id, 'rz_verified', true ) ): ?>
+ <i class="rz--verified fas fa-check-circle"></i>
+ <span><?php echo static::e($strings->verified); ?></span>
+ <?php endif; ?>
+ </a>
+ <?php if( $total_reviews ): ?>
+ <div class="rz--reviews">
+ <i class="fas fa-star"></i>
+ <span><?php echo static::e(sprintf( _n( $strings->review, $strings->reviews, $total_reviews, 'routiz' ), $total_reviews )); ?></span>
+ </div>
+ <?php endif; ?>
+ </div>
+ </div>
+ </div>
+ <?php if( $user_description ): ?>
+ <div class="rz--description">
+ <?php echo wpautop( $user_description ); ?>
+
+ </div>
+ <?php endif; ?>
+ <div class="rz--action">
+ <a href="#" class="rz-button rz-button-accent" data-modal="<?php echo static::e(is_user_logged_in() ? 'conversation' : 'signin'); ?>" data-params='{"id":<?php echo static::e($listing->id); ?>}'>
+ <span><?php echo static::e(sprintf( $strings->contact, $userdata->display_name )); ?></span>
+ </a>
+ </div>
+ </div>
+</div>

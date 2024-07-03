@@ -1,0 +1,16 @@
+<div class="rz-action-contact">
+
+ <?php if( $enable_author ): ?>
+ <?php echo static::e(Rz()->the_template('routiz/single/action/author')); ?>
+
+ <?php endif; ?>
+
+ <div class="rz-action-footer rz-text-center">
+ <div class="rz--action">
+ <a href="#" class="rz-button rz-large" data-modal="<?php echo static::e(is_user_logged_in() ? 'conversation' : 'signin'); ?>" data-params='{"id":<?php echo static::e($listing_id); ?>}'>
+ <span><?php echo static::e($strings->send_message); ?></span>
+ </a>
+ </div>
+ </div>
+
+</div>

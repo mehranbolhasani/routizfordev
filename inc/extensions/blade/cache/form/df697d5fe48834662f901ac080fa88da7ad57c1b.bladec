@@ -1,0 +1,75 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-calendar-date rz-no-select">
+
+ <div class="rz-grid rz-none">
+
+ <div class="rz-col">
+ <input type="text" class="rz-calendar-date-start rz-mt-4" value="<?php echo static::e($date->date_start); ?>" autocomplete="nope">
+ <input type="text" name="<?php echo static::e($id); ?>[]" class="rz-calendar-ts" value="<?php echo static::e($date->ts_start); ?>" autocomplete="nope">
+ </div>
+
+ <div class="rz-col">
+ <input type="text" class="rz-calendar-date-end rz-mt-4" value="<?php echo static::e($date->date_end); ?>" autocomplete="nope">
+ <input type="text" name="<?php echo static::e($id); ?>[]" class="rz-calendar-ts-end" value="<?php echo static::e($date->ts_end); ?>" autocomplete="nope">
+ </div>
+
+ </div>
+
+ <?php 
+ $calendar_class = [];
+ if( $large ) {
+ $calendar_class[] = 'rz-calendar-large';
+ }
+ ?>
+
+ <div class="rz-calendar <?php echo static::e(implode( ' ', $calendar_class )); ?>">
+
+ <div class="rz-calendar-nav rz-flex rz-w-100 rz-justify-space">
+ <div class="">
+ <a href="#" class="rz-disabled" data-action="prev">
+ <i class="fas fa-arrow-left" aria-hidden="true"></i>
+ </a>
+ </div>
+ <div class="">
+ <a href="#" class="" data-action="next">
+ <i class="fas fa-arrow-right" aria-hidden="true"></i>
+ </a>
+ </div>
+ </div>
+
+ <?php $__currentLoopData = $months; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $month): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <div class="rz-calendar-month <?php if( $month->id <= ( $large == true ? 2 : 1 ) ): ?> rz-active <?php endif; ?>" data-month="<?php echo static::e($month->id); ?>">
+ <div class="rz-month">
+ <h4><?php echo static::e(date_i18n( 'F', mktime( 0, 0, 0, $month->month, 10 ) )); ?> <?php echo static::e(esc_attr( $month->year )); ?></h4>
+ </div>
+ <ul class="rz-weekdays">
+ <?php $__currentLoopData = $week_days; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $week_day): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li data-name="<?php echo static::e($week_day->name); ?>"><?php echo static::e($week_day->initial); ?></li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ <ul class="rz-days">
+ <?php $__currentLoopData = $month->days; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $d_index => $day): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li class="<?php echo static::e(implode( ' ', $day->class )); ?>"
+ <?php if( isset( $day->timestamp ) ): ?> data-timestamp="<?php echo static::e($day->timestamp); ?>" <?php endif; ?>
+ <?php if( isset( $day->date ) ): ?> data-date="<?php echo static::e($day->date); ?>" <?php endif; ?>>
+ <?php if( $day->day ): ?>
+ <span><i><?php echo static::e((int) $day->day); ?></i></span>
+ <?php endif; ?>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+
+ <div class="rz-calendar-actions <?php if( ! $range ): ?> rz-none <?php endif; ?>">
+ <?php if( ! $readonly ): ?>
+ <a href="#" class="rz-calendar-clear">
+ <?php echo static::e($strings->clear_dates); ?>
+
+ </a>
+ <?php endif; ?>
+ </div>
+
+</div>

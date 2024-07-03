@@ -1,0 +1,12 @@
+<div class="rz-form-group rz-col-12">
+
+ <div class="rz-filter-heading">
+ <?php if( $name ): ?>
+ <h5 class="rz--heading"><?php echo static::e($name); ?></h5>
+ <?php if( isset( $description ) and ! empty( $description ) ): ?>
+ <p><?php echo static::e($description); ?></p>
+ <?php endif; ?>
+ <?php endif; ?>
+ </div>
+
+</div>

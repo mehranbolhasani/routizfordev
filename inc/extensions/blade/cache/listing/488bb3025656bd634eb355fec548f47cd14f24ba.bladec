@@ -1,0 +1,7 @@
+<div class="rz-mod-content">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <?php echo static::e(Rz()->the_template('routiz/single/reviews/reviews')); ?>
+
+</div>

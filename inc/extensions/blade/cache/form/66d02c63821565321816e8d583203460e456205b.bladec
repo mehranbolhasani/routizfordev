@@ -1,0 +1,4 @@
+<input
+ type="hidden"
+ name="<?php echo static::e($id); ?>"
+ value="<?php echo static::e($value); ?>">

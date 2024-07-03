@@ -1,0 +1,23 @@
+<h4 class="rz--title"><?php echo static::e($title); ?></h4>
+
+<?php if( $fields ): ?>
+ <form>
+ <div class="rz-grid">
+ <?php $__currentLoopData = $fields; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if( $item->fields->is_submit_form ): ?>
+ <?php echo static::e($form->render( Rz()->prefix_item( $item ) )); ?>
+
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ </form>
+<?php else: ?>
+ <div class="rz-submission-error rz-block">
+ <div class="rz--error">
+ <div class="rz--content">
+ <?php echo static::e($strings->not_found); ?>
+
+ </div>
+ </div>
+ </div>
+<?php endif; ?>

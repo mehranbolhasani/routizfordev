@@ -1,0 +1,7 @@
+<div class="rz-step-publish rz-text-center">
+ <div>
+ <span class="rz--icon"><i class="fas fa-paper-plane"></i></span>
+ <h4 class="rz--title"><?php echo static::e($strings->about_publish); ?></h4>
+ <p><?php echo static::e($strings->confirm); ?></p>
+ </div>
+</div>

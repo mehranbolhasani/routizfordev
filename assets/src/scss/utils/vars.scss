@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+:root {
+    --name: #000;
+    --border: #ddd;
+    --field-bg: #f1f1f1;
+    --field-white: #fff;
+    --field-black: #000;
+    --field-text: #111;
+    --field-disabled-bg: #f1f1f1;
+    --field-disabled-text: #bbb;
+    --field-placeholder: #666;
+    --field-shadow: inset 0 0 0 1px #111, 0 3px 8px 0 rgba(0,0,0,0.1);
+    --field-repeater-row: #f1f1f1;
+    --field-repeater-row-expand: #222;
+    --field-repeater-content-shadow: 0 0 15px 0 rgba( 0, 0, 0, .08 );
+}

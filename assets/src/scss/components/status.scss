@@ -1,0 +1,61 @@
+/*
+ * status
+ *
+ */
+.rz-post-status {
+    white-space: nowrap;
+
+    a, span {
+        display: inline-block;
+        padding: 0 14px;
+        margin: 0;
+        background-color: #111;
+        color: $color-white;
+        font-size: 13px;
+        line-height: 28px;
+        text-transform: none;
+        box-shadow: none;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+
+    &.rz-status-publish,
+    &.rz-status-approved {
+        a, span {
+            background-color: #d7fbe3;
+            color: #209048;
+        }
+    }
+
+    &.rz-status-pending {
+        a, span {
+            background-color: #f2e1bb;
+            color: #b48726;
+        }
+    }
+
+    &.rz-status-used {
+        a, span {
+            background-color: #d7e8fb;
+            color: #2d619c;
+        }
+    }
+
+    &.rz-status-pending_payment,
+    &.rz-status-draft {
+        a, span {
+            background-color: #e5e5e5;
+            color: #777;
+        }
+    }
+
+    &.rz-status-expired,
+    &.rz-status-trash,
+    &.rz-status-declined,
+    &.rz-status-cancelled {
+        a, span {
+            background-color: #f5d7b9;
+            color: #ab7036;
+        }
+    }
+}

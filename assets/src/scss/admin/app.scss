@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+/* configuration */
+@import
+    '../utils/vars',
+    '../utils/variables',
+    '../utils/mixins';
+
+/* base stuff and helpers */
+@import
+    '../base/fonts.scss',
+    '../base/typography.scss',
+    '../base/helpers.scss',
+    '../base/animations.scss',
+    '../base/base.scss';
+
+/* layout-related sections */
+
+/* components */
+@import
+    '../components/button.scss',
+    '../components/dummy.scss',
+    '../components/notice.scss',
+    '../components/preloader.scss',
+    '../components/status.scss',
+    '../components/modal.scss',
+    '../components/grid/grid.scss';
+
+/* ... */
+@import
+    'main.scss';

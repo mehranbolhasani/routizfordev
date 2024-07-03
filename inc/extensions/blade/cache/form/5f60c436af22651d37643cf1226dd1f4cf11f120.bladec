@@ -1,0 +1,27 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-opts">
+ <div class="rz-opts-list">
+ <ul class="rz-opts-items">
+ <?php if( is_array( $options ) ): ?>
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_value => $option_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li><input type="text" value="<?php echo static::e(is_array( $option_name ) ? $option_name['label'] : $option_name); ?>" disabled></li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+ </ul>
+ <a href="#" class="rz-button rz-button-opts-add">
+ <span><?php echo static::e($strings->add_options); ?></span>
+ </a>
+ </div>
+ <div class="rz-opts-add">
+ <p><?php echo $options_description; ?></p>
+ <textarea
+ type="text"
+ name="<?php echo static::e($id); ?>"
+ placeholder="<?php echo static::e($placeholder); ?>"
+ <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>><?php echo static::e($value_raw); ?></textarea>
+ <a href="#" class="rz-button rz-button-opts-save">
+ <span><?php echo static::e($strings->save_options); ?></span>
+ </a>
+ </div>
+</div>

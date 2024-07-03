@@ -1,0 +1,60 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-datetime">
+
+ <div class="rz-grid">
+ <div class="rz-col-12 rz--col-month rz-mb-1">
+ <p class="rz-weight-700 rz-mb-1"><?php echo static::e($strings->month); ?></p>
+ <div class="rz-select rz-select-single">
+ <select name="<?php echo static::e($id); ?>[month]">
+ <option value=""><?php echo static::e($strings->select_month); ?></option>
+ <?php $__currentLoopData = $months; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $month_key => $month_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <option value="<?php echo static::e($month_key); ?>" <?php if( isset( $value['month'] ) and $value['month'] == $month_key ): ?> selected="selected" <?php endif; ?>><?php echo static::e(sprintf( '%02d', $month_key )); ?> - <?php echo static::e($month_name); ?></option>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </select>
+ </div>
+ </div>
+ <div class="rz-col-12 rz--col-day rz-mb-1">
+ <p class="rz-weight-700 rz-mb-1"><?php echo static::e($strings->day); ?></p>
+ <input
+
+ type="text"
+ name="<?php echo static::e($id); ?>[day]"
+ value="<?php echo static::e(isset( $value['day'] ) ? $value['day'] : ''); ?>"
+ placeholder="<?php echo static::e(date_i18n('d')); ?>">
+ </div>
+ <div class="rz-col-12 rz--col-year rz-mb-1">
+ <p class="rz-weight-700 rz-mb-1"><?php echo static::e($strings->year); ?></p>
+ <input
+
+ type="text"
+ name="<?php echo static::e($id); ?>[year]"
+ value="<?php echo static::e(isset( $value['year'] ) ? $value['year'] : ''); ?>"
+ placeholder="<?php echo static::e(date_i18n('Y')); ?>">
+ </div>
+ </div>
+
+ <div class="rz-grid">
+ <div class="rz-col-6 rz--col-hour rz-mb-1">
+ <p class="rz-weight-700 rz-mb-1"><?php echo static::e($strings->hour); ?></p>
+ <input
+
+ type="text"
+ name="<?php echo static::e($id); ?>[hour]"
+ value="<?php echo static::e(isset( $value['hour'] ) ? $value['hour'] : ''); ?>"
+ placeholder="<?php echo static::e(date_i18n('H')); ?>">
+ </div>
+ <div class="rz-col-6 rz--col-minute rz-mb-1">
+ <p class="rz-weight-700 rz-mb-1"><?php echo static::e($strings->minute); ?></p>
+ <input
+
+ type="text"
+ name="<?php echo static::e($id); ?>[minute]"
+ value="<?php echo static::e(isset( $value['minute'] ) ? $value['minute'] : ''); ?>"
+ placeholder="<?php echo static::e(date_i18n('i')); ?>">
+ </div>
+ </div>
+
+
+
+</div>

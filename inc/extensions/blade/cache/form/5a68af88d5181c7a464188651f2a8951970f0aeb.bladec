@@ -1,0 +1,16 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<input
+
+ type="text"
+ name="<?php echo static::e($id); ?>"
+ value="<?php echo static::e($value); ?>"
+ placeholder="<?php echo static::e($placeholder); ?>"
+ class="<?php echo static::e($html->class); ?>"
+ <?php if( $html->id ): ?>id="<?php echo static::e($html->id); ?>"<?php endif; ?>
+
+ <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>
+
+ <?php echo static::e($disabled ? 'disabled' : ''); ?>
+
+ <?php echo static::e(( isset( $readonly ) and $readonly == true ) ? 'form="fake-form-readonly"' : ''); ?>>

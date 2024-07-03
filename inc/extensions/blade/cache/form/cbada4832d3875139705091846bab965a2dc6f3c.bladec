@@ -1,0 +1,13 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-buttons rz-no-select rz--style-<?php echo static::e($style); ?>">
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_key => $option_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <div class="rz-btn">
+ <input type="radio" name="<?php echo static::e($id); ?>" value="<?php echo static::e($option_key); ?>" <?php echo static::e($option_key == $value ? 'checked' : ''); ?>>
+ <span class="rz-transition"><?php echo static::e($option_name); ?></span>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+</div>
+
+<?php /* fix for empty inputs in post */ ?>
+<input name="<?php echo static::e($id); ?>" type="hidden" value="" disabled>

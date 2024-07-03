@@ -1,0 +1,11 @@
+<div class="rz-step-publish rz-text-center">
+ <div>
+ <span class="rz--icon"><i class="fas fa-check"></i></span>
+ <h4 class="rz--title"><?php echo static::e($strings->success); ?></h4>
+ <?php if( $requires_admin_approval ): ?>
+ <p><?php echo static::e($strings->awaits_approval); ?></p>
+ <?php else: ?>
+ <p><?php echo static::e($strings->published); ?></p>
+ <?php endif; ?>
+ </div>
+</div>

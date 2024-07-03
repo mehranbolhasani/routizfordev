@@ -1,0 +1,27 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-checklist">
+ <?php if( is_array( $options ) ): ?>
+ <?php $__currentLoopData = $options; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $option_key => $option_name): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <label class='rz-checkbox rz-no-select'>
+ <input type='checkbox' name="<?php echo static::e($id); ?>[]" value="<?php echo static::e($option_key); ?>" <?php echo static::e(( is_array( $value ) and in_array( $option_key, $value ) ) ? 'checked' : ''); ?>>
+ <span class='rz-transition'></span>
+ <?php if( is_array( $option_name ) ): ?>
+ <div class="rz-flex rz-space-between">
+ <div class="rz-flex-1">
+ <em><?php echo static::e($option_name[0]); ?></em>
+ </div>
+ <div class="">
+ <strong><?php echo $option_name[1]; ?></strong>
+ </div>
+ </div>
+ <?php else: ?>
+ <em><?php echo static::e($option_name); ?></em>
+ <?php endif; ?>
+ </label>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+</div>
+
+<?php /* fix for empty inputs in post */ ?>
+<input name="<?php echo static::e($id); ?>[]" type="hidden" value="" disabled>

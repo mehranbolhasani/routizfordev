@@ -1,0 +1,23 @@
+<div class="rz-action-claim">
+
+ <div class="rz--icon">
+ <i class="fas fa-store"></i>
+ </div>
+
+ <?php if( $is_claimed ): ?>
+ <h4><i class="fas fa-check-circle rz-mr-1"></i><?php echo static::e($strings->claimed); ?></h4>
+ <p class="rz-mb-0"><?php echo static::e($strings->claimed_description); ?></p>
+ <?php else: ?>
+ <h4><?php echo static::e($claim_title); ?></h4>
+ <p><?php echo static::e($claim_description); ?></p>
+
+ <div class="rz-action-footer rz-text-center">
+ <div class="rz--action">
+ <a href="#" class="rz-button rz-button-accent rz-large" data-modal="<?php echo static::e(is_user_logged_in() ? 'action-claim' : 'signin'); ?>" data-params='<?php echo static::e($listing_id); ?>'>
+ <span><?php echo static::e($claim_button_label ? $claim_button_label : $strings->button_label); ?></span>
+ </a>
+ </div>
+ </div>
+ <?php endif; ?>
+
+</div>

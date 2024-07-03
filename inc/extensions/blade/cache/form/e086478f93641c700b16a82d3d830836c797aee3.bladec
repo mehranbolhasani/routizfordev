@@ -1,0 +1,6 @@
+<?php echo $this->runChild('label.index'); ?>
+<textarea
+    type="text"
+    name="<?php echo static::e($id); ?>"
+    <?php echo static::e($v_model ? "v-model={$v_model}" : ''); ?>
+    <?php echo static::e($disabled ? 'disabled' : ''); ?>><?php echo static::e($value); ?></textarea>

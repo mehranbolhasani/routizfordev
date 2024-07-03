@@ -1,0 +1,18 @@
+{
+    "/js/account.js": "/js/account.js",
+    "/js/admin/admin.js": "/js/admin/admin.js",
+    "/js/admin/panel.js": "/js/admin/panel.js",
+    "/js/explore.js": "/js/explore.js",
+    "/js/form.js": "/js/form.js",
+    "/js/listing.js": "/js/listing.js",
+    "/js/main.js": "/js/main.js",
+    "/css/main.css": "/css/main.css",
+    "/css/form.css": "/css/form.css",
+    "/css/explore.css": "/css/explore.css",
+    "/css/submission.css": "/css/submission.css",
+    "/css/listing.css": "/css/listing.css",
+    "/css/account.css": "/css/account.css",
+    "/css/admin/admin.css": "/css/admin/admin.css",
+    "/css/admin/panel.css": "/css/admin/panel.css",
+    "/js/submission.js": "/js/submission.js"
+}

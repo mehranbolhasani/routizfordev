@@ -1,0 +1,28 @@
+<?php echo $this->runChild('label.index'); ?>
+
+<div class="rz-geo-field">
+
+ <div class="rz-dropdown">
+ <input
+ type="text"
+ name="rz_geo"
+ value="<?php echo static::e($value); ?>"
+ placeholder="<?php echo static::e($placeholder); ?>"
+ class="rz-map-address <?php echo static::e($html->class); ?>"
+ autocomplete="off"
+ <?php if( $html->id ): ?>id="<?php echo static::e($html->id); ?>"<?php endif; ?>>
+ <div class="rz-dropdown-list rz-scrollbar">
+ <ul></ul>
+ </div>
+ </div>
+
+ <a href="#" class="rz-geo-get">
+ <i class="material-icon-gps_fixedmy_location"></i>
+ </a>
+
+</div>
+
+<input type="hidden" name="rz_geo_n" value="<?php echo static::e($geo_n); ?>">
+<input type="hidden" name="rz_geo_e" value="<?php echo static::e($geo_e); ?>">
+<input type="hidden" name="rz_geo_s" value="<?php echo static::e($geo_s); ?>">
+<input type="hidden" name="rz_geo_w" value="<?php echo static::e($geo_w); ?>">

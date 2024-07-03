@@ -1,0 +1,6 @@
+<?php 
+ $component->render( array_merge( $props, [
+ 'type' => 'select2',
+ 'allow_empty' => true,
+ ]));
+ ?>

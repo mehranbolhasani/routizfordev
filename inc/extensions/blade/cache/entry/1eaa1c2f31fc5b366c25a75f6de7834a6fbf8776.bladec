@@ -1,0 +1,233 @@
+<div class="rz-modal-container rz-scrollbar">
+
+ <?php if( $status == 'publish' ): ?>
+ <div class="rz-booking-approved">
+ <?php echo static::e(sprintf( $strings->text_approved, get_the_modified_date() )); ?>
+
+ </div>
+ <?php endif; ?>
+
+ <?php if( $status == 'pending_payment' ): ?>
+ <div class="rz-booking-pending">
+ <?php echo static::e(sprintf( $strings->text_pending, $cancellation_date )); ?>
+
+ </div>
+ <?php endif; ?>
+
+ <?php if( $status == 'declined' ): ?>
+ <div class="rz-booking-declined">
+ <?php echo static::e(sprintf( $strings->text_declined, get_the_modified_date() )); ?>
+
+ </div>
+ <?php endif; ?>
+
+ <h5><?php echo static::e($strings->reservation); ?></h5>
+
+ <table>
+ <tbody>
+ <tr>
+ <td><?php echo static::e($strings->reservation_id); ?>:</td>
+ <td class="rz-text-right">#<?php echo static::e(get_the_ID()); ?></td>
+ </tr>
+ <tr>
+ <td><?php echo static::e($strings->reservation_status); ?>:</td>
+ <td class="rz-text-right">
+ <?php echo Rz()->get_status(); ?>
+ </td>
+ </tr>
+ <?php if( isset( $userdata->display_name ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->requested_by); ?>:</td>
+ <td class="rz-text-right"><?php echo static::e($userdata->display_name); ?></td>
+ </tr>
+ <?php endif; ?>
+ <tr>
+ <td><?php echo static::e($strings->checkin); ?>:</td>
+ <td class="rz-text-right"><?php echo static::e($checkin_date); ?></td>
+ </tr>
+ <tr>
+ <td><?php echo static::e($strings->checkout); ?>:</td>
+ <td class="rz-text-right"><?php echo static::e($checkout_date); ?></td>
+ </tr>
+ <?php if( isset( $guests ) and ! empty( $guests ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->guests); ?>:</td>
+ <td class="rz-text-right"><?php echo static::e($guests); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->hours ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->hours); ?>:</td>
+ <td class="rz-text-right">✕ <?php echo static::e($pricing->hours); ?></td>
+ </tr>
+ <?php endif; ?>
+ </tbody>
+ </table>
+
+ <?php if( $listing->type->get('rz_allow_pricing') and $pricing ): ?>
+
+ <h5><?php echo static::e($strings->pricing_details); ?></h5>
+
+ <table>
+ <tbody>
+ <?php if( isset( $pricing->base ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->base_price); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->base ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->guest_price ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->guest_price); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->guest_price ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->child_price ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->child_price); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->child_price ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->child_sep_price ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->child_sep_price); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->child_sep_price ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->long_term ) and ! empty( $pricing->long_term ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->long_term_price); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->long_term ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->security_deposit ) and ! empty( $pricing->security_deposit ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->security_deposit); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->security_deposit ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->service_fee ) and ! empty( $pricing->service_fee ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->service_fee); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->service_fee ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->extras ) and ! empty( $pricing->extras ) ): ?>
+ <?php $__currentLoopData = $pricing->extras; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $extra): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <tr>
+ <td>
+ <?php if( isset( $services[ $key ] ) ): ?>
+ <?php echo static::e($services[ $key ]->fields->name); ?>:
+ <?php endif; ?>
+ </td>
+ <td class="rz-text-right">
+ <?php echo Rz()->format_price( $extra->price ); ?>
+
+ <?php if( isset( $pricing->nights ) && $extra->type == 'per_day' ): ?>
+ ✕ <?php echo static::e($pricing->nights); ?>
+
+ <?php endif; ?>
+ </td>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+ <?php if( isset( $pricing->addons ) and ! empty( $pricing->addons ) ): ?>
+ <?php $__currentLoopData = $pricing->addons; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $addon_id => $addon): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <tr>
+ <td>
+ <?php $__currentLoopData = $addons; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $adn): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if( $adn->fields->key == $addon_id ): ?>
+ <?php echo static::e($adn->fields->name); ?>:
+ <?php break; ?>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </td>
+ <td class="rz-text-right">
+ <?php echo Rz()->format_price( $addon->price ); ?>
+
+ </td>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+ <?php if( isset( $pricing->extras_total ) and ! empty( $pricing->extras_total ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->extra_service_total); ?>:</td>
+ <td class="rz-text-right"><?php echo Rz()->format_price( $pricing->extras_total ); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->payment ) and isset( $pricing->payment_processing_name ) ): ?>
+ <tr>
+ <td><?php echo static::e($strings->payment); ?>:</td>
+ <td class="rz-text-right"><?php echo static::e($pricing->payment_processing_name); ?></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->total ) ): ?>
+ <tr>
+ <td><strong><?php echo static::e($strings->total); ?></strong></td>
+ <td class="rz-text-right"><strong><?php echo Rz()->format_price( $pricing->total ); ?></strong></td>
+ </tr>
+ <?php endif; ?>
+ <?php if( isset( $pricing->processing ) ): ?>
+ <tr>
+ <td><strong><?php echo static::e($strings->processing); ?></strong></td>
+ <td class="rz-text-right"><strong><?php echo Rz()->format_price( $pricing->processing ); ?></strong></td>
+ </tr>
+ <?php endif; ?>
+ </tbody>
+ </table>
+
+ <?php endif; ?>
+
+</div>
+
+<?php /* owner */ ?>
+<?php if( $user_owner_id == get_current_user_id() ): ?>
+ <div class="rz-modal-footer rz--top-border rz-text-center">
+ <div class="rz-modal-footer-buttons">
+ <?php if( $status == 'declined' ): ?>
+ <span href="#" class="rz-button rz-modal-button rz-disabled">
+ <span><?php echo static::e($strings->declined); ?></span>
+ </span>
+ <?php else: ?>
+ <a href="#" class="rz-button rz-white-gray rz-modal-button" data-action="booking-entry-action" data-type="decline">
+ <i class="fas fa-times rz-mr-1"></i>
+ <span><?php echo static::e($strings->decline); ?></span>
+ <?php Rz()->preloader(); ?>
+ </a>
+ <?php endif; ?>
+
+ <?php if( $status == 'pending' ): ?>
+ <a href="#" class="rz-button rz-button-accent rz-modal-button" data-action="booking-entry-action" data-type="approve">
+ <i class="fas fa-check rz-mr-1"></i>
+ <span><?php echo static::e($strings->approve); ?></span>
+ <?php Rz()->preloader(); ?>
+ </a>
+ <?php endif; ?>
+ </div>
+ </div>
+<?php /* requester */ ?>
+<?php else: ?>
+ <div class="rz-modal-footer rz--top-border rz-text-center">
+ <div class="rz-modal-footer-buttons">
+ <?php if( $status == 'declined' ): ?>
+ <span href="#" class="rz-button rz-modal-button rz-disabled">
+ <span><?php echo static::e($strings->declined); ?></span>
+ </span>
+ <?php else: ?>
+ <a href="#" class="rz-button rz-white-gray rz-modal-button" data-action="booking-entry-action" data-type="decline">
+ <i class="fas fa-times rz-mr-1"></i>
+ <span><?php echo static::e($strings->decline); ?></span>
+ <?php Rz()->preloader(); ?>
+ </a>
+ <?php endif; ?>
+ <?php if( $status == 'pending_payment' ): ?>
+ <a href="#" class="rz-button rz-button-accent rz-modal-button" data-action="booking-entry-action" data-type="payment-process">
+ <i class="fas fa-hand-holding-usd rz-mr-1"></i>
+ <span><?php echo static::e($strings->pay_now); ?></span>
+ <?php Rz()->preloader(); ?>
+ </a>
+ <?php endif; ?>
+
+ </div>
+ </div>
+<?php endif; ?>

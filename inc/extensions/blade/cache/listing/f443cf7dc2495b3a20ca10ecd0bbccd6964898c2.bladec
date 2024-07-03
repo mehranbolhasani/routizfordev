@@ -1,0 +1,29 @@
+<?php if( ! empty( $terms ) ): ?>
+ <div class="rz-mod-content">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <?php if( is_array( $terms ) ): ?>
+ <ul class="rz-tax-list rz--style-<?php echo static::e(( isset( $style ) and ! empty( $style ) ) ? $style : ''); ?>">
+ <?php $__currentLoopData = $terms; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $term): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li>
+ <?php if( ! empty( $term->icon ) ): ?>
+ <div class="rz--icon">
+ <i class="<?php echo static::e($term->icon); ?>"></i>
+ </div>
+ <?php endif; ?>
+ <div class="rz--label">
+ <p class="rz-mb-0"><strong><?php echo static::e($term->name); ?></strong></p>
+ <?php if( $term->description ): ?>
+ <p class="rz-mb-1 rz-mt-1">
+ <?php echo static::e($term->description); ?>
+
+ </p>
+ <?php endif; ?>
+ </div>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ <?php endif; ?>
+ </div>
+<?php endif; ?>

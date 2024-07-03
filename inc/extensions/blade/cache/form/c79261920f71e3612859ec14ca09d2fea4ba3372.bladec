@@ -1,0 +1,67 @@
+<?php 
+
+$form = new \Routiz\Inc\Src\Form\Component();
+
+ ?>
+
+<div class="rz-repeater-item <?php echo static::e($is_item_hidden ? 'rz-item-hidden' : ''); ?> <?php echo static::e($is_item_empty ? 'rz-item-empty' : ''); ?>" data-id="<?php echo static::e($template->id); ?>" data-name="<?php echo static::e($schema['name']); ?>" data-heading="<?php echo static::e(isset( $schema['heading'] ) ? $schema['heading'] : ''); ?>">
+
+ <div class="rz-item-row rz-no-select">
+ <div class="rz-item-label">
+ <a href="#" class="rz-item-expand">
+ <i class="fas fa-angle-down"></i>
+ </a>
+ <em class="rz-item-name">
+ <?php echo static::e($template->name); ?>
+
+ </em>
+ <span class="rz-item-title">
+ <?php echo static::e(isset( $template->heading_text ) ? strip_tags( $template->heading_text ) : ''); ?>
+
+ </span>
+ </div>
+ <div class="rz-item-actions">
+ <?php if( $can_hide ): ?>
+ <a href="#" class="rz-item-hide">
+ <i class="fas fa-ban"></i>
+ </a>
+ <?php endif; ?>
+ <a href="#" class="rz-item-clone">
+ <i class="far fa-clone"></i>
+ </a>
+ <a href="#" class="rz-item-remove">
+ <i class="far fa-trash-alt"></i>
+ </a>
+ </div>
+ </div>
+
+ <div class="rz-repeater-content rz-grid">
+ <?php if( is_array( $schema['fields'] ) ): ?>
+ <?php $__currentLoopData = $schema['fields']; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $id => $props_default): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php 
+
+ $props = [
+ 'id' => $id,
+ 'readonly' => true,
+ ];
+
+ if( isset( $parent ) ) {
+ $props['parent'] = $parent;
+ }
+
+ if( isset( $fields->{$id} ) ) {
+ $props['value'] = $fields->{$id};
+ }
+
+ if( isset( $props['value'] ) and is_string( $props['value'] ) ) {
+ $props['value'] = html_entity_decode( $props['value'] );
+ }
+
+ $form->render( array_merge( $props_default, $props ) );
+
+ ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ <?php endif; ?>
+ </div>
+
+</div>

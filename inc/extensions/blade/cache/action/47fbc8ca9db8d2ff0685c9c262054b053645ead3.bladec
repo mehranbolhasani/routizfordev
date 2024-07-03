@@ -1,0 +1,72 @@
+<?php if( is_array( $open_hours ) and ! empty( $open_hours ) ): ?>
+ <?php 
+ $is_empty = true;
+ foreach( $open_hours as $day_key => $hours ) {
+ if( ! empty( $hours ) ) {
+ $is_empty = false;
+ break;
+ }
+ }
+ ?>
+ <?php if( ! $is_empty ): ?>
+ <div class="rz-action-open-hours">
+ <div class="rz-open-hours <?php echo static::e($is_expanded ? 'rz--expand' : ''); ?>">
+ <div class="rz--current">
+ <div class="rz--now <?php echo static::e($is_open ? 'rz--open' : ''); ?>">
+ <span><?php echo static::e($is_open ? $strings->open_now : $strings->closed); ?></span>
+ </div>
+ <div class="rz--now-hours">
+
+ <?php if( $type == 'open' ): ?>
+ <?php /* .. */ ?>
+ <?php elseif( $type == 'closed' ): ?>
+ <?php /* .. */ ?>
+ <?php else: ?>
+ <?php if( $current_start and $current_end ): ?>
+ <span class="rz--now-hours"><?php echo static::e(date( $time_format, $current_start )); ?> - <?php echo static::e(date( $time_format, $current_end )); ?></span>
+ <?php endif; ?>
+ <?php endif; ?>
+
+ <a href="#" class="rz--toggle">
+ <i class="fas fa-plus"></i>
+ </a>
+ </div>
+ </div>
+ <div class="rz--list">
+ <ul>
+ <?php $__currentLoopData = $open_hours; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $day_key => $hr): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if(
+ $hr->type == 'open' or
+ $hr->type == 'closed' or
+ (
+ $hr->type == 'range' and
+ ! empty( $hr->unix_start ) and
+ ! empty( $hr->unix_end )
+ )
+ ): ?>
+ <li>
+ <span class="rz--day"><?php echo static::e($week_days[ $day_key ]); ?></span>
+ <span class="rz--hour">
+
+ <?php if( $hr->type == 'open' ): ?>
+ <?php echo static::e($strings->all_day_open); ?>
+
+ <?php elseif( $hr->type == 'closed' ): ?>
+ <?php echo static::e($strings->all_day_closed); ?>
+
+ <?php else: ?>
+ <?php echo static::e(date( $time_format, $hr->unix_start )); ?> - <?php echo static::e(date( $time_format, $hr->unix_end )); ?>
+
+ <?php endif; ?>
+
+ </span>
+ </li>
+ <?php endif; ?>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ </div>
+ <p class="rz--info"><u><?php echo static::e($strings->local_time); ?></u></p>
+ </div>
+ </div>
+ <?php endif; ?>
+<?php endif; ?>

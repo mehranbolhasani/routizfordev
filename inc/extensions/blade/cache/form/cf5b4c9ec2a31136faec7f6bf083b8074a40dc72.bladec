@@ -1,0 +1,140 @@
+<?php 
+
+$field_marker_fields = $component->create([
+ 'type' => 'use_field',
+ 'id' => 'marker_field',
+ 'name' => esc_html__('Select Marker Field', 'routiz'),
+ 'include' => [
+ 'rz_price' => esc_html__('Price', 'routiz'),
+ ],
+ 'v_model' => 'field',
+ 'col' => 6,
+ 'dependency' => [
+ 'id' => 'marker_type',
+ 'value' => 'field',
+ 'compare' => '=',
+ ],
+]);
+
+$props = array_merge( $props, [
+ 'fields' => $field_marker_fields->props->options
+]);
+
+ ?>
+
+<rz-preview-marker :props='<?php echo static::e(json_encode( $props )); ?>' inline-template>
+
+ <div class="rz-form">
+ <div class="rz-grid">
+ <div class="rz-col-6 rz-col-lg-12">
+ <div class="rz-grid">
+ <?php 
+
+ $component->render([
+ 'type' => 'select',
+ 'id' => 'marker_type',
+ 'name' => esc_html__('Type', 'routiz'),
+ 'v_model' => 'type',
+ 'value' => 'icon',
+ 'options' => [
+ 'icon' => 'Icon',
+ 'field' => 'Field',
+ 'image' => 'Image',
+ ],
+ 'allow_empty' => false
+ ]);
+
+ $component->render([
+ 'type' => 'number',
+ 'input_type' => 'range',
+ 'id' => 'marker_image_width',
+ 'name' => esc_html__('Marker Image Width', 'routiz'),
+ 'min' => 0,
+ 'max' => 200,
+ 'format' => '<strong>%s</strong> Pixels',
+ 'v_model' => 'image_width',
+ 'dependency' => [
+ 'id' => 'marker_type',
+ 'value' => 'image',
+ 'compare' => '=',
+ ],
+ ]);
+
+ $component->render([
+ 'type' => 'upload',
+ 'id' => 'marker_image',
+ 'name' => esc_html__('Marker Image', 'routiz'),
+ 'multiple' => false,
+ 'v_model' => 'image',
+ 'dependency' => [
+ 'id' => 'marker_type',
+ 'value' => 'image',
+ 'compare' => '=',
+ ],
+ ]);
+
+ echo $field_marker_fields->get();
+
+ $component->render([
+ 'type' => 'text',
+ 'id' => 'marker_field_format',
+ 'name' => esc_html__('Marker Field Format', 'routiz'),
+ 'v_model' => 'field_format',
+ 'value' => '%s',
+ 'col' => 6,
+ 'dependency' => [
+ 'id' => 'marker_type',
+ 'value' => 'field',
+ 'compare' => '=',
+ ],
+ ]);
+
+ ?>
+
+ <div class="rz-form-group rz-col-12 rz-text-center rz-mt-3">
+ <button type="submit" class="rz-button rz-large">
+ <span><?php esc_html_e( 'Save Changes', 'routiz' ); ?></span>
+ </button>
+ </div>
+
+ </div>
+ </div>
+ <div class="rz-col-6 rz-col-lg-12">
+
+ <div class="rz-heading">
+ <label class="rz-ellipsis ">
+ <?php echo static::e(esc_html__( 'Marker Preview', 'routiz' )); ?>
+
+ </label>
+ </div>
+
+ <div class="rz-prv rz-flex rz-flex-column rz-justify-center rz-no-select">
+
+ <div v-if="type == 'icon'" class="rz-prv-marker rz-prv-marker-icon">
+ <i :class="icon"></i>
+ </div>
+
+ <div v-if="type == 'image'" class="rz-prv-marker rz-prv-marker-image">
+ <template v-if="get_image_thumb()">
+ <img v-if="image" :src="get_image_thumb()" v-bind:style="{ width: parseFloat( image_width ) + 'px' }" alt="">
+ </template>
+ <template v-else>
+ <p class="rz-prv-marker-warning rz-mb-0"><?php  esc_html_e( 'Upload marker image', 'routiz' );  ?></p>
+ </template>
+ </div>
+
+ <div v-if="type == 'field'" class="rz-prv-marker rz-prv-marker-field" :class="{ 'rz-field-empty': ! field }">
+ <template v-if="field">
+ <span v-html="format_heading( field_format, props.fields[ field ] )"></span>
+ </template>
+ <template v-else>
+ <?php  esc_html_e( 'Select field', 'routiz' );  ?>
+ </template>
+ </div>
+
+ </div>
+
+ </div>
+ </div>
+ </div>
+</rz-preview-listing>

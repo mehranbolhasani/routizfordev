@@ -1,0 +1,51 @@
+<?php if( is_array( $items ) and ! empty( $items ) ): ?>
+ <div class="rz-mod-menu">
+ <?php if( ! empty( $name ) ): ?>
+ <h4><?php echo static::e($name); ?></h4>
+ <?php endif; ?>
+ <div class="rz-price-menu">
+ <div class="rz--tabs">
+ <ul>
+ <?php $__currentLoopData = $items; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $section_key => $section): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <li class="<?php echo static::e($section_key == 0 ? 'rz-active' : ''); ?>">
+ <a href="#">
+ <?php echo static::e($section->fields->name); ?>
+
+ </a>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ </div>
+ <div class="rz--sections">
+ <?php $__currentLoopData = $items; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $section_key => $section): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <section class="rz--section<?php echo static::e($section_key == 0 ? ' rz-active' : ''); ?>">
+ <?php if( $section->fields->items ): ?>
+ <ul>
+ <?php $__currentLoopData = $section->fields->items; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php if( ! $item->fields->name ): ?> <?php continue; ?> <?php endif; ?>
+ <li class="<?php echo static::e($item->fields->focus ? 'rz--is-focus' : ''); ?>">
+ <?php if( $item->fields->focus ): ?>
+ <span class="rz--focus"><?php echo static::e($item->fields->focus); ?></span>
+ <?php endif; ?>
+ <div class="rz--heading">
+ <div class="rz--name">
+ <h4><?php echo static::e($item->fields->name); ?></h4>
+ </div>
+ <span class="rz--price rz-font-heading">
+ <?php echo is_numeric( $item->fields->price ) ? Rz()->format_price( $item->fields->price ) : $item->fields->price; ?>
+
+ </span>
+ </div>
+ <?php if( $item->fields->description ): ?>
+ <div class="rz--description"><?php echo static::e($item->fields->description); ?></div>
+ <?php endif; ?>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ <?php endif; ?>
+ </section>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ </div>
+ </div>
+<?php endif; ?>

@@ -1,0 +1,50 @@
+<?php 
+ global $rz_explore;
+ $args = [];
+ if( $rz_explore->type ) {
+ $args['type'] = $rz_explore->type->get('rz_slug');
+ }
+ ?>
+
+<div class="rz-form-group rz-col-12">
+
+ <?php if( $name ): ?>
+ <div class="rz-heading">
+ <label class="rz-ellipsis">
+ <?php echo $name; ?>
+
+ </label>
+ </div>
+ <?php endif; ?>
+
+ <div class="rz-filter-tab <?php if( ! empty( $labels ) ): ?> rz-active <?php endif; ?>">
+ <div class="rz-tab-title rz-is-placeholder rz-no-select" data-label="<?php echo static::e($label); ?>">
+ <?php if( ! empty( $labels ) ): ?>
+ <?php echo $labels; ?>
+
+ <?php else: ?>
+ <span><?php echo static::e($label); ?></span>
+ <?php endif; ?>
+ </div>
+ <div class="rz-tab-flyout">
+ <div class="rz-tab-content rz-scrollbar">
+ <div class="rz-grid">
+ <?php $__currentLoopData = $content; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $filter): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <?php echo static::e($component->render( array_merge( (array) $filter->fields, [
+ 'type' => $filter->template->id,
+ ]))); ?>
+
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ </div>
+ <div class="rz-tab-footer">
+ <div>
+ <a href="#" class="rz-button rz-small">
+ <span><?php echo static::e($strings->close); ?></span>
+ </a>
+ </div>
+ </div>
+ </div>
+ </div>
+
+</div>

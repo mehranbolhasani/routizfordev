@@ -1,0 +1,101 @@
+<div class="rz-action-button">
+
+ <?php if( $enable_author ): ?>
+ <?php echo static::e(Rz()->the_template('routiz/single/action/author')); ?>
+
+ <?php endif; ?>
+
+ <?php if( ! empty( $title ) ): ?>
+ <h5 class="rz--title"><?php echo static::e($title); ?></h5>
+ <?php endif; ?>
+
+ <?php if( $meta ): ?>
+ <div class="rz-action-info">
+ <?php $__currentLoopData = $meta; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $m): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+
+ <?php 
+ $field_value = $listing->get( $m->fields->id );
+ ?>
+
+ <?php if( $field_value ): ?>
+ <p>
+
+ <?php if( $m->fields->icon ): ?>
+ <i class="rz--icon <?php echo static::e($m->fields->icon); ?>"></i>
+ <?php endif; ?>
+
+ <?php switch ( $m->fields->type ) {
+
+ case ('address'): ?>
+ <a href="<?php echo static::e(add_query_arg( [ 'api' => 1, 'query' => urlencode( $field_value ) ], 'https://www.google.com/maps/search/' )); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $m->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('url'): ?>
+ <a href="<?php echo static::e(esc_url( str_replace( '{field}', $field_value, $m->fields->format ) )); ?>" target="_blank">
+ <?php if( isset( $m->fields->type_url_label ) and ! empty( $m->fields->type_url_label ) ): ?>
+ <?php echo static::e($m->fields->type_url_label); ?>
+
+ <?php else: ?>
+ <?php echo static::e(str_replace( '{field}', $field_value, $m->fields->format )); ?>
+
+ <?php endif; ?>
+ </a>
+ <?php break; ?>
+
+ <?php case ('phone'): ?>
+ <a href="tel:<?php echo static::e($field_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $m->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('email'): ?>
+ <a href="mailto:<?php echo static::e($field_value); ?>" target="_blank">
+ <?php echo static::e(str_replace( '{field}', $field_value, $m->fields->format )); ?>
+
+ </a>
+ <?php break; ?>
+
+ <?php case ('price'): ?>
+ <span>
+ <?php echo str_replace( '{field}', Rz()->format_price( $field_value ), $item->fields->format ); ?>
+
+ </span>
+ <?php break; ?>
+
+ <?php default: ?>
+ <span>
+ <?php echo static::e(str_replace( '{field}', $field_value, $m->fields->format )); ?>
+
+ </span>
+
+ <?php } // end switch ?>
+
+ </p>
+ <?php endif; ?>
+
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ <?php endif; ?>
+
+ <?php if( $show_button ): ?>
+ <div class="rz-action-footer rz-text-center">
+ <div class="rz--action">
+ <a href="<?php echo static::e($url); ?>"
+ class="rz-button rz-button-accent rz-large"
+ <?php echo static::e($target); ?>
+
+ <?php echo $modal; ?>>
+ <span>
+ <?php echo static::e($button_label ? $button_label : $strings->label); ?>
+
+ </span>
+ </a>
+ </div>
+ </div>
+ <?php endif; ?>
+
+</div>
